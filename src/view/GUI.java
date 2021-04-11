@@ -430,7 +430,7 @@ public class GUI extends JFrame {
 				}
 			}
 			catch (Exception e) {
-				
+
 				
 			}
 			finally {
@@ -457,9 +457,12 @@ public class GUI extends JFrame {
 		}
 		// Si on a arreté de jouer et qu'il y a encore des fruits, c'est que pacman n'a plus de vie, et donc on arrete le jeu
 		if (carte.are_Fruits()) {
-					
-			System.out.println("You loose !");
-			System.out.println("Your score : " + this.SCORE);
+			
+			Thread.sleep(1000);
+			playSound("pacman_death.wav");
+			Thread.sleep(2000);
+			JOptionPane box = new JOptionPane();
+			box.showMessageDialog(this, "You loose ! Your score : " + this.SCORE);
 			System.exit(((Pacman) item[PACMAN_POSITION]).get_score());
 			
 					
