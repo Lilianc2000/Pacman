@@ -1,11 +1,6 @@
 package logic;
 
-import data.Empty;
 import data.Entite;
-import data.Fruit;
-import data.Ghost;
-import data.Pacman;
-import data.Wall;
 
 /**
  * Class carte
@@ -43,9 +38,9 @@ public class Carte {
 	 * @param liste a list of Entite to put on the map
 	 */	
 	public Carte(Entite[] liste) {
-		// On vérifie qu'il y a au moins 3 éléments, sinon le jeu ne sert à  rien
+		// On vï¿½rifie qu'il y a au moins 3 ï¿½lï¿½ments, sinon le jeu ne sert ï¿½ rien
 		assert liste.length > 2 : "You can not play with less than 3 elements";
-		// On récupère les items dans la carte
+		// On rï¿½cupï¿½re les items dans la carte
 		this.liste = liste;
 		// On recherche pacman pour stocker sa position
 		for (int i = 0; i < liste.length; i++) {

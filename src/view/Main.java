@@ -1,9 +1,8 @@
 package view;
 
 import data.Entite;
-
+import data.Level;
 import logic.Carte;
-import logic.Level;
 
 /**
  * Main method of the program

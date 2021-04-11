@@ -1,7 +1,9 @@
-package data;
+package logic;
 
 import java.awt.Color;
 import java.util.concurrent.ThreadLocalRandom;
+
+import data.Entite;
 
 /**
  * Class Ghost

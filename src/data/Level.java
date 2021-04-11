@@ -1,10 +1,10 @@
-package logic;
+package data;
 
-import data.Entite;
-import data.Fruit;
-import data.Ghost;
-import data.Pacman;
-import data.Wall;
+import logic.Carte;
+import logic.Fruit;
+import logic.Ghost;
+import logic.Pacman;
+import logic.Wall;
 
 public abstract class Level {
 

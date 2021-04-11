@@ -1,6 +1,8 @@
-package data;
+package logic;
 
 import java.awt.Color;
+
+import data.Entite;
 
 /**
  * Class Pacman

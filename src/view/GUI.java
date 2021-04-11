@@ -16,14 +16,14 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
-import data.Empty;
 import data.Entite;
-import data.Fruit;
-import data.Ghost;
-import data.Pacman;
-import data.Wall;
+import data.Level;
 import logic.Carte;
-import logic.Level;
+import logic.Empty;
+import logic.Fruit;
+import logic.Ghost;
+import logic.Pacman;
+import logic.Wall;
 
 /**
  * Graphical User Interface Class
