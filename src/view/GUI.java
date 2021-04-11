@@ -182,7 +182,7 @@ public class GUI extends JFrame {
         				
         				try {
             				
-        					game(item, score);
+        					game(score);
         					
         				} 
             			
@@ -304,7 +304,7 @@ public class GUI extends JFrame {
 				
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
-					
+					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 					
 				}
 				else {
@@ -319,7 +319,7 @@ public class GUI extends JFrame {
 
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
-					
+					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 					
 				}
 				else {
@@ -334,7 +334,7 @@ public class GUI extends JFrame {
 
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
-					
+					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 					
 				}
 				else {
@@ -349,7 +349,7 @@ public class GUI extends JFrame {
 
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
-					
+					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 					
 				}
 				else {
@@ -371,7 +371,7 @@ public class GUI extends JFrame {
 	 * @throws InterruptedException 
 	 */
 	
-	private void game(Entite[] item, JLabel score) throws InterruptedException {
+	private void game(JLabel score) throws InterruptedException {
 		
 		// Tant qu'il y a des fruits en jeu et que Pacman a de la vie, on peut le déplacer
 		
@@ -384,35 +384,35 @@ public class GUI extends JFrame {
 				// Si on a pressé UP, alors on envoie le code 1 pour le déplacement
 				if (upPressed) {
 				
-					carte.move_pacman(1);
+					carte.move_pacman(1, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé DOWN, alors on envoie le code 2 pour le déplacement
 				else if (downPressed) {
 				
-					carte.move_pacman(2);
+					carte.move_pacman(2, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé RIGHT, alors on envoie le code 3 pour le déplacement
 				else if (rightPressed) {
 				
-					carte.move_pacman(3);
+					carte.move_pacman(3,(Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé LEFT, alors on envoie le code 4 pour le déplacement
 				else if (leftPressed) {
 				
-					carte.move_pacman(4);
+					carte.move_pacman(4, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Sinon, on doit continuer dans la meme direction, on envoie donc le code 5
 				else {
 				
-					carte.move_pacman(5);
+					carte.move_pacman(5, (Pacman) item[PACMAN_POSITION]);
 					
 				}
 			}

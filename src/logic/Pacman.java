@@ -7,7 +7,7 @@ import data.Entite;
 /**
  * Class Pacman
  * Represents pacman on the map and all his attributes
- * @author Camille Barbarin--Renvoisé
+ * @author Camille Barbarin--Renvoisï¿½
  *
  */
 
@@ -112,6 +112,7 @@ public class Pacman extends Entite {
 		// Si on a recu un autre code que 1 2 3 ou 4, alors on ne change pas de direction
 		this.x = this.x + this.direction_x;
 		this.y = this.y + this.direction_y;
+		
 		return this;
 	}
 
