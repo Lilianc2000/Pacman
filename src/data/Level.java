@@ -139,7 +139,21 @@ public abstract class Level {
 									  new Wall(14,10),
 									  };
 									  
-	private static Entite[] liste_niveau_2;
+	private static Entite[] liste_niveau_2= new Entite[] 
+			{
+					  new Wall(0, 0),
+					  new Pacman(10, 0, 1, 0), 
+					  new Fruit(4, 5, 3),
+					  new Fruit(6, 8, 7),
+					  new Fruit(7, 1, 11),
+					  new Fruit(9, 8, 13),
+					  new Fruit(8, 14, 2),
+					  new Fruit(10, 13, 9),
+					  new Fruit(10, 13, 9),
+					  new Ghost(6, 0),
+					  new Ghost(11, 1),
+					  new Ghost(2, 9),
+			};
 	
 	private static Carte niveau_1 = new Carte(liste_niveau_1);
 	private static Carte niveau_2 = new Carte(liste_niveau_2);
