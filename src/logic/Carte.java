@@ -66,32 +66,36 @@ public class Carte implements Interface_VL{
 		if (code == 1) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
-					if (liste[i].get_y()=liste[PACMAN_POSITION.get_y() ]
-					
-					
-					
-					assert liste[i].get_y() != liste[PACMAN_POSITION].get_y()|| liste[i].get_x() != liste[PACMAN_POSITION].get_x() - 1: "A wall is here.";
+					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+						throw new Exception ("A wall is here");
+					}
 				}
 			}
 		}
 		else if (code == 2) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
-					assert liste[i].get_y() != liste[PACMAN_POSITION].get_y() || liste[i].get_x() != liste[PACMAN_POSITION].get_x() + 1: "A wall is here.";
+					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+						throw new Exception ("A wall is here");
+					}
 				}
 			}
 		}
 		else if (code == 3) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
-					assert liste[i].get_y() != liste[PACMAN_POSITION].get_y() + 1 || liste[i].get_x() != liste[PACMAN_POSITION].get_x(): "A wall is here.";
+					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+						throw new Exception ("A wall is here");
+					}
 				}
 			}
 		}
 		else if (code == 4) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
-					assert liste[i].get_y() != liste[PACMAN_POSITION].get_y() - 1 || liste[i].get_x() != liste[PACMAN_POSITION].get_x() : "A wall is here.";
+					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+						throw new Exception ("A wall is here");
+					}
 				}
 			}
 		}
@@ -100,17 +104,44 @@ public class Carte implements Interface_VL{
 			int int_y = pacman.get_direction_y();
 			if (int_x == 1) {
 				code = 1;
+				for (int i = 0; i < liste.length; i++) {
+					if (liste[i] instanceof Wall) {
+						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+							throw new Exception ("A wall is here");
+						}
+					}
+				}
 			}
 			else if (int_x == -1) {
 				code = 2;
+				for (int i = 0; i < liste.length; i++) {
+					if (liste[i] instanceof Wall) {
+						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+							throw new Exception ("A wall is here");
+						}
+					}
+				}
 			}
 			else if (int_y == -1) {
 				code = 3;
+				for (int i = 0; i < liste.length; i++) {
+					if (liste[i] instanceof Wall) {
+						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+							throw new Exception ("A wall is here");
+						}
+					}
+				}
 			}
 			else {
 				code = 4;
+				for (int i = 0; i < liste.length; i++) {
+					if (liste[i] instanceof Wall) {
+						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+							throw new Exception ("A wall is here");
+						}
+					}
+				}
 			}
-			move_pacman(code, pacman);
 		}
 		// Si on est toujours la, c'est qu'on peut bouger
 		liste[PACMAN_POSITION] = ((Pacman) liste[PACMAN_POSITION]).move_pacman(code);		
