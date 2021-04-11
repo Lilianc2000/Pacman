@@ -66,7 +66,7 @@ public class Carte implements Interface_VL{
 		if (code < 1 || code > 5) {
 			throw new Exception ("Wrong moving code detected");
 		}
-		// On verifie si la case souhaitée est un mur, auquel cas on souleve une exception et on de déplace pas pacman
+		// On verifie si la case souhaitï¿½e est un mur, auquel cas on souleve une exception et on de dï¿½place pas pacman
 		if (code == 1) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
@@ -147,6 +147,7 @@ public class Carte implements Interface_VL{
 				}
 			}
 		}
+		System.out.println("check walls passed");
 		// Si on est toujours la, c'est qu'on peut bouger
 		liste[PACMAN_POSITION] = ((Pacman) liste[PACMAN_POSITION]).move_pacman(code);		
 		// On verifie si on n'a pas mange un fruit ou rencontrer un fantome

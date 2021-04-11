@@ -190,8 +190,8 @@ public class GUI extends JFrame {
         			public void run() {
         				
         				try {
-            				playSound("pacman_beginning.wav");
-            				Thread.sleep(4000);
+            				//playSound("pacman_beginning.wav");
+            				//Thread.sleep(4000);
         					game();
 
         				} 
@@ -365,35 +365,35 @@ public class GUI extends JFrame {
 			try {
 				// Si on a pressé UP, alors on envoie le code 1 pour le déplacement
 				if (upPressed) {
-				
+					System.out.println("1 sent");
 					carte.move_pacman(1, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé DOWN, alors on envoie le code 2 pour le déplacement
 				else if (downPressed) {
-				
+					System.out.println("2 sent");
 					carte.move_pacman(2, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé RIGHT, alors on envoie le code 3 pour le déplacement
 				else if (rightPressed) {
-				
+					System.out.println("3 sent");
 					carte.move_pacman(3,(Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé LEFT, alors on envoie le code 4 pour le déplacement
 				else if (leftPressed) {
-				
+					System.out.println("4 sent");
 					carte.move_pacman(4, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Sinon, on doit continuer dans la meme direction, on envoie donc le code 5
 				else {
-				
+					System.out.println("5 sent");
 					carte.move_pacman(5, (Pacman) item[PACMAN_POSITION]);
 					
 				}

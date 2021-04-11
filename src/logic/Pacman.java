@@ -112,6 +112,7 @@ public class Pacman extends Entite {
 		// Si on a recu un autre code que 1 2 3 ou 4, alors Pacman ne change pas de direction		
 		this.x = this.x + this.direction_x;
 		this.y = this.y + this.direction_y;
+		System.out.println("Pacman updated : x " + this.x + "   y : " + this.y);
 		return this;
 	}
 
