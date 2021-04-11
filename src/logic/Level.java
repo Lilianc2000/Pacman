@@ -8,8 +8,8 @@ import data.Wall;
 
 public abstract class Level {
 
-	// Antoine, la premiere ligne du premier niveau est faite. Je te laisse la modifié si tu le souhaites,
-	// et compléter les 14 autres lignes ainsi que le niveau 2
+	// Antoine, la premiere ligne du premier niveau est faite. Je te laisse la modifier si tu le souhaites,
+	// et completer les 14 autres lignes ainsi que le niveau 2
 	private static Entite[] liste_niveau_1 = new Entite[]
 									  {
 									  new Wall(0, 0),
