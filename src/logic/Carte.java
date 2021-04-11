@@ -52,11 +52,10 @@ public class Carte implements Interface_VL{
 	/**
 	 * Method to move the Pacman on the map
 	 * @param code the moving code of Pacman
-	 * @return this the actualized map
-	 * Gives the liste attribute for carte
 	 * @throws Exception 
-	 * @returns liste
+	 * @return carte the actualized Carte object
 	 */
+	
 	public Carte move_pacman(int code, Pacman pacman) throws Exception {
 		// On verifie que le code de deplacement est dans les valeurs possibles
 		if (code < 0 || code > 5) {
