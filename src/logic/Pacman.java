@@ -92,21 +92,21 @@ public class Pacman extends Entite {
 		// Direction nord
 		if (code == 1) {
 			this.direction_y = 0;
-			this.direction_x = -1;
+			this.direction_x = 1;
 		}
 		// Direction sud
 		else if (code == 2) {	
 			this.direction_y = 0;
-			this.direction_x = 1;
+			this.direction_x = -1;
 		}
 		// Direction est
 		else if (code == 3) {	
-			this.direction_y = 1;
+			this.direction_y = -1;
 			this.direction_x = 0;
 		}
 		// Direction ouest
 		else if (code == 4) {	
-			this.direction_y = -1;
+			this.direction_y = 1;
 			this.direction_x = 0;
 		}
 		// Si on a recu un autre code que 1 2 3 ou 4, alors on ne change pas de direction
