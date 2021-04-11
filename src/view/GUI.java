@@ -436,11 +436,14 @@ public class GUI extends JFrame {
 				
 		// Sinon, c'est que l'on veut changer de niveau
 		else {
+			
+			Thread.sleep(1000);
 			 // On récupère la nouvelle carte
 			Carte new_map = Level.get_carte(lvl + 1);
 			
 			// On crée une nouvelle fenêtre
-			
+			playSound("victory.wav");
+			Thread.sleep(2000);
 			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1, this.Xresolution, this.Yresolution);
 			frame.setSize(Xresolution, Yresolution);
 	        frame.setResizable(false);
@@ -501,7 +504,7 @@ public class GUI extends JFrame {
 	        }
 	    }
 
-	// Classe de l'audio de pacman
+	// Fonction de l'audio du jeu
 	public static synchronized void playSound(final String url) {
 		  new Thread(new Runnable() {
 		    public void run() {
