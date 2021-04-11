@@ -27,7 +27,7 @@ public class Main {
     		System.exit(-1);
     	}
 		
-		
+
 		Entite[] item = new Entite[taille * taille];
 		item[0] = new Pacman(10, 0, 0, 1);
 		item[1] = new Fruit(10, 0, 2);
@@ -55,10 +55,10 @@ public class Main {
 				k = k + 1;
 				
 			}
-			
+				
 		}
 		
-		
+
 		int lvl = 1;
 		
 		//Carte carte = Level.get_carte(lvl);
