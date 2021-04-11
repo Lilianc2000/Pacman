@@ -6,6 +6,7 @@ import data.Ghost;
 import data.Pacman;
 import data.Wall;
 import logic.Carte;
+import logic.Level;
 
 /**
  * Main method of the program
@@ -26,8 +27,9 @@ public class Main {
     		System.exit(-1);
     	}
 		
-		Entite[] item = new Entite[taille * taille];
+		Entite[] item = Level.get_carte(1);
 		
+		/*
 		item[0] = new Pacman(10, 0, 0, 1);
 		item[1] = new Fruit(10, 0, 2);
 		item[2] = new Fruit(10, 0, 3);
@@ -56,6 +58,7 @@ public class Main {
 			}
 			
 		}
+		*/
 		
 		Carte carte = new Carte(item);
 		
