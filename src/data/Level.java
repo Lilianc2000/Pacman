@@ -287,6 +287,11 @@ public abstract class Level {
 	private static Carte niveau_1 = new Carte(liste_niveau_1);
 	private static Carte niveau_2 = new Carte(liste_niveau_2);
 	
+	/**
+	 * 
+	 * @param level
+	 * @return a list with the initial coordinate of Pacman, walls, Fruits(with values) and Ghosts
+	 */
 	public static Carte get_carte(int level) {
 		
 		if (level == 1) {
