@@ -52,14 +52,15 @@ public class Carte implements Interface_VL{
 	/**
 	 * Method to move the Pacman on the map
 	 * @param code the moving code of Pacman
-	 * @return this the actualized map
-	 * Gives the liste attribute for carte
-	 * @returns liste
+	 * @throws Exception 
+	 * @return carte the actualized Carte object
 	 */
-	public Carte move_pacman(int code) {
-		// On vï¿½rifie que le code de deplacement fourni est bien dans ceux traites
-		assert code <= 5 && code >0 : "Wrong moving code detected";
-		// On verifie si on ne va pas dans un mur, auquel cas on souleve une exception pour ne pas bouger pacman
+	public Carte move_pacman(int code, Pacman pacman) throws Exception {
+		// On verifie que le code de deplacement est dans les valeurs possibles
+		if (code < 0 || code > 5) {
+			throw new Exception ("Wrong moving code detected");
+		}
+		// On verifie si la case souhaitée est un mur, auquel cas on souleve une exception pour ne pas bouger pacman
 		if (code == 1) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
