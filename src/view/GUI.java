@@ -12,6 +12,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
@@ -187,9 +190,10 @@ public class GUI extends JFrame {
         			public void run() {
         				
         				try {
-            				
+            				playSound("pacman_beginning.wav");
+            				Thread.sleep(4000);
         					game();
-        					
+
         				} 
             			
             			catch (InterruptedException e1) {
@@ -354,9 +358,9 @@ public class GUI extends JFrame {
 		
 		// Tant qu'il y a des fruits en jeu et que Pacman a de la vie, on peut le déplacer
 		while (carte.are_Fruits() && ((Pacman) item[PACMAN_POSITION]).get_life() > 0) {
-			System.out.println(carte.are_Fruits());
+
 			System.out.println("Waiting actions");
-			Thread.sleep(500);
+			Thread.sleep(565);
 			
 			try {
 				// Si on a pressé UP, alors on envoie le code 1 pour le déplacement
@@ -401,6 +405,7 @@ public class GUI extends JFrame {
 			finally {
 				
 				// On fait bouger les fantomes
+				playSound("pacman_chomp.wav");
 				carte.move_ghost();
 
 				// On rebalaye tout le tableau après le déplacement de pacman et donc aussi les déplacements des fantomes
@@ -424,6 +429,8 @@ public class GUI extends JFrame {
 					
 			System.out.println("You loose !");
 			System.out.println("Your score : " + this.SCORE);
+			System.exit(((Pacman) item[PACMAN_POSITION]).get_score());
+			
 					
 		}
 				
@@ -433,6 +440,7 @@ public class GUI extends JFrame {
 			Carte new_map = Level.get_carte(lvl + 1);
 			
 			// On crée une nouvelle fenêtre
+			
 			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1, this.Xresolution, this.Yresolution);
 			frame.setSize(Xresolution, Yresolution);
 	        frame.setResizable(false);
@@ -492,4 +500,22 @@ public class GUI extends JFrame {
 	            }
 	        }
 	    }
+
+	// Classe de l'audio de pacman
+	public static synchronized void playSound(final String url) {
+		  new Thread(new Runnable() {
+		    public void run() {
+		      try {
+		        Clip clip = AudioSystem.getClip();
+		        AudioInputStream inputStream = AudioSystem.getAudioInputStream(
+		          Main.class.getResourceAsStream("/view/" + url));
+		        clip.open(inputStream);
+		        clip.start(); 
+		      } catch (Exception e) {
+		        System.err.println(e.getMessage());
+		      }
+		    }
+		  }).start();
+		}
+
 }
