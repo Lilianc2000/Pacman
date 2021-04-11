@@ -7,12 +7,12 @@ import data.Entite;
 /**
  * Class Empty
  * Represent an empty case on the map
- * @author Lilian Cizeron
+ * @author Camille Barbarin--Renvoise
  */
 
 public class Empty extends Entite {
 	
-	// La couleur du vide : noir
+	// On choisit que les cases vides seront noires
 	private static final Color color = Color.BLACK;
 	
 	/**

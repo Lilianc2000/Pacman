@@ -21,5 +21,5 @@ public interface Interface_DL {
 	 * @return y the y position of the Entity
 	 */
 	public int get_Y();
-
+ 
 }

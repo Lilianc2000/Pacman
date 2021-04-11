@@ -4,7 +4,7 @@ import data.Entite;
 
 /**
  * Interface between the logic and the view parts of the game
- * @author Camille Barbarin--Renvoisé
+ * @author Camille Barbarin--Renvoise
  */
 
 public interface Interface_VL {
