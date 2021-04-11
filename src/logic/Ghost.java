@@ -32,7 +32,7 @@ public class Ghost extends Entite {
 	}
 	
 	/**
-	 * Getter for get direction_x attribute of ghost
+	 * Getter for direction_x attribute of ghost
 	 * @return direction_x an integer
 	 */
 	public int get_direction_x() {
@@ -40,11 +40,27 @@ public class Ghost extends Entite {
 	}
 	
 	/**
-	 * Getter for get direction_y attribute of ghost
+	 * Getter for direction_y attribute of ghost
 	 * @return direction_y an integer
 	 */
 	public int get_direction_y() {
 		return this.direction_y;
+	}
+	
+	/**
+	 * Setter for direction_x attribute of ghost
+	 * @return direction_x an integer
+	 */
+	public void set_direction_x(int dir) {
+		this.direction_x = dir;
+	}
+	
+	/**
+	 * Setter for direction_y attribute of ghost
+	 * @return direction_y an integer
+	 */
+	public void set_direction_y(int dir) {
+		this.direction_y = dir;
 	}
 	
 	/**

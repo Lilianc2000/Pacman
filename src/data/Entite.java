@@ -11,7 +11,7 @@ import java.awt.Color;
 
 public abstract class Entite {
 	
-	// La couleur de notre entite
+	// La coleur de notre entite
 	protected Color color;
 	
 	// Les coordonnees de notre entite

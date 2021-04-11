@@ -457,7 +457,6 @@ public class GUI extends JFrame {
 		}
 		// Si on a arreté de jouer et qu'il y a encore des fruits, c'est que pacman n'a plus de vie, et donc on arrete le jeu
 		if (carte.are_Fruits()) {
-			
 			Thread.sleep(1000);
 			playSound("pacman_death.wav");
 			Thread.sleep(2000);
