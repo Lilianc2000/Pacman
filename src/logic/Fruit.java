@@ -6,9 +6,8 @@ import data.Entite;
 
 /**
  * Class Fruit
- * Represent a fruit on the map
- * @author Lilian Cizeron
- *
+ * Represents a fruit on the map
+ * @author Camille Barbarin--Renvoisé
  */
 
 public class Fruit extends Entite {
@@ -25,9 +24,7 @@ public class Fruit extends Entite {
 	 * @param x the x position of the fruit
 	 * @param y the y position of the fruit
 	 */
-	
 	public Fruit(int value, int x, int y) {
-		
 		super(color, x, y);
 		this.value = value;
 		
@@ -38,8 +35,6 @@ public class Fruit extends Entite {
 	 * @return value the value of the fruit
 	 */
 	public int get_value() {
-		
 		return value;
-		
 	}
 }
