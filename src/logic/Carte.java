@@ -61,16 +61,28 @@ public class Carte implements Interface_VL{
 	 * @param direction_x an integer in {-1, 0, 1}
 	 * @param direction_y an integer in {-1, 0, 1}
 	 * @return is_a_wall a boolean (true if it is a wall)
+	 * @throws Exception 
 	 */
-	public boolean is_a_wall(Entite entite, int direction_x, int direction_y) {
+	public boolean is_a_wall(Entite entite) throws Exception {
 		// On calcule le futur emplacement du fantome ou du pacman passé en paramètre
 		int x = entite.get_x();
 		int y = entite.get_y();
-		int future_x = x + direction_x;
-		int future_y = y + direction_y;
+		int future_x = -1;
+		int future_y = -1;
+		if (entite instanceof Pacman) {
+			future_x = x + ((Pacman) entite).get_direction_x();
+			future_y = y + ((Pacman) entite).get_direction_y();
+		}
+		else if (entite instanceof Ghost) {
+			future_x = x + ((Ghost) entite).get_direction_x();
+			future_y = y + ((Ghost) entite).get_direction_y();
+		}
+		else {
+			throw new Exception("L'entité n'est ni un fantome ni un pacman");
+		}
 		// On boucle sur la liste des entités pour vérifier s'il existe un mur sur cette future position
 		for (int i = 0; i < liste.length; i++) {
-			if (this.liste[i] instanceof Wall && this.liste[i].get_x() == future_x && this.liste[i].get_y() == future_y) {
+			if (this.liste[i] instanceof Wall && this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y ) {
 				// On renvoie is_a_wall = true si l'entité veut se déplacer sur un mur
 				return true;
 			}
@@ -83,13 +95,13 @@ public class Carte implements Interface_VL{
 	 * @param code the moving code of Pacman
 	 * @throws Exception 
 	 * @return carte the actualized Carte object
-	 */
+	 */	
 	public Carte move_pacman(int code, Pacman pacman) throws Exception {
 		// On verifie que le code de deplacement est dans les valeurs possibles
 		if (code < 1 || code > 5) {
 			throw new Exception ("Wrong moving code detected");
 		}
-		// On verifie si la case souhaitï¿½e est un mur, auquel cas on souleve une exception et on de dï¿½place pas pacman
+		// On verifie si la case souhaitee est un mur, auquel cas on souleve une exception et on de deplace pas pacman
 		if (code == 1) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
@@ -225,8 +237,14 @@ public class Carte implements Interface_VL{
 		// On recherche dans la liste tous les fantomes
 		for (int i = 0; i < liste.length; i++) {
 			if (liste[i] instanceof Ghost) {
-				// Et on les fait bouger
-				((Ghost) liste[i]).move_ghost(liste);
+				// Et on les fait bouger, seulement si leur direction n'est pas un mur
+				try {
+					if (is_a_wall(liste[i]) == false) {
+						((Ghost) liste[i]).move_ghost(liste);
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
 		}
 	}
