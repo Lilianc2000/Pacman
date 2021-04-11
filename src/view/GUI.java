@@ -42,11 +42,11 @@ public class GUI extends JFrame {
 	private JPanel contentPane;
 	
 	// Création des objets graphiques des objets
-	private ImageIcon pacman = new ImageIcon(GUI.class.getResource("/game/pacman.png"));
-	private ImageIcon ghost = new ImageIcon(GUI.class.getResource("/game/ghost.png"));
-	private ImageIcon fruit = new ImageIcon(GUI.class.getResource("/game/fruit.png"));
-	private ImageIcon wall = new ImageIcon(GUI.class.getResource("/game/wall.png"));
-	private ImageIcon empty = new ImageIcon(GUI.class.getResource("/game/null.png"));
+	private ImageIcon pacman = new ImageIcon(GUI.class.getResource("/view/pacman.png"));
+	private ImageIcon ghost = new ImageIcon(GUI.class.getResource("/view/ghost.png"));
+	private ImageIcon fruit = new ImageIcon(GUI.class.getResource("/view/fruit.png"));
+	private ImageIcon wall = new ImageIcon(GUI.class.getResource("/view/wall.png"));
+	private ImageIcon empty = new ImageIcon(GUI.class.getResource("/view/null.png"));
 	private JTable table_1;
 	
 	// Suivi du clavier

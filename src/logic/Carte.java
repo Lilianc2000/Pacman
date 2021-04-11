@@ -2,7 +2,7 @@ package logic;
 
 import data.Entite;
 
-public class Carte {
+public class Carte implements Interface_VL{
 
 	// Entites list on the map
 	private Entite[] liste;
@@ -57,7 +57,7 @@ public class Carte {
 	 * @returns liste
 	 */
 	public Carte move_pacman(int code) {
-		// On vérifie que le code de deplacement fourni est bien dans ceux traites
+		// On vï¿½rifie que le code de deplacement fourni est bien dans ceux traites
 		assert code <= 5 && code >0 : "Wrong moving code detected";
 		// On verifie si on ne va pas dans un mur, auquel cas on souleve une exception pour ne pas bouger pacman
 		if (code == 1) {
