@@ -66,6 +66,8 @@ public class GUI extends JFrame {
 	private int lvl = -1;
 	private int Xresolution;
 	private int Yresolution;
+	private JLabel score;
+	private JLabel life;
 	
 	/**
 	 * Constructor of the GUI
@@ -108,7 +110,7 @@ public class GUI extends JFrame {
 		menuBar.add(btnExit);
 		
 		// Création de la zone de score
-		JLabel score = new JLabel("Score = " + this.SCORE);
+		score = new JLabel("Score : " + this.SCORE + "  ");
 		menuBar.add(score);
 		
 		// Création de la fenêtre
@@ -125,6 +127,10 @@ public class GUI extends JFrame {
 		donnee = new ImageIcon[this.taille][this.taille];
 		entetes = new String[this.taille];
 		initialize_table(item);
+		
+		// Création de la zone d'affichage de la vie
+		life = new JLabel("              Life remaining : " + ((Pacman) item[PACMAN_POSITION]).get_life());
+		menuBar.add(life);
 		
 		// On initialise le tableau graphique
 		
@@ -182,7 +188,7 @@ public class GUI extends JFrame {
         				
         				try {
             				
-        					game(score);
+        					game();
         					
         				} 
             			
@@ -281,20 +287,7 @@ public class GUI extends JFrame {
 			
 			// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman imagé, aux coordonnées de l'item
 			if (item[i] instanceof Pacman) {
-							
-				for (int j = 0; i < taille; i++) {
-					
-					for (int k = 0; j < taille; j++) {
-						
-						if (modele.getValueAt(j, k) == this.pacman) {
-							
-							modele.setValueAt(this.empty, j, k);
-							
-						}
-						
-					}
-					
-				}
+
 				modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 								
 			}
@@ -308,7 +301,8 @@ public class GUI extends JFrame {
 					
 			// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit imagé, aux coordonnées de l'item
 			else if (item[i] instanceof Fruit) {
-
+				
+				// Si il y a un pacman à son emplacement, on prefere afficher pacman
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
 					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
@@ -323,7 +317,8 @@ public class GUI extends JFrame {
 					
 			// Si l'item est du vide
 			else if (item[i] instanceof Empty) {
-
+				
+				// Si il y a un pacman à son emplacement, on prefere afficher pacman
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
 					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
@@ -339,16 +334,8 @@ public class GUI extends JFrame {
 			// Si l'item est un mur
 			else if (item[i] instanceof Wall){
 
-				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
+				modele.setValueAt(this.wall, item[i].get_x(), item[i].get_y());	
 					
-					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
-					
-				}
-				else {
-					
-					modele.setValueAt(this.wall, item[i].get_x(), item[i].get_y());	
-					
-				}
 			}
 							
 		}
@@ -363,12 +350,12 @@ public class GUI extends JFrame {
 	 * @throws InterruptedException 
 	 */
 	
-	private void game(JLabel score) throws InterruptedException {
+	private void game() throws InterruptedException {
 		
 		// Tant qu'il y a des fruits en jeu et que Pacman a de la vie, on peut le déplacer
-		
 		while (carte.are_Fruits() && ((Pacman) item[PACMAN_POSITION]).get_life() > 0) {
-			
+			System.out.println("Pacman Poisition : " + item[PACMAN_POSITION].get_x() + " " + item[PACMAN_POSITION].get_y());
+			System.out.println(PACMAN_POSITION);
 			System.out.println("Waiting actions");
 			Thread.sleep(500);
 			
@@ -425,11 +412,12 @@ public class GUI extends JFrame {
 				// Et on redraw le tableau
 				change_gui(item2);
 				
-				// On affiche le score
+				// On affiche le score et la vie restante
 				this.SCORE = ((Pacman) this.item[PACMAN_POSITION]).get_score();
-			
+				
 				this.setTitle("Pacman Game - Score : " + this.SCORE);
-				score.setText("Score : " + this.SCORE);
+				score.setText("Score : " + this.SCORE + "  ");
+				life.setText("              Life remaining : " + ((Pacman) item[PACMAN_POSITION]).get_life());
 		
 			}
 		}
