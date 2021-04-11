@@ -121,6 +121,7 @@ public class Pacman extends Entite {
 	 * @return actualized pacman
 	 */
 	public void loose_life() {
+		System.out.println("Life loosed");
 		this.life = this.life - 1;
 	}
 }
