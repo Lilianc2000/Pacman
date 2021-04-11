@@ -7,13 +7,13 @@ import data.Entite;
 /**
  * Class Pacman
  * Represents pacman on the map and all his attributes
- * @author Camille Barbarin--Renvois�
+ * @author Camille Barbarin--Renvoise
  *
  */
 
 public class Pacman extends Entite {
 	
-	// La couleur de pacman, qui sera toujours jaune
+	// On choisit que Pacman sera toujours jaune
 	private static final Color color = Color.YELLOW;
 	
 	// Les proprietes propres a pacman
@@ -108,17 +108,15 @@ public class Pacman extends Entite {
 		else if (code == 4) {	
 			this.direction_y = 1;
 			this.direction_x = 0;
-		}
-		// Si on a recu un autre code que 1 2 3 ou 4, alors on ne change pas de direction
+		}		
+		// Si on a recu un autre code que 1 2 3 ou 4, alors Pacman ne change pas de direction		
 		this.x = this.x + this.direction_x;
 		this.y = this.y + this.direction_y;
-		
 		return this;
 	}
 
 	/**
 	 * Method to decrease pacman's life
-	 * @return actualized pacman
 	 */
 	public void loose_life() {
 		System.out.println("Life loosed");
