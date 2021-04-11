@@ -54,11 +54,14 @@ public class Carte implements Interface_VL{
 	 * @param code the moving code of Pacman
 	 * @return this the actualized map
 	 * Gives the liste attribute for carte
+	 * @throws Exception 
 	 * @returns liste
 	 */
-	public Carte move_pacman(int code) {
-		// On v�rifie que le code de deplacement fourni est bien dans ceux traites
-		assert code <= 5 && code >0 : "Wrong moving code detected";
+	public Carte move_pacman(int code, Pacman pacman) throws Exception {
+		// On verifie que le code de deplacement fourni est bien dans ceux traites
+		if (code < 0 || code > 5) {
+			throw new Exception ("Wrong moving code detected");
+		}
 		// On verifie si on ne va pas dans un mur, auquel cas on souleve une exception pour ne pas bouger pacman
 		if (code == 1) {
 			for (int i = 0; i < liste.length; i++) {
@@ -87,6 +90,23 @@ public class Carte implements Interface_VL{
 					assert liste[i].get_y() != liste[PACMAN_POSITION].get_y() - 1 || liste[i].get_x() != liste[PACMAN_POSITION].get_x() : "A wall is here.";
 				}
 			}
+		}
+		else if (code == 5) {
+			int int_x = pacman.get_direction_x();
+			int int_y = pacman.get_direction_y();
+			if (int_x == 1) {
+				code = 1;
+			}
+			else if (int_x == -1) {
+				code = 2;
+			}
+			else if (int_y == -1) {
+				code = 3;
+			}
+			else {
+				code = 4;
+			}
+			return move_pacman(code, pacman);
 		}
 		// Si on est toujours la, c'est qu'on peut bouger
 		liste[PACMAN_POSITION] = ((Pacman) liste[PACMAN_POSITION]).move_pacman(code);		
