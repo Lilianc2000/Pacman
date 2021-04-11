@@ -354,8 +354,7 @@ public class GUI extends JFrame {
 		
 		// Tant qu'il y a des fruits en jeu et que Pacman a de la vie, on peut le déplacer
 		while (carte.are_Fruits() && ((Pacman) item[PACMAN_POSITION]).get_life() > 0) {
-			System.out.println("Pacman Poisition : " + item[PACMAN_POSITION].get_x() + " " + item[PACMAN_POSITION].get_y());
-			System.out.println(PACMAN_POSITION);
+			System.out.println(carte.are_Fruits());
 			System.out.println("Waiting actions");
 			Thread.sleep(500);
 			
@@ -398,13 +397,12 @@ public class GUI extends JFrame {
 			catch (Exception e) {
 				
 				
-				
 			}
 			finally {
 				
 				// On fait bouger les fantomes
 				carte.move_ghost();
-				
+
 				// On rebalaye tout le tableau après le déplacement de pacman et donc aussi les déplacements des fantomes
 				Entite[] item2 = new Entite[donnee.length * donnee.length];
 				item2 = carte.get_all();
