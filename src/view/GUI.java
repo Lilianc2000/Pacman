@@ -64,6 +64,8 @@ public class GUI extends JFrame {
 	private Entite[] item;
 	private DefaultTableModel modele;
 	private int lvl = -1;
+	private int Xresolution;
+	private int Yresolution;
 	
 	/**
 	 * Constructor of the GUI
@@ -72,7 +74,7 @@ public class GUI extends JFrame {
 	 * @param score_pre the score to initialize the game
 	 */
 	
-	public GUI(int taille, Carte carte, int score_pre, int lvl){
+	public GUI(int taille, Carte carte, int score_pre, int lvl, int Xresolution, int Yresolution){
 		
 		// Récupération de la taille de la map
 		this.taille = taille;
@@ -81,6 +83,10 @@ public class GUI extends JFrame {
 		this.carte = carte;
 		this.item = carte.get_all();
 		this.lvl = lvl;
+		
+		// Récupération de la taille de la fenêtre
+		this.Xresolution = Xresolution;
+		this.Yresolution = Yresolution;
 		
 		// Récupération du score initial
 		this.SCORE = score_pre;
@@ -290,7 +296,6 @@ public class GUI extends JFrame {
 					
 				}
 				modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
-				PACMAN_POSITION = i;
 								
 			}
 					
@@ -429,7 +434,7 @@ public class GUI extends JFrame {
 				change_gui(item2);
 				
 				// On affiche le score
-				this.SCORE = ((Pacman) item[PACMAN_POSITION]).get_score();
+				this.SCORE = ((Pacman) this.item[PACMAN_POSITION]).get_score();
 			
 				this.setTitle("Pacman Game - Score : " + this.SCORE);
 				score.setText("Score : " + this.SCORE);
@@ -450,8 +455,12 @@ public class GUI extends JFrame {
 			Carte new_map = Level.get_carte(lvl + 1);
 			
 			// On crée une nouvelle fenêtre
-			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1);
-			
+			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1, this.Xresolution, this.Yresolution);
+			frame.setSize(Xresolution, Yresolution);
+	        frame.setResizable(false);
+	        frame.setVisible(true);
+	        frame.setTitle("Pacman Game");
+	        
 			// On fait disparaitre la actuelle
 			this.dispose();
 		}
