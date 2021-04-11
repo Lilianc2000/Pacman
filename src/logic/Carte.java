@@ -56,6 +56,29 @@ public class Carte implements Interface_VL{
 	}
 	
 	/**
+	 * Verifies if the future cell of an entite (ghost or pacman) is a wall or not
+	 * @param entite an Entite object (precisely a ghost or a pacman)
+	 * @param direction_x an integer in {-1, 0, 1}
+	 * @param direction_y an integer in {-1, 0, 1}
+	 * @return is_a_wall a boolean (true if it is a wall)
+	 */
+	public boolean is_a_wall(Entite entite, int direction_x, int direction_y) {
+		// On calcule le futur emplacement du fantome ou du pacman passé en paramètre
+		int x = entite.get_x();
+		int y = entite.get_y();
+		int future_x = x + direction_x;
+		int future_y = y + direction_y;
+		// On boucle sur la liste des entités pour vérifier s'il existe un mur sur cette future position
+		for (int i = 0; i < liste.length; i++) {
+			if (this.liste[i] instanceof Wall && this.liste[i].get_x() == future_x && this.liste[i].get_y() == future_y) {
+				// On renvoie is_a_wall = true si l'entité veut se déplacer sur un mur
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	/**
 	 * Method to move the Pacman on the map
 	 * @param code the moving code of Pacman
 	 * @throws Exception 
