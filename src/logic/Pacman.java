@@ -50,6 +50,16 @@ public class Pacman extends Entite {
 	}
 	
 	/**
+	 * Method to set pacman's score
+	 * @param score
+	 */
+	public void set_score(int score) {
+		
+		this.score = score;
+		
+	}
+	
+	/**
 	 * Method to increase pacman's score
 	 * @param fruit
 	 */

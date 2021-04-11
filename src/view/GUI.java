@@ -221,7 +221,8 @@ public class GUI extends JFrame {
 			
 			// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman imagé, aux coordonnées de l'item
 			if (item[i] instanceof Pacman) {
-					
+				
+				((Pacman) item[i]).set_score(this.SCORE);
 				assert PACMAN_POSITION == -1 : "More than 1 Pacman detected";
 				this.donnee[(item[i]).get_x()][(item[i]).get_y()] = this.pacman;
 				PACMAN_POSITION = i;

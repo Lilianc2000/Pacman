@@ -1,6 +1,5 @@
 package view;
 
-import data.Entite;
 import data.Level;
 import logic.Carte;
 
@@ -23,7 +22,6 @@ public class Main {
     		System.exit(-1);
     	}
 		
-		Entite[] item = Level.get_carte(1);
 		
 		/*
 		item[0] = new Pacman(10, 0, 0, 1);
@@ -56,10 +54,12 @@ public class Main {
 		}
 		*/
 		
-		Carte carte = new Carte(item);
+		int lvl = 1;
+		
+		Carte carte = Level.get_carte(lvl);
 		
 		int Xresolution = 60 * taille, Yresolution = 65 * taille;			//Résolution de la fenetre
-		GUI frame = new GUI(taille, carte, 0);
+		GUI frame = new GUI(taille, carte, 0, lvl);
         frame.setSize(Xresolution, Yresolution);
         frame.setResizable(false);
         frame.setVisible(true);
