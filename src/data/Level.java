@@ -19,11 +19,11 @@ public abstract class Level {
 									  {
 									  new Wall(0, 0),
 									  new Pacman(10, 0, 1, 0), 
-									  new Fruit(4, 5, 3),
-									  new Fruit(6, 8, 7),
-									  new Fruit(7, 1, 11),
-									  new Fruit(9, 8, 13),
-									  new Fruit(8, 14, 2),
+									  new Fruit(10, 5, 3),
+									  new Fruit(10, 8, 7),
+									  new Fruit(10, 1, 11),
+									  new Fruit(10, 8, 13),
+									  new Fruit(10, 14, 2),
 									  new Fruit(10, 13, 9),
 									  new Ghost(6, 0),
 									  new Wall(0, 4),
@@ -143,13 +143,13 @@ public abstract class Level {
 			{
 					  new Wall(0, 0),
 					  new Pacman(10, 0, 1, 0), 
-					  new Fruit(3, 0, 3),
-					  new Fruit(5, 4, 11),
-					  new Fruit(5, 7, 5),
-					  new Fruit(7, 12, 2),
-					  new Fruit(8, 14, 2),
-					  new Fruit(10, 11, 10),
-					  new Fruit(9, 9, 13),
+					  new Fruit(15, 0, 3),
+					  new Fruit(15, 4, 11),
+					  new Fruit(15, 7, 5),
+					  new Fruit(15, 12, 2),
+					  new Fruit(15, 14, 2),
+					  new Fruit(15, 11, 10),
+					  new Fruit(15, 9, 13),
 					  new Ghost(1, 8),
 					  new Ghost(7, 3),
 					  new Ghost(13, 5),
@@ -270,7 +270,7 @@ public abstract class Level {
 					  new Wall(13, 10),
 					  new Wall(13, 11),
 					  new Wall(13, 12),
-					  new Wall(13, 12),
+					  new Wall(13, 13),
 					  new Wall(13, 14),
 					  new Wall(14, 0),
 					  new Wall(14, 1),
@@ -290,7 +290,7 @@ public abstract class Level {
 	/**
 	 * 
 	 * @param level
-	 * @return a list with the initial coordinate of Pacman, walls, Fruits(with values) and Ghosts
+	 * @return a list with the initial coordinate of pacman, walls, Fruits(with values) and Ghosts
 	 */
 	public static Carte get_carte(int level) {
 		
