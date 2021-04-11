@@ -274,7 +274,7 @@ public class GUI extends JFrame {
 	 * @param item a list of Entite
 	 */
 	
-	private void change_gui(Entite[] item) {
+private void change_gui(Entite[] item) {
 		
 		// On rempli le tableau avec les éléments nécessaires
 		for (int i = 0; i < item.length; i++) {
@@ -304,7 +304,7 @@ public class GUI extends JFrame {
 				
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
-					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
+					
 					
 				}
 				else {
@@ -319,7 +319,7 @@ public class GUI extends JFrame {
 
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
-					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
+					
 					
 				}
 				else {
@@ -334,7 +334,7 @@ public class GUI extends JFrame {
 
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
-					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
+					
 					
 				}
 				else {
@@ -349,7 +349,7 @@ public class GUI extends JFrame {
 
 				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
-					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
+					
 					
 				}
 				else {
