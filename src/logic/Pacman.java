@@ -61,10 +61,26 @@ public class Pacman extends Entite {
 	
 	/**
 	 * Method to increase pacman's life
-	 * @return
+	 * @return life an integer
 	 */
 	public int get_life() {
 		return this.life;
+	}
+	
+	/**
+	 * Getter for get direction_x attribute of pacman
+	 * @return direction_x an integer
+	 */
+	public int get_direction_x() {
+		return this.direction_x;
+	}
+	
+	/**
+	 * Getter for get direction_y attribute of pacman
+	 * @return direction_y an integer
+	 */
+	public int get_direction_y() {
+		return this.direction_y;
 	}
 	
 	/**
