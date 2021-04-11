@@ -23,6 +23,7 @@ import data.Ghost;
 import data.Pacman;
 import data.Wall;
 import logic.Carte;
+import logic.Level;
 
 /**
  * Graphical User Interface Class
@@ -62,6 +63,7 @@ public class GUI extends JFrame {
 	private Carte carte;
 	private Entite[] item;
 	private DefaultTableModel modele;
+	private int lvl = -1;
 	
 	/**
 	 * Constructor of the GUI
@@ -70,7 +72,7 @@ public class GUI extends JFrame {
 	 * @param score_pre the score to initialize the game
 	 */
 	
-	public GUI(int taille, Carte carte, int score_pre){
+	public GUI(int taille, Carte carte, int score_pre, int lvl){
 		
 		// Récupération de la taille de la map
 		this.taille = taille;
@@ -78,6 +80,7 @@ public class GUI extends JFrame {
 		// Récupération de la carte
 		this.carte = carte;
 		this.item = carte.get_all();
+		this.lvl = lvl;
 		
 		// Récupération du score initial
 		this.SCORE = score_pre;
@@ -442,12 +445,14 @@ public class GUI extends JFrame {
 				
 		// Sinon, c'est que l'on veut changer de niveau
 		else {
+			 // On récupère la nouvelle carte
+			Carte new_map = Level.get_carte(lvl + 1);
 			
-			/*item = Interface.nextLevel();
-			GUI frame = new GUI(this.taille, item, this.SCORE);
+			// On crée une nouvelle fenêtre
+			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1);
+			
+			// On fait disparaitre la actuelle
 			this.dispose();
-			*/
-			
 		}
 	
 	}
