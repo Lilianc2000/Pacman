@@ -7,15 +7,15 @@ import data.Entite;
 /**
  * Class Fruit
  * Represents a fruit on the map
- * @author Camille Barbarin--Renvoisé
+ * @author Camille Barbarin--Renvoise
  */
 
 public class Fruit extends Entite {
 	
-	// La couleur des fruits : blanc
+	// On choisit que les fruits seront blancs
 	private static final Color color = Color.WHITE;
 	
-	//  La valeur du fruit
+	// La valeur du fruit (= le nombre de points que Pacman gagne s'il mange le fruit)
 	private int value;
 	
 	/**
@@ -27,7 +27,6 @@ public class Fruit extends Entite {
 	public Fruit(int value, int x, int y) {
 		super(color, x, y);
 		this.value = value;
-		
 	}
 
 	/**

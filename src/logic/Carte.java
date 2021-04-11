@@ -2,6 +2,12 @@ package logic;
 
 import data.Entite;
 
+/**
+ * Class Carte
+ * Represents the map in which the Entite
+ * @author Camille Barbarin--Renvoise
+ */
+
 public class Carte implements Interface_VL{
 
 	// Entites list on the map
@@ -57,10 +63,10 @@ public class Carte implements Interface_VL{
 	 */
 	public Carte move_pacman(int code, Pacman pacman) throws Exception {
 		// On verifie que le code de deplacement est dans les valeurs possibles
-		if (code < 0 || code > 5) {
+		if (code < 1 || code > 5) {
 			throw new Exception ("Wrong moving code detected");
 		}
-		// On verifie si la case souhaitée est un mur, auquel cas on souleve une exception pour ne pas bouger pacman
+		// On verifie si la case souhaitée est un mur, auquel cas on souleve une exception et on de déplace pas pacman
 		if (code == 1) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
@@ -130,7 +136,7 @@ public class Carte implements Interface_VL{
 					}
 				}
 			}
-			else {
+			else if (int_y == 1) {
 				code = 4;
 				for (int i = 0; i < liste.length; i++) {
 					if (liste[i] instanceof Wall) {
