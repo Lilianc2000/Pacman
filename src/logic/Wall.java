@@ -6,9 +6,8 @@ import data.Entite;
 
 /**
  * Class Wall
- * Represent a wall on the map
+ * Represents a wall on the map
  * @author Lilian Cizeron
- *
  */
 
 public class Wall extends Entite {

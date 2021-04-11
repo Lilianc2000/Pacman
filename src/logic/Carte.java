@@ -52,39 +52,92 @@ public class Carte implements Interface_VL{
 	/**
 	 * Method to move the Pacman on the map
 	 * @param code the moving code of Pacman
-	 * @return this the actualized map
-	 * Gives the liste attribute for carte
-	 * @returns liste
+	 * @throws Exception 
+	 * @return carte the actualized Carte object
 	 */
-	public Carte move_pacman(int code) {
-		// On vï¿½rifie que le code de deplacement fourni est bien dans ceux traites
-		assert code <= 5 && code >0 : "Wrong moving code detected";
-		// On verifie si on ne va pas dans un mur, auquel cas on souleve une exception pour ne pas bouger pacman
+	public Carte move_pacman(int code, Pacman pacman) throws Exception {
+		// On verifie que le code de deplacement est dans les valeurs possibles
+		if (code < 0 || code > 5) {
+			throw new Exception ("Wrong moving code detected");
+		}
+		// On verifie si la case souhaitée est un mur, auquel cas on souleve une exception pour ne pas bouger pacman
 		if (code == 1) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
-					assert liste[i].get_y() != liste[PACMAN_POSITION].get_y()|| liste[i].get_x() != liste[PACMAN_POSITION].get_x() - 1: "A wall is here.";
+					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+						throw new Exception ("A wall is here");
+					}
 				}
 			}
 		}
 		else if (code == 2) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
-					assert liste[i].get_y() != liste[PACMAN_POSITION].get_y() || liste[i].get_x() != liste[PACMAN_POSITION].get_x() + 1: "A wall is here.";
+					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+						throw new Exception ("A wall is here");
+					}
 				}
 			}
 		}
 		else if (code == 3) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
-					assert liste[i].get_y() != liste[PACMAN_POSITION].get_y() + 1 || liste[i].get_x() != liste[PACMAN_POSITION].get_x(): "A wall is here.";
+					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+						throw new Exception ("A wall is here");
+					}
 				}
 			}
 		}
 		else if (code == 4) {
 			for (int i = 0; i < liste.length; i++) {
 				if (liste[i] instanceof Wall) {
-					assert liste[i].get_y() != liste[PACMAN_POSITION].get_y() - 1 || liste[i].get_x() != liste[PACMAN_POSITION].get_x() : "A wall is here.";
+					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+						throw new Exception ("A wall is here");
+					}
+				}
+			}
+		}
+		else if (code == 5) {
+			int int_x = pacman.get_direction_x();
+			int int_y = pacman.get_direction_y();
+			if (int_x == 1) {
+				code = 1;
+				for (int i = 0; i < liste.length; i++) {
+					if (liste[i] instanceof Wall) {
+						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+							throw new Exception ("A wall is here");
+						}
+					}
+				}
+			}
+			else if (int_x == -1) {
+				code = 2;
+				for (int i = 0; i < liste.length; i++) {
+					if (liste[i] instanceof Wall) {
+						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+							throw new Exception ("A wall is here");
+						}
+					}
+				}
+			}
+			else if (int_y == -1) {
+				code = 3;
+				for (int i = 0; i < liste.length; i++) {
+					if (liste[i] instanceof Wall) {
+						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+							throw new Exception ("A wall is here");
+						}
+					}
+				}
+			}
+			else {
+				code = 4;
+				for (int i = 0; i < liste.length; i++) {
+					if (liste[i] instanceof Wall) {
+						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+							throw new Exception ("A wall is here");
+						}
+					}
 				}
 			}
 		}
