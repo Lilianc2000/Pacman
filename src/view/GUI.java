@@ -301,17 +301,9 @@ public class GUI extends JFrame {
 					
 			// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome imagé, aux coordonnées de l'item
 			else if (item[i] instanceof Ghost) {
-				
-				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
-					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
-					
-				}
-				else {
-					
-					modele.setValueAt(this.ghost, item[i].get_x(), item[i].get_y());	
-					
-				}
+				modele.setValueAt(this.ghost, item[i].get_x(), item[i].get_y());	
+
 			}
 					
 			// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit imagé, aux coordonnées de l'item
