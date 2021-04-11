@@ -107,16 +107,6 @@ public class Carte implements Interface_VL{
 			int int_x = pacman.get_direction_x();
 			int int_y = pacman.get_direction_y();
 			if (int_x == 1) {
-				code = 1;
-				for (int i = 0; i < liste.length; i++) {
-					if (liste[i] instanceof Wall) {
-						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
-							throw new Exception ("A wall is here");
-						}
-					}
-				}
-			}
-			else if (int_x == -1) {
 				code = 2;
 				for (int i = 0; i < liste.length; i++) {
 					if (liste[i] instanceof Wall) {
@@ -126,8 +116,18 @@ public class Carte implements Interface_VL{
 					}
 				}
 			}
+			else if (int_x == -1) {
+				code = 1;
+				for (int i = 0; i < liste.length; i++) {
+					if (liste[i] instanceof Wall) {
+						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
+							throw new Exception ("A wall is here");
+						}
+					}
+				}
+			}
 			else if (int_y == -1) {
-				code = 3;
+				code = 4;
 				for (int i = 0; i < liste.length; i++) {
 					if (liste[i] instanceof Wall) {
 						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
@@ -137,7 +137,7 @@ public class Carte implements Interface_VL{
 				}
 			}
 			else if (int_y == 1) {
-				code = 4;
+				code = 3;
 				for (int i = 0; i < liste.length; i++) {
 					if (liste[i] instanceof Wall) {
 						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
