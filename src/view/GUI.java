@@ -129,7 +129,7 @@ public class GUI extends JFrame {
 		// Initialisation du tableau
 		donnee = new ImageIcon[this.taille][this.taille];
 		entetes = new String[this.taille];
-		initialize_table(item);
+		initialize_table();
 		
 		// Création de la zone d'affichage de la vie
 		life = new JLabel("              Life remaining : " + ((Pacman) item[PACMAN_POSITION]).get_life());
@@ -190,8 +190,8 @@ public class GUI extends JFrame {
         			public void run() {
         				
         				try {
-            				//playSound("pacman_beginning.wav");
-            				//Thread.sleep(4000);
+            				playSound("pacman_beginning.wav");
+            				Thread.sleep(4000);
         					game();
 
         				} 
@@ -230,7 +230,7 @@ public class GUI extends JFrame {
 	 * @param donnee the list of the graphicals item in the game
 	 */
 	
-	private void initialize_table(Entite[] item) {
+	private void initialize_table() {
 		
 		// On rempli le tableau avec les éléments nécessaires
 		for (int i = 0; i < item.length; i++) {
@@ -286,64 +286,95 @@ public class GUI extends JFrame {
 	
 	private void change_gui(Entite[] item) {
 		
+		// On vide le tableau
+		for (int i = 0; i < donnee.length; i++) {
+			
+			for (int j = 0; j < donnee.length; j++) {
+				
+				modele.setValueAt(null, i, j);
+				
+			}
+			
+		}
+		
 		// On rempli le tableau avec les éléments nécessaires
 		for (int i = 0; i < item.length; i++) {
 			
-			// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman imagé, aux coordonnées de l'item
-			if (item[i] instanceof Pacman) {
+			try {
+				// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman imagé, aux coordonnées de l'item
+				if (item[i] instanceof Pacman) {
 
-				modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
+					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 								
-			}
-					
-			// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome imagé, aux coordonnées de l'item
-			else if (item[i] instanceof Ghost) {
-					
-				modele.setValueAt(this.ghost, item[i].get_x(), item[i].get_y());	
-
-			}
-					
-			// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit imagé, aux coordonnées de l'item
-			else if (item[i] instanceof Fruit) {
+				}
 				
-				// Si il y a un pacman à son emplacement, on prefere afficher pacman
-				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
+				// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome imagé, aux coordonnées de l'item
+				else if (item[i] instanceof Ghost) {
 					
-					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
-					
-				}
-				else {
-					
-					modele.setValueAt(this.fruit, item[i].get_x(), item[i].get_y());	
-					
-				}
-			}
-					
-			// Si l'item est du vide
-			else if (item[i] instanceof Empty) {
-				
-				// Si il y a un pacman à son emplacement, on prefere afficher pacman
-				if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
-					
-					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
-					
-				}
-				else {
-					
-					modele.setValueAt(this.empty, item[i].get_x(), item[i].get_y());	
-					
-				}
-			}
-					
-			// Si l'item est un mur
-			else if (item[i] instanceof Wall){
+					modele.setValueAt(this.ghost, item[i].get_x(), item[i].get_y());	
 
-				modele.setValueAt(this.wall, item[i].get_x(), item[i].get_y());	
+				}
+				
+				// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit imagé, aux coordonnées de l'item
+				else if (item[i] instanceof Fruit) {
+				
+					// Si il y a un pacman à son emplacement, on prefere afficher pacman
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 					
+						modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
+					
+					}
+					else {
+					
+						modele.setValueAt(this.fruit, item[i].get_x(), item[i].get_y());	
+					
+					}
+				}
+					
+				// Si l'item est du vide
+				else if (item[i] instanceof Empty) {
+				
+					// Si il y a un pacman à son emplacement, on prefere afficher pacman
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
+					
+						modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
+					
+					}
+					else {
+					
+						modele.setValueAt(this.empty, item[i].get_x(), item[i].get_y());	
+					
+					}
+				}
+					
+				// Si l'item est un mur
+				else if (item[i] instanceof Wall){
+
+					modele.setValueAt(this.wall, item[i].get_x(), item[i].get_y());	
+				
+				}
+			}
+			
+			catch(Exception e) {
+				
 			}
 							
 		}
+		
+		// S'il reste des cases null, on y met null
+		for (int i = 0; i < donnee.length; i++) {
+			
+			for (int j = 0; j < donnee.length; j++) {
+				if (modele.getValueAt(i, j) == null) {
+					
+					modele.setValueAt(this.empty, i, j);
+					
+				}
 				
+			}
+			
+		}
+		
 		modele.fireTableDataChanged();
 		
 	}
