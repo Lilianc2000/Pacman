@@ -6,6 +6,11 @@ import logic.Ghost;
 import logic.Pacman;
 import logic.Wall;
 
+/**
+ * Abstract Static Class to define ours levels
+ * @author Lilian Cizeron
+ *
+ */
 public abstract class Level {
 
 	// Antoine, la premiere ligne du premier niveau est faite. Je te laisse la modifier si tu le souhaites,
