@@ -7,12 +7,12 @@ import data.Entite;
 /**
  * Class Wall
  * Represents a wall on the map
- * @author Lilian Cizeron
+ * @author Camille Barbarin--Renvoise
  */
 
 public class Wall extends Entite {
 
-	// La couleur du mur : bleu
+	// On choisit que les murs sont bleus
 	private static final Color color = Color.BLUE;
 	
 	/**
@@ -20,11 +20,7 @@ public class Wall extends Entite {
 	 * @param x the x position of the wall
 	 * @param y the y position of the wall
 	 */
-	
 	public Wall(int x, int y) {
-
 		super(color, x, y);
-
 	}
-
 }

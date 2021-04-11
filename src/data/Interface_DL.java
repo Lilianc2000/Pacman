@@ -3,7 +3,7 @@ package data;
 /**
  * Interface between Data and Logic packages
  * Represent an empty case on the map
- * @author Antoine Chr�tien
+ * @author Antoine Chretien
  */
 
 public interface Interface_DL {
