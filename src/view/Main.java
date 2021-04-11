@@ -1,11 +1,11 @@
 package view;
 
-import data.Carte;
 import data.Entite;
-import logic.Fruit;
-import logic.Ghost;
-import logic.Pacman;
-import logic.Wall;
+import data.Fruit;
+import data.Ghost;
+import data.Pacman;
+import data.Wall;
+import logic.Carte;
 
 /**
  * Main method of the program

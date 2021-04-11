@@ -1,8 +1,6 @@
-package logic;
+package data;
 
 import java.awt.Color;
-
-import data.Entite;
 
 /**
  * Class Wall

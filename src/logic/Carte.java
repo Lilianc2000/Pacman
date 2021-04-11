@@ -1,10 +1,11 @@
-package data;
+package logic;
 
-import logic.Empty;
-import logic.Fruit;
-import logic.Ghost;
-import logic.Pacman;
-import logic.Wall;
+import data.Empty;
+import data.Entite;
+import data.Fruit;
+import data.Ghost;
+import data.Pacman;
+import data.Wall;
 
 /**
  * Class carte
