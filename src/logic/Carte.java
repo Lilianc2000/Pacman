@@ -68,7 +68,7 @@ public class Carte implements Interface_VL{
 		// On initialise deux variables pour les futures coordonnees 
 		int future_x = -1;
 		int future_y = -1;
-		// On calcule les futures coordonn�es de notre entite (qui est soit un Pacman soit un Ghost)
+		// On calcule les futures coordonnees de notre entite (qui est soit un Pacman soit un Ghost)
 		if (entite instanceof Pacman) {
 			future_x = ((Pacman) entite).get_x() + ((Pacman) entite).get_direction_x();
 			future_y = ((Pacman) entite).get_y() + ((Pacman) entite).get_direction_y();
@@ -139,12 +139,11 @@ public class Carte implements Interface_VL{
 			}
 			i += 1;
 		}
+		find_ghost();
 		// Si aucune exception n a ete soulevee on deplace Pacman
 		liste[PACMAN_POSITION] = pacman.move_pacman(code);	
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
-		find_ghost();
-
 	}
 	
 	/**

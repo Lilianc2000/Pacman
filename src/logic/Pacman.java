@@ -131,7 +131,6 @@ public class Pacman extends Entite {
 	 * Method to decrease pacman's life
 	 */
 	public void loose_life() {
-		System.out.println("Life loosed");
 		this.life = this.life - 1;
 	}
 }
