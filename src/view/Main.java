@@ -1,12 +1,7 @@
 package view;
 
-import data.Entite;
 import data.Level;
 import logic.Carte;
-import logic.Fruit;
-import logic.Pacman;
-import logic.Wall;
-import logic.Ghost;
 
 /**
  * Main method of the program
@@ -27,7 +22,7 @@ public class Main {
     		System.exit(-1);
     	}
 		
-
+		/*
 		Entite[] item = new Entite[taille * taille];
 		item[0] = new Pacman(10, 0, 0, 1);
 		item[1] = new Fruit(10, 0, 2);
@@ -86,11 +81,11 @@ public class Main {
 				
 		}
 		
-
+		*/
 		int lvl = 1;
 		
-		//Carte carte = Level.get_carte(lvl);
-		Carte carte = new Carte(item);
+		Carte carte = Level.get_carte(lvl);
+		//Carte carte = new Carte(item);
 		int Xresolution = 60 * taille, Yresolution = 65 * taille;			//Résolution de la fenetre
 		GUI frame = new GUI(taille, carte, 0, lvl, Xresolution, Yresolution);
         frame.setSize(Xresolution, Yresolution);
