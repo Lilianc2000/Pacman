@@ -18,7 +18,7 @@ public class Main {
 		
 	private static final int taille = 15;
 	private static Carte carte;
-	private static int lvl;
+	private static int lvl = 0;
 	
 	public static void main(String[] args) {
 		
