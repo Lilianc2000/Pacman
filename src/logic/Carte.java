@@ -65,7 +65,7 @@ public class Carte implements Interface_VL{
 	 * @throws Exception 
 	 */
 	public boolean is_a_wall(Entite entite) throws Exception {
-		// On calcule le futur emplacement du fantome ou du pacman passï¿½ en paramï¿½tre
+		// On calcule le futur emplacement du fantome ou du pacman passe en parametre
 		int x = entite.get_x();
 		int y = entite.get_y();
 		int future_x = -1;
@@ -79,12 +79,12 @@ public class Carte implements Interface_VL{
 			future_y = y + ((Ghost) entite).get_direction_y();
 		}
 		else {
-			throw new Exception("L'entitï¿½ n'est ni un fantome ni un pacman");
+			throw new Exception("L'entite n'est ni un fantome ni un pacman");
 		}
-		// On boucle sur la liste des entitï¿½s pour vï¿½rifier s'il existe un mur sur cette future position
+		// On boucle sur la liste des entite pour verifier s'il existe un mur sur cette future position
 		for (int i = 0; i < liste.length; i++) {
 			if (this.liste[i] instanceof Wall && this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y ) {
-				// On renvoie is_a_wall = true si l'entitï¿½ veut se dï¿½placer sur un mur
+				// On renvoie is_a_wall = true si l'entite veut se deplacer sur un mur
 				return true;
 			}
 		}
@@ -102,91 +102,44 @@ public class Carte implements Interface_VL{
 		if (code < 1 || code > 5) {
 			throw new Exception ("Wrong moving code detected");
 		}
-		// On verifie si la case souhaitee est un mur, auquel cas on souleve une exception et on de deplace pas pacman
+		// On initialise des valeurs à -1 de x et y
+		int x = - 1;
+		int y = - 1;
+		// On calcule les futures coordonnées x et y de Pacman
 		if (code == 1) {
-			for (int i = 0; i < liste.length; i++) {
-				if (liste[i] instanceof Wall) {
-					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
-						throw new Exception ("A wall is here");
-					}
-				}
-			}
+			x = pacman.get_x() - 1;
+			y = pacman.get_y();
 		}
 		else if (code == 2) {
-			for (int i = 0; i < liste.length; i++) {
-				if (liste[i] instanceof Wall) {
-					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
-						throw new Exception ("A wall is here");
-					}
-				}
-			}
+			x = pacman.get_x() + 1;
+			y = pacman.get_y();
 		}
-		else if (code == 3) {
-			for (int i = 0; i < liste.length; i++) {
-				if (liste[i] instanceof Wall) {
-					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
-						throw new Exception ("A wall is here");
-					}
-				}
-			}
+		else if (code == 3) {	
+			x = pacman.get_x();
+			y = pacman.get_y() + 1;
 		}
-		else if (code == 4) {
-			for (int i = 0; i < liste.length; i++) {
-				if (liste[i] instanceof Wall) {
-					if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
-						throw new Exception ("A wall is here");
-					}
-				}
-			}
+		else if (code == 4) {	
+			x = pacman.get_x();
+			y = pacman.get_y() - 1;
 		}
 		else if (code == 5) {
-			int int_x = pacman.get_direction_x();
-			int int_y = pacman.get_direction_y();
-			if (int_x == 1) {
-				code = 2;
-				for (int i = 0; i < liste.length; i++) {
-					if (liste[i] instanceof Wall) {
-						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
-							throw new Exception ("A wall is here");
-						}
-					}
-				}
+			x = pacman.get_direction_x() + pacman.get_x();
+			y = pacman.get_direction_y() + pacman.get_y();
+		}
+		// On verifie si la future position de Pacman est un mur, auquel cas on souleve une exception et Pacman ne bouge pas
+		boolean verif = false;
+		int i = 0;
+		while (i < this.liste.length && verif == false) {
+			if (liste[i] instanceof Wall && liste[i].get_x() == x && liste[i].get_y() == y) {
+				throw new Exception ("There is a wall in this cell");
 			}
-			else if (int_x == -1) {
-				code = 1;
-				for (int i = 0; i < liste.length; i++) {
-					if (liste[i] instanceof Wall) {
-						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
-							throw new Exception ("A wall is here");
-						}
-					}
-				}
-			}
-			else if (int_y == -1) {
-				code = 4;
-				for (int i = 0; i < liste.length; i++) {
-					if (liste[i] instanceof Wall) {
-						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
-							throw new Exception ("A wall is here");
-						}
-					}
-				}
-			}
-			else if (int_y == 1) {
-				code = 3;
-				for (int i = 0; i < liste.length; i++) {
-					if (liste[i] instanceof Wall) {
-						if (liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i].get_x() == liste[PACMAN_POSITION].get_x() -1) {
-							throw new Exception ("A wall is here");
-						}
-					}
-				}
+			else {
+				pacman.move_pacman(code);
 			}
 		}
-		System.out.println("check walls passed");
-		// Si on est toujours la, c'est qu'on peut bouger
+		// On actualise la position de Pacman dans la liste dédiée
 		liste[PACMAN_POSITION] = ((Pacman) liste[PACMAN_POSITION]).move_pacman(code);		
-		// On verifie si on n'a pas mange un fruit ou rencontrer un fantome
+		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
 		find_ghost();
 		return this;
