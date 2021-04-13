@@ -192,7 +192,7 @@ public class GUI extends JFrame {
         			public void run() {
         				
         				try {
-            				playSound("pacman_beginning.wav");
+        					Audio.playSound("pacman_beginning.wav");
             				Thread.sleep(4000);
         					game();
 
@@ -451,7 +451,7 @@ public class GUI extends JFrame {
 			}
 			finally {
 				
-				playSound("pacman_chomp.wav");
+				Audio.playSound("pacman_chomp.wav");
 				// On fait bouger les fantomes
 				carte.move_ghost();
 
@@ -473,8 +473,9 @@ public class GUI extends JFrame {
 		}
 		// Si on a arreté de jouer et qu'il y a encore des fruits, c'est que pacman n'a plus de vie, et donc on arrete le jeu
 		if (carte.are_Fruits()) {
+			
 			Thread.sleep(1000);
-			playSound("pacman_death.wav");
+			Audio.playSound("pacman_death.wav");
 			Thread.sleep(2000);
 			JOptionPane box = new JOptionPane();
 			box.showMessageDialog(this, "You loose ! Your score : " + this.SCORE);
@@ -491,7 +492,7 @@ public class GUI extends JFrame {
 			Carte new_map = Level.get_carte(lvl + 1);
 			
 			// On crée une nouvelle fenêtre
-			playSound("victory.wav");
+			Audio.playSound("victory.wav");
 			Thread.sleep(2000);
 			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1, this.Xresolution, this.Yresolution, ((Pacman) item[PACMAN_POSITION]).get_life());
 			frame.setSize(Xresolution, Yresolution);
@@ -552,22 +553,5 @@ public class GUI extends JFrame {
 	            }
 	        }
 	    }
-
-	// Fonction de l'audio du jeu
-	public static synchronized void playSound(final String url) {
-		  new Thread(new Runnable() {
-		    public void run() {
-		      try {
-		        Clip clip = AudioSystem.getClip();
-		        AudioInputStream inputStream = AudioSystem.getAudioInputStream(
-		          Main.class.getResourceAsStream("/view/" + url));
-		        clip.open(inputStream);
-		        clip.start(); 
-		      } catch (Exception e) {
-		        System.err.println(e.getMessage());
-		      }
-		    }
-		  }).start();
-		}
 
 }
