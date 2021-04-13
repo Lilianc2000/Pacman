@@ -65,7 +65,7 @@ public class Carte implements Interface_VL{
 	 * @throws Exception 
 	 */
 	public boolean is_a_wall(Entite entite) throws Exception {
-		// On calcule le futur emplacement du fantome ou du pacman passé en paramètre
+		// On calcule le futur emplacement du fantome ou du pacman passï¿½ en paramï¿½tre
 		int x = entite.get_x();
 		int y = entite.get_y();
 		int future_x = -1;
@@ -79,12 +79,12 @@ public class Carte implements Interface_VL{
 			future_y = y + ((Ghost) entite).get_direction_y();
 		}
 		else {
-			throw new Exception("L'entité n'est ni un fantome ni un pacman");
+			throw new Exception("L'entitï¿½ n'est ni un fantome ni un pacman");
 		}
-		// On boucle sur la liste des entités pour vérifier s'il existe un mur sur cette future position
+		// On boucle sur la liste des entitï¿½s pour vï¿½rifier s'il existe un mur sur cette future position
 		for (int i = 0; i < liste.length; i++) {
 			if (this.liste[i] instanceof Wall && this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y ) {
-				// On renvoie is_a_wall = true si l'entité veut se déplacer sur un mur
+				// On renvoie is_a_wall = true si l'entitï¿½ veut se dï¿½placer sur un mur
 				return true;
 			}
 		}
@@ -241,12 +241,15 @@ public class Carte implements Interface_VL{
 				// Et on les fait bouger, seulement si leur direction n'est pas un mur
 				try {
 					if (is_a_wall(liste[i]) == false) {
-						((Ghost) liste[i]).move_ghost(liste);
+						((Ghost) liste[i]).move_ghost();
 					}
-					// Si la direction du fantome n'est pas un valide (= c'est un mur) on cherche une autre direction pour le fantome, tant que la direction suivante est un mur ET que il n'y a pas une direction linéaire ET tant que l'on ne bouge pas ET que on est pas out of bounds
-					while(is_a_wall(liste[i]) && (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0) && (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0) && (liste[i].get_x() + ((Ghost) liste[i]).get_direction_x() < 0 && liste[i].get_y() + ((Ghost) liste[i]).get_direction_x() > 14 && liste[i].get_y() + ((Ghost) liste[i]).get_direction_y() < 0 && liste[i].get_y() + ((Ghost) liste[i]).get_direction_y() > 14)) {
-						((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 1));
-						((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 1));
+					else {
+					// Si la direction du fantome n'est pas un valide (= c'est un mur) on cherche une autre direction pour le fantome, tant que la direction suivante est un mur ET que il n'y a pas une direction linï¿½aire ET tant que l'on ne bouge pas ET que on est pas out of bounds
+						while(is_a_wall(liste[i]) && (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0) && (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0) && (liste[i].get_x() + ((Ghost) liste[i]).get_direction_x() < 0 && liste[i].get_y() + ((Ghost) liste[i]).get_direction_x() > 14 && liste[i].get_y() + ((Ghost) liste[i]).get_direction_y() < 0 && liste[i].get_y() + ((Ghost) liste[i]).get_direction_y() > 14)) {
+							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 1));
+							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 1));
+						}
+						((Ghost) liste[i]).move_ghost();
 					} 
 				}
 				catch (Exception e) {

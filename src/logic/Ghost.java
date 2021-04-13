@@ -67,7 +67,7 @@ public class Ghost extends Entite {
 	 * Method to move a ghost
 	 * @param liste the list of entities on the map (including walls)
 	 */
-	public void move_ghost(Entite[] liste) {
+	public void move_ghost() {
 		// On met a jour la position du fantome
 		this.x = this.x + direction_x;
 		this.y = this.y + direction_y;

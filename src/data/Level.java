@@ -181,7 +181,6 @@ public abstract class Level {
 									  new Fruit(10, 5, 12),
 									  new Fruit(10, 5, 13),
 									  new Fruit(10, 5, 14),
-									  new Fruit(10, 6, 0),
 									  new Fruit(10, 6, 3),
 									  new Fruit(10, 6, 8),
 									  new Fruit(10, 6, 14),
@@ -220,7 +219,7 @@ public abstract class Level {
 									  new Fruit(10, 10, 14),
 									  new Fruit(10, 11, 1),
 									  new Fruit(10, 11, 5),
-									  new Fruit(10, 11, 9),
+									  new Fruit(10, 11, 10),
 									  new Fruit(10, 11, 14),
 									  new Fruit(10, 12, 1),
 									  new Fruit(10, 12, 5),
@@ -398,6 +397,10 @@ public abstract class Level {
 					  new Wall(14, 12),
 					  new Wall(14, 13),
 					  new Wall(14, 14),
+					  new Fruit(15, 0, 4),
+					  new Fruit(15, 0, 5),
+					  new Fruit(15, 0, 6),
+					  new Fruit(15, 0, 7),
 			};
 	
 	private static Carte niveau_1 = new Carte(liste_niveau_1);
