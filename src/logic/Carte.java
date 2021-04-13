@@ -138,13 +138,11 @@ public class Carte implements Interface_VL{
 		while (i < this.liste.length && verif == false) {
 			if (liste[i] instanceof Wall && liste[i].get_x() == x && liste[i].get_y() == y) {
 				verif = true;
-				throw new Exception ("There is a wall in this cell");
+				pacman.move_pacman(5);			
 			}
 			i += 1;
 		}
-		pacman.move_pacman(code);
-		// On actualise la position de Pacman dans la liste dediee
-		liste[PACMAN_POSITION] = ((Pacman) liste[PACMAN_POSITION]).move_pacman(code);		
+		pacman.move_pacman(code);	
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
 		find_ghost();
