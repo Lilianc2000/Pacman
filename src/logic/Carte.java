@@ -132,6 +132,7 @@ public class Carte implements Interface_VL{
 		while (i < this.liste.length && verif == false) {
 			if (liste[i] instanceof Wall && liste[i].get_x() == x && liste[i].get_y() == y) {
 				throw new Exception ("There is a wall in this cell");
+				verif = true;
 			}
 			else {
 				pacman.move_pacman(code);
@@ -152,9 +153,9 @@ public class Carte implements Interface_VL{
 		// On verifie si, dans la liste des entites, un fruit a les memes coordonnees que notre pacman
 		for (int i = 0; i < liste.length; i++) {
 			if (liste[i].get_x() == liste[PACMAN_POSITION].get_x() && liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i] instanceof Fruit) {
-				// Si oui, on signale a pacman qu'il a mange
+				// Si oui, on le signale a pacman
 				((Pacman) liste[PACMAN_POSITION]).eat_fruit((Fruit) liste[i]);
-				// Et on fait remplace le fruit par une case vide
+				// Et on remplace le fruit par une case vide
 				liste[i] = new Empty(liste[PACMAN_POSITION].get_x(), liste[PACMAN_POSITION].get_y());
 			}	
 		}
