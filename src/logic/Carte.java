@@ -109,10 +109,10 @@ public class Carte implements Interface_VL{
 			throw new Exception ("Wrong moving code detected");
 		}
 
-		// On initialise des valeurs � -1 de x et y
+		// On initialise des valeurs a -1 de x et y
 		int x = - 1;
 		int y = - 1;
-		// On calcule les futures coordonn�es x et y de Pacman
+		// On calcule les futures coordonnes x et y de Pacman
 
 		if (code == 1) {
 			x = pacman.get_x() - 1;
@@ -145,6 +145,7 @@ public class Carte implements Interface_VL{
 			else {
 				pacman.move_pacman(code);
 			}
+			i += 1;
 		}
 
 		// On actualise la position de Pacman dans la liste d�di�e

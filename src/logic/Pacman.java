@@ -110,7 +110,6 @@ public class Pacman extends Entite {
 			this.direction_y = -1;
 			this.direction_x = 0;
 		}
-		
 		// Si on a recu un autre code que 1 2 3 ou 4, alors Pacman ne change pas de direction		
 		if (this.x + this.direction_x > 14 || this.x + this.direction_x < 0 || this.y + this.direction_y > 14 || this.y + this.direction_y < 0) {
 			throw new Exception ("Pacman sort du jeu");
