@@ -68,7 +68,7 @@ public class Carte implements Interface_VL{
 		// On initialise deux variables pour les futures coordonnees 
 		int future_x = -1;
 		int future_y = -1;
-		// On regarde si notre entite est un Pacman ou un Ghost
+		// On calcule les futures coordonnées de notre entite (qui est soit un Pacman soit un Ghost)
 		if (entite instanceof Pacman) {
 			future_x = ((Pacman) entite).get_x() + ((Pacman) entite).get_direction_x();
 			future_y = ((Pacman) entite).get_y() + ((Pacman) entite).get_direction_y();
@@ -77,7 +77,7 @@ public class Carte implements Interface_VL{
 			future_x = ((Ghost) entite).get_x() + ((Ghost) entite).get_direction_x();
 			future_y = ((Ghost) entite).get_y() + ((Ghost) entite).get_direction_y();
 		}
-		// Si on est ni sur un Pacman ni sur un Ghost souleve une exception
+		// Si l'entite n est ni un Pacman ni un Ghost souleve une exception
 		else {
 			throw new Exception("L'entite n'est ni un fantome ni un pacman");
 		}
