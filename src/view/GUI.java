@@ -44,7 +44,7 @@ public class GUI extends JFrame {
 
 	private JPanel contentPane;
 	
-	// Création des objets graphiques des objets
+	// Creation des objets graphiques des objets
 	private ImageIcon pacman = new ImageIcon(GUI.class.getResource("/view/pacman.png"));
 	private ImageIcon ghost = new ImageIcon(GUI.class.getResource("/view/ghost.png"));
 	private ImageIcon fruit = new ImageIcon(GUI.class.getResource("/view/fruit.png"));
@@ -55,7 +55,7 @@ public class GUI extends JFrame {
 	// Suivi du clavier
 	public boolean upPressed, downPressed, rightPressed, leftPressed;
 			
-	// Création du tableau pour l'affichage
+	// Creation du tableau pour l'affichage
 	private ImageIcon[][] donnee;
 	private String[] entetes;
 	
@@ -82,49 +82,49 @@ public class GUI extends JFrame {
 	
 	public GUI(int taille, Carte carte, int score_pre, int lvl, int Xresolution, int Yresolution, int pacman_life) throws Exception{
 		
-		// Récupération de la taille de la map
+		// Recuperation de la taille de la map
 		this.taille = taille;
 		
-		// Récupération de la carte
+		// Recuperation de la carte
 		this.carte = carte;
 		this.item = carte.get_all();
 		this.lvl = lvl;
 		
-		// Récupération de la taille de la fenêtre
+		// Recuperation de la taille de la fenêtre
 		this.Xresolution = Xresolution;
 		this.Yresolution = Yresolution;
 		
-		// Récupération du score initial et de la vie restante
+		// Recuperation du score initial et de la vie restante
 		this.SCORE = score_pre;
 		((Pacman) item[carte.get_position()]).set_life(pacman_life);
 				
-		// On défini les paramètres de base de la fenêtre
+		// On definit les parametres de base de la fenetre
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		
-		// Création de la bar de menu
+		// Creation de la barre de menu
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
-		// Création du bouton start et ajout à la bar de menu
+		// Creation du bouton start et ajout a la barre de menu
 		JButton btnStart = new JButton("Start");
 		menuBar.add(btnStart);
 		
-		// Création du bounton exit et ajout à la bar de menu
+		// Creation du bounton exit et ajout a la barre de menu
 		JButton btnExit = new JButton("Exit");
 		menuBar.add(btnExit);
 		
-		// Création de la zone de score
+		// Creation de la zone de score
 		score = new JLabel("Score : " + this.SCORE + "  ");
 		menuBar.add(score);
 		
-		// Création de la fenêtre
+		// Creation de la fenetre
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 	       
-		// Création du panneau d'affichage
+		// Creation du panneau d'affichage
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.CENTER);
 		
@@ -133,7 +133,7 @@ public class GUI extends JFrame {
 		entetes = new String[this.taille];
 		initialize_table();
 		
-		// Création de la zone d'affichage de la vie
+		// Creation de la zone d'affichage de la vie
 		life = new JLabel("              Life remaining : " + ((Pacman) item[PACMAN_POSITION]).get_life());
 		menuBar.add(life);
 		
@@ -144,7 +144,7 @@ public class GUI extends JFrame {
 		{          
 			private static final long serialVersionUID = 1;
             
-			// Permet de détecter le type des variables dans le tableau et de les afficher correctement
+			// Permet de detecter le type des variables dans le tableau et de les afficher correctement
 			@SuppressWarnings({ "unchecked", "rawtypes" })
 			public Class getColumnClass(int colonne)
            {
@@ -167,12 +167,12 @@ public class GUI extends JFrame {
         // Le suivi du clavier est fait sur le tableau car celui-ci occupe tout le JPanel et donc on ne peut obtenir le focus sur le JPanel
         table_1.addKeyListener(new KeyboardListener());
         
-        // Création de l'action du bouton exit
+        // Creation de l'action du bouton exit
         ActionListener action_exit = new ActionListener() {
         	
         	public void actionPerformed(ActionEvent e) {
         		
-				// On quite en envoyant un code du score de pacman, cela peut toujours être utile
+				// On quitte en envoyant un code du score de pacman, cela peut toujours être utile
         		System.exit(((Pacman) item[PACMAN_POSITION]).get_score());
 		
         	}
@@ -181,7 +181,7 @@ public class GUI extends JFrame {
         
         btnExit.addActionListener(action_exit);
         
-        // Création de l'action du bouton start
+        // Creation de l'action du bouton start
         ActionListener action_start = new ActionListener() {
         	
         	public void actionPerformed(ActionEvent e) {
@@ -235,28 +235,28 @@ public class GUI extends JFrame {
 	
 	private void initialize_table() throws Exception {
 		
-		// On rempli le tableau avec les éléments nécessaires
+		// On rempli le tableau avec les elements necessaires
 		for (int i = 0; i < item.length; i++) {
 			
-			// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman imagé, aux coordonnées de l'item
+			// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman image, aux coordonnees de l'item
 			if (item[i] instanceof Pacman) {
 				
 				((Pacman) item[i]).set_score(this.SCORE);
 				assert PACMAN_POSITION == -1 : "More than 1 Pacman detected";
 				this.donnee[(item[i]).get_x()][(item[i]).get_y()] = this.pacman;
-				// On enregistre la position de pacman, ici et pas plus tot pour vérifié qu'on en a que un 
+				// On enregistre la position de pacman, ici et pas plus tot pour verifie qu'on en a que un 
 				PACMAN_POSITION = i;
 						
 			}
 			
-			// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome imagé, aux coordonnées de l'item
+			// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome image, aux coordonnees de l'item
 			else if (item[i] instanceof Ghost) {
 					
 				this.donnee[item[i].get_x()][item[i].get_y()] = this.ghost;	
 				
 			}
 			
-			// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit imagé, aux coordonnées de l'item
+			// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit image, aux coordonnees de l'item
 			else if (item[i] instanceof Fruit) {
 						
 				this.donnee[item[i].get_x()][item[i].get_y()] = this.fruit;
@@ -304,18 +304,18 @@ public class GUI extends JFrame {
 			
 		}
 		
-		// On rempli le tableau avec les éléments nécessaires
+		// On rempli le tableau avec les elements necessaires
 		for (int i = 0; i < item.length; i++) {
 			
 			try {
-				// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman imagé, aux coordonnées de l'item
+				// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman image, aux coordonnees de l'item
 				if (item[i] instanceof Pacman) {
 
 					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 								
 				}
 				
-				// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome imagé, aux coordonnées de l'item
+				// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome image, aux coordonnees de l'item
 				else if (item[i] instanceof Ghost) {
 					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
 						
@@ -327,10 +327,10 @@ public class GUI extends JFrame {
 					}
 				}
 				
-				// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit imagé, aux coordonnées de l'item
+				// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit image, aux coordonnees de l'item
 				else if (item[i] instanceof Fruit) {
 				
-					// Si il y a un pacman à son emplacement, on prefere afficher pacman
+					// Si il y a un pacman a son emplacement, on prefere afficher pacman
 					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.ghost) {
 					
 					
