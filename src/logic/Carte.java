@@ -65,27 +65,34 @@ public class Carte implements Interface_VL{
 	 * @throws Exception 
 	 */
 	public boolean is_a_wall(Entite entite) throws Exception {
-		// On calcule le futur emplacement du fantome ou du pacman passe en parametre
-		int x = entite.get_x();
-		int y = entite.get_y();
+		
+		// On calcule le futur emplacement du fantome ou du pacman passï¿½ en paramï¿½tre
 		int future_x = -1;
 		int future_y = -1;
+		
 		if (entite instanceof Pacman) {
-			future_x = x + ((Pacman) entite).get_direction_x();
-			future_y = y + ((Pacman) entite).get_direction_y();
+			future_x = ((Pacman) entite).get_x() + ((Pacman) entite).get_direction_x();
+			future_y = ((Pacman) entite).get_y() + ((Pacman) entite).get_direction_y();
 		}
 		else if (entite instanceof Ghost) {
-			future_x = x + ((Ghost) entite).get_direction_x();
-			future_y = y + ((Ghost) entite).get_direction_y();
+			future_x = ((Ghost) entite).get_x() + ((Ghost) entite).get_direction_x();
+			future_y = ((Ghost) entite).get_y() + ((Ghost) entite).get_direction_y();
 		}
 		else {
 			throw new Exception("L'entite n'est ni un fantome ni un pacman");
 		}
-		// On boucle sur la liste des entite pour verifier s'il existe un mur sur cette future position
+		
+		System.out.println(future_x + " " + future_y);
+		
+		// On boucle sur la liste des entitï¿½s pour vï¿½rifier s'il existe un mur sur cette future position
 		for (int i = 0; i < liste.length; i++) {
-			if (this.liste[i] instanceof Wall && this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y ) {
-				// On renvoie is_a_wall = true si l'entite veut se deplacer sur un mur
-				return true;
+			if (this.liste[i] instanceof Wall) {
+				System.out.println("Wall found");
+				System.out.println(liste[i].get_x() + " " + liste[i].get_y());
+				if (this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y) {
+				// On renvoie is_a_wall = true si l'entitï¿½ veut se dï¿½placer sur un mur
+				System.out.println("wall in " + future_x + " " + future_y);
+				return true;}
 			}
 		}
 		return false;
@@ -102,10 +109,10 @@ public class Carte implements Interface_VL{
 		if (code < 1 || code > 5) {
 			throw new Exception ("Wrong moving code detected");
 		}
-		// On initialise des valeurs à -1 de x et y
+		// On initialise des valeurs ï¿½ -1 de x et y
 		int x = - 1;
 		int y = - 1;
-		// On calcule les futures coordonnées x et y de Pacman
+		// On calcule les futures coordonnï¿½es x et y de Pacman
 		if (code == 1) {
 			x = pacman.get_x() - 1;
 			y = pacman.get_y();
@@ -137,7 +144,7 @@ public class Carte implements Interface_VL{
 				pacman.move_pacman(code);
 			}
 		}
-		// On actualise la position de Pacman dans la liste dédiée
+		// On actualise la position de Pacman dans la liste dï¿½diï¿½e
 		liste[PACMAN_POSITION] = ((Pacman) liste[PACMAN_POSITION]).move_pacman(code);		
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
