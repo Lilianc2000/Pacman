@@ -198,10 +198,10 @@ public class Carte implements Interface_VL{
 						((Ghost) liste[i]).move_ghost();
 					}
 					else {
-					// Si la direction du fantome n'est pas un valide (= c'est un mur) on cherche une autre direction pour le fantome, tant que la direction suivante est un mur ET que il n'y a pas une direction lin�aire ET tant que l'on ne bouge pas ET que on est pas out of bounds
+					// Si la direction du fantome n est pas valide (= c'est un mur) on cherche une autre direction pour le fantome, tant que la direction suivante est un mur ET que il n'y a pas une direction lineaire ET tant que l'on ne bouge pas ET que on est pas out of bounds
 						while(is_a_wall(liste[i]) || (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0) || (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0) || ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) < 0) || ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14) || ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0) || ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14)) {
-							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 1));
-							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 1));
+							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 2));
+							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 2));
 							System.out.println("is_a_wall(liste[i])" + is_a_wall(liste[i]));
 							System.out.println("((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0" + (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0));
 							System.out.println("((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0" + (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0));
@@ -209,6 +209,10 @@ public class Carte implements Interface_VL{
 							System.out.println("((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0)" + ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0));
 							System.out.println("((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14)" + ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14));
 							System.out.println("((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14)" + ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14));
+							System.out.println("dir_x" + ((Ghost) liste[i]).get_direction_x());
+							System.out.println("dir_y" + ((Ghost) liste[i]).get_direction_y());
+							System.out.println("item 1" + liste[1]);
+							System.out.println("item 15" + liste[15]);
 						}
 						((Ghost) liste[i]).move_ghost();
 					} 
