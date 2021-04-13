@@ -68,7 +68,7 @@ public class Carte implements Interface_VL{
 		// On initialise deux variables pour les futures coordonnees 
 		int future_x = -1;
 		int future_y = -1;
-		// On calcule les futures coordonnées de notre entite (qui est soit un Pacman soit un Ghost)
+		// On calcule les futures coordonnï¿½es de notre entite (qui est soit un Pacman soit un Ghost)
 		if (entite instanceof Pacman) {
 			future_x = ((Pacman) entite).get_x() + ((Pacman) entite).get_direction_x();
 			future_y = ((Pacman) entite).get_y() + ((Pacman) entite).get_direction_y();
@@ -81,7 +81,7 @@ public class Carte implements Interface_VL{
 		else {
 			throw new Exception("L'entite n'est ni un fantome ni un pacman");
 		}
-		// On boucle sur la liste des entites pour verifier s'il existe un mur sur la future position de l'entite passée en paramètre
+		// On boucle sur la liste des entites pour verifier s'il existe un mur sur la future position de l'entite passï¿½e en paramï¿½tre
 		for (int i = 0; i < liste.length; i++) {
 			if (this.liste[i] instanceof Wall) {
 				if (this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y) {
@@ -203,7 +203,10 @@ public class Carte implements Interface_VL{
 							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 2));
 							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 2));
 						}
+						System.out.println("Coords : " + liste[i].get_x() + " " + liste[i].get_y());
+						System.out.println("New direction : " + ((Ghost) liste[i]).get_direction_x() + "  " + ((Ghost) liste[i]).get_direction_y());
 						((Ghost) liste[i]).move_ghost();
+						System.out.println("New coords : " + liste[i].get_x() + " " + liste[i].get_y());
 					} 
 				}
 				catch (Exception e) {
