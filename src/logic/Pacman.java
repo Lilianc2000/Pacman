@@ -52,6 +52,14 @@ public class Pacman extends Entite {
 	}
 	
 	/**
+	 * Method to set pacman's number of lives
+	 * @param life
+	 */
+	public void set_life(int life) {
+		this.life = life;
+	}
+	
+	/**
 	 * Method to increase pacman's score
 	 * @param fruit
 	 */
@@ -110,13 +118,12 @@ public class Pacman extends Entite {
 			this.direction_y = -1;
 			this.direction_x = 0;
 		}
-		// Si on a recu un code diff�rent de 1 2 3 ou 4, alors Pacman ne change pas de direction		
+		// Si on a recu un code different de 1 2 3 ou 4, alors Pacman ne change pas de direction		
 		if (this.x + this.direction_x > 14 || this.x + this.direction_x < 0 || this.y + this.direction_y > 14 || this.y + this.direction_y < 0) {
 			throw new Exception ("Pacman sort du jeu");
 		}
 		this.x = this.x + this.direction_x;
 		this.y = this.y + this.direction_y;
-		
 		return this;
 	}
 
