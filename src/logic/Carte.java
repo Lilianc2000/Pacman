@@ -89,7 +89,7 @@ public class Carte implements Interface_VL{
 				System.out.println("Wall found");
 				System.out.println(liste[i].get_x() + " " + liste[i].get_y());
 				if (this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y) {
-				// On renvoie is_a_wall = true si l'entit� veut se d�placer sur un mur
+				// On renvoie is_a_wall = true si l'entite veut se deplacer sur un mur
 				System.out.println("wall in " + future_x + " " + future_y);
 				return true;}
 			}
@@ -108,12 +108,10 @@ public class Carte implements Interface_VL{
 		if (code < 1 || code > 5) {
 			throw new Exception ("Wrong moving code detected");
 		}
-
 		// On initialise des valeurs a -1 de x et y
 		int x = - 1;
 		int y = - 1;
 		// On calcule les futures coordonnes x et y de Pacman
-
 		if (code == 1) {
 			x = pacman.get_x() - 1;
 			y = pacman.get_y();
@@ -142,14 +140,10 @@ public class Carte implements Interface_VL{
 				verif = true;
 				throw new Exception ("There is a wall in this cell");
 			}
-			else {
-				pacman.move_pacman(code);
-			}
 			i += 1;
 		}
-
-		// On actualise la position de Pacman dans la liste d�di�e
-
+		pacman.move_pacman(code);
+		// On actualise la position de Pacman dans la liste dediee
 		liste[PACMAN_POSITION] = ((Pacman) liste[PACMAN_POSITION]).move_pacman(code);		
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
