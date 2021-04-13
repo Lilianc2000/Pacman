@@ -202,17 +202,6 @@ public class Carte implements Interface_VL{
 						while(is_a_wall(liste[i]) || (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0) || (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0) || ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) < 0) || ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14) || ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0) || ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14)) {
 							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 2));
 							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 2));
-							System.out.println("is_a_wall(liste[i])" + is_a_wall(liste[i]));
-							System.out.println("((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0" + (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0));
-							System.out.println("((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0" + (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0));
-							System.out.println("((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) < 0)" + ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) < 0));
-							System.out.println("((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0)" + ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0));
-							System.out.println("((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14)" + ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14));
-							System.out.println("((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14)" + ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14));
-							System.out.println("dir_x" + ((Ghost) liste[i]).get_direction_x());
-							System.out.println("dir_y" + ((Ghost) liste[i]).get_direction_y());
-							System.out.println("item 1" + liste[1]);
-							System.out.println("item 15" + liste[15]);
 						}
 						((Ghost) liste[i]).move_ghost();
 					} 
