@@ -16,17 +16,10 @@ import logic.Wall;
 
 public class Main {
 		
+	private static final int taille = 15;
+	
 	public static void main(String[] args) {
 		
-		int taille = -1;
-		try{
-    		taille = Integer.parseInt(args[0]);				//Taille de la carte n*n
-      	}
-    	catch(Exception e) {
-    		System.out.println("Please, type an integer.");
-    		System.exit(-1);
-    	}
-		/*
 		Entite[] item = new Entite[taille * taille];
 		item[0] = new Pacman(10, 0, 0, 1);
 		item[1] = new Fruit(10, 0, 2);
@@ -83,7 +76,7 @@ public class Main {
 				
 			}
 				
-		}*/
+		}
 		int lvl = 1;
 		
 		Carte carte = Level.get_carte(lvl);
