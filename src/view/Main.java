@@ -1,7 +1,12 @@
 package view;
 
+import data.Entite;
 import data.Level;
 import logic.Carte;
+import logic.Fruit;
+import logic.Ghost;
+import logic.Pacman;
+import logic.Wall;
 
 /**
  * Main method of the program
@@ -21,7 +26,6 @@ public class Main {
     		System.out.println("Please, type an integer.");
     		System.exit(-1);
     	}
-		
 		/*
 		Entite[] item = new Entite[taille * taille];
 		item[0] = new Pacman(10, 0, 0, 1);
@@ -79,9 +83,7 @@ public class Main {
 				
 			}
 				
-		}
-		
-		*/
+		}*/
 		int lvl = 1;
 		
 		Carte carte = Level.get_carte(lvl);
