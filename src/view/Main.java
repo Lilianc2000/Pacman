@@ -79,8 +79,8 @@ public class Main {
 		}
 		int lvl = 1;
 		
-		Carte carte = Level.get_carte(lvl);
-		//Carte carte = new Carte(item);
+		//Carte carte = Level.get_carte(lvl);
+		Carte carte = new Carte(item);
 		int Xresolution = 60 * taille, Yresolution = 65 * taille;			//Résolution de la fenetre
 		GUI frame = new GUI(taille, carte, 0, lvl, Xresolution, Yresolution);
         frame.setSize(Xresolution, Yresolution);
