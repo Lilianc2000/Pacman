@@ -39,7 +39,7 @@ public class Carte implements Interface_VL{
 	 * @return true if fruits are on the map
 	 */
 	public boolean are_Fruits() {
-		// On balaye toutes les entites de la carte pour verifier s'il y a au moins un fruit
+		// On regarde toutes les entites pour verifier s il y a au moins un fruit
 		for (int i = 0; i < liste.length; i++) {
 			if (liste[i] instanceof Fruit) {
 				return true;
@@ -79,17 +79,11 @@ public class Carte implements Interface_VL{
 		else {
 			throw new Exception("L'entite n'est ni un fantome ni un pacman");
 		}
-
-		System.out.println(future_x + " " + future_y);
-		
-		// On boucle sur la liste des entitï¿½s pour vï¿½rifier s'il existe un mur sur cette future position
+		// On boucle sur la liste des entites pour verifier s'il existe un mur sur cette future position
 		for (int i = 0; i < liste.length; i++) {
 			if (this.liste[i] instanceof Wall) {
-				System.out.println("Wall found");
-				System.out.println(liste[i].get_x() + " " + liste[i].get_y());
 				if (this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y) {
 				// On renvoie is_a_wall = true si l'entite veut se deplacer sur un mur
-				System.out.println("wall in " + future_x + " " + future_y);
 				return true;}
 			}
 		}
@@ -203,10 +197,18 @@ public class Carte implements Interface_VL{
 					}
 					else {
 					// Si la direction du fantome n'est pas un valide (= c'est un mur) on cherche une autre direction pour le fantome, tant que la direction suivante est un mur ET que il n'y a pas une direction linï¿½aire ET tant que l'on ne bouge pas ET que on est pas out of bounds
-						while(is_a_wall(liste[i]) && (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0) && (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0) && ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) < 0) && ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14) && ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0) && ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14)) {
+						while(is_a_wall(liste[i]) || (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0) || (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0) || ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) < 0) || ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14) || ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0) || ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14)) {
 							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 1));
 							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 1));
+							System.out.println("Recherche aléatoire");
 						}
+						System.out.println("is_a_wall(liste[i])" + is_a_wall(liste[i]));
+						System.out.println("((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0" + (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0));
+						System.out.println("((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0" + (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0));
+						System.out.println("((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) < 0)" + ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) < 0));
+						System.out.println("((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0)" + ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0));
+						System.out.println("((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14)" + ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14));
+						System.out.println("((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14)" + ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14));
 						((Ghost) liste[i]).move_ghost();
 					} 
 				}
