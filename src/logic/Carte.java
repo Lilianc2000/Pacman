@@ -65,10 +65,9 @@ public class Carte implements Interface_VL{
 	 * @throws Exception 
 	 */
 	public boolean is_a_wall(Entite entite) throws Exception {
-
+		// On initialise deux variables pour les futures coordonnees 
 		int future_x = -1;
 		int future_y = -1;
-		
 		if (entite instanceof Pacman) {
 			future_x = ((Pacman) entite).get_x() + ((Pacman) entite).get_direction_x();
 			future_y = ((Pacman) entite).get_y() + ((Pacman) entite).get_direction_y();
@@ -136,12 +135,14 @@ public class Carte implements Interface_VL{
 		boolean verif = false;
 		int i = 0;
 		while (i < this.liste.length && verif == false) {
+			// Si cette cellule est un mur on souleve une exception
 			if (liste[i] instanceof Wall && liste[i].get_x() == x && liste[i].get_y() == y) {
 				verif = true;
 				throw new Exception ("There is a wall on this cell");
 			}
 			i += 1;
 		}
+		// Si aucune exception n a ete soulevee on deplace Pacman
 		pacman.move_pacman(code);	
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
@@ -153,10 +154,10 @@ public class Carte implements Interface_VL{
 	 * Private method to check if Pacman ate a fruit while moving
 	 */
 	private void eat_fruit() {
-		// On verifie si, dans la liste des entites, un fruit a les memes coordonnees que notre pacman
+		// On verifie si un fruit possede les memes coordonnees que notre pacman
 		for (int i = 0; i < liste.length; i++) {
 			if (liste[i].get_x() == liste[PACMAN_POSITION].get_x() && liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i] instanceof Fruit) {
-				// Si oui, on le signale a pacman
+				// Si oui, Pacman mange le fruit et gagne des points
 				((Pacman) liste[PACMAN_POSITION]).eat_fruit((Fruit) liste[i]);
 				// Et on remplace le fruit par une case vide
 				liste[i] = new Empty(liste[PACMAN_POSITION].get_x(), liste[PACMAN_POSITION].get_y());
@@ -170,7 +171,7 @@ public class Carte implements Interface_VL{
 	 * @returns position an integer
 	 */
 	private void find_ghost() {
-		// On verifie si, dans la liste des entites, un fantome a les memes coordonnees que notre pacman
+		// On verifie si un fantome a les memes coordonnees que notre pacman
 		for (int i = 0; i < liste.length; i++) {	
 			if (liste[i].get_x() == liste[PACMAN_POSITION].get_x() && liste[i].get_y() == liste[PACMAN_POSITION].get_y() && liste[i] instanceof Ghost) {
 				// Si oui, pacman perd une vie
@@ -195,14 +196,14 @@ public class Carte implements Interface_VL{
 		// On recherche dans la liste tous les fantomes
 		for (int i = 0; i < liste.length; i++) {
 			if (liste[i] instanceof Ghost) {
-				// Et on les fait bouger, seulement si leur direction n'est pas un mur
+				// On deplace les fantomes seulement si leur direction n'est pas un mur
 				try {
 					if (is_a_wall(liste[i]) == false) {
 						((Ghost) liste[i]).move_ghost();
 					}
 					else {
 					// Si la direction du fantome n'est pas un valide (= c'est un mur) on cherche une autre direction pour le fantome, tant que la direction suivante est un mur ET que il n'y a pas une direction lin�aire ET tant que l'on ne bouge pas ET que on est pas out of bounds
-						while(is_a_wall(liste[i]) && (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0) && (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0) && (liste[i].get_x() + ((Ghost) liste[i]).get_direction_x() < 0 && liste[i].get_y() + ((Ghost) liste[i]).get_direction_x() > 14 && liste[i].get_y() + ((Ghost) liste[i]).get_direction_y() < 0 && liste[i].get_y() + ((Ghost) liste[i]).get_direction_y() > 14)) {
+						while(is_a_wall(liste[i]) && (((Ghost) liste[i]).get_direction_x() != 0 && ((Ghost) liste[i]).get_direction_y() != 0) && (((Ghost) liste[i]).get_direction_x() == 0 && ((Ghost) liste[i]).get_direction_y() == 0) && ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) < 0) && ((liste[i].get_x() + ((Ghost) liste[i]).get_direction_x()) > 14) && ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) < 0) && ((liste[i].get_y() + ((Ghost) liste[i]).get_direction_y()) > 14)) {
 							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 1));
 							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 1));
 						}
