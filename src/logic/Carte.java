@@ -142,7 +142,7 @@ public class Carte implements Interface_VL{
 			}
 			i += 1;
 		}
-		pacman.move_pacman(code);
+
 		// On actualise la position de Pacman dans la liste dediee
 		liste[PACMAN_POSITION] = ((Pacman) liste[PACMAN_POSITION]).move_pacman(code);		
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
