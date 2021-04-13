@@ -39,7 +39,7 @@ public class Carte implements Interface_VL{
 	 * @return true if fruits are on the map
 	 */
 	public boolean are_Fruits() {
-		// On balaye toutes les entites de la carte pour verifier s'il y a au moins un fruit
+		// On regarde toutes les entites pour verifier s il y a au moins un fruit
 		for (int i = 0; i < liste.length; i++) {
 			if (liste[i] instanceof Fruit) {
 				return true;
@@ -82,14 +82,11 @@ public class Carte implements Interface_VL{
 
 		System.out.println(future_x + " " + future_y);
 		
-		// On boucle sur la liste des entit�s pour v�rifier s'il existe un mur sur cette future position
+		// On boucle sur la liste des entites pour verifier s'il existe un mur sur cette future position
 		for (int i = 0; i < liste.length; i++) {
 			if (this.liste[i] instanceof Wall) {
-				System.out.println("Wall found");
-				System.out.println(liste[i].get_x() + " " + liste[i].get_y());
 				if (this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y) {
 				// On renvoie is_a_wall = true si l'entite veut se deplacer sur un mur
-				System.out.println("wall in " + future_x + " " + future_y);
 				return true;}
 			}
 		}
@@ -208,6 +205,8 @@ public class Carte implements Interface_VL{
 							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 1));
 						}
 						((Ghost) liste[i]).move_ghost();
+						System.out.println(liste[i].get_x());
+						System.out.println(liste[i].get_y());
 					} 
 				}
 				catch (Exception e) {
