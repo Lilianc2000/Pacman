@@ -411,35 +411,35 @@ public class GUI extends JFrame {
 				// Si on a pressé UP, alors on envoie le code 1 pour le déplacement
 				if (upPressed) {
 					System.out.println("1 sent");
-					carte = carte.move_pacman(1, (Pacman) item[PACMAN_POSITION]);
+					carte.move_pacman(1, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé DOWN, alors on envoie le code 2 pour le déplacement
 				else if (downPressed) {
 					System.out.println("2 sent");
-					carte = carte.move_pacman(2, (Pacman) item[PACMAN_POSITION]);
+					carte.move_pacman(2, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé RIGHT, alors on envoie le code 3 pour le déplacement
 				else if (rightPressed) {
 					System.out.println("3 sent");
-					carte = carte.move_pacman(3,(Pacman) item[PACMAN_POSITION]);
+					carte.move_pacman(3,(Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé LEFT, alors on envoie le code 4 pour le déplacement
 				else if (leftPressed) {
 					System.out.println("4 sent");
-					carte = carte.move_pacman(4, (Pacman) item[PACMAN_POSITION]);
+					carte.move_pacman(4, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Sinon, on doit continuer dans la meme direction, on envoie donc le code 5
 				else {
 					System.out.println("5 sent");
-					carte = carte.move_pacman(5, (Pacman) item[PACMAN_POSITION]);
+					carte.move_pacman(5, (Pacman) item[PACMAN_POSITION]);
 					
 				}
 			}
@@ -451,7 +451,7 @@ public class GUI extends JFrame {
 				
 				// On fait bouger les fantomes
 				playSound("pacman_chomp.wav");
-				carte = carte.move_ghost();
+				carte.move_ghost();
 
 				// On rebalaye tout le tableau après le déplacement de pacman et donc aussi les déplacements des fantomes
 				//Entite[] item2 = new Entite[donnee.length * donnee.length];

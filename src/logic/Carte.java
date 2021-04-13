@@ -99,7 +99,7 @@ public class Carte implements Interface_VL{
 	 * @throws Exception 
 	 * @return carte the actualized Carte object
 	 */	
-	public Carte move_pacman(int code, Pacman pacman) throws Exception {
+	public void move_pacman(int code, Pacman pacman) throws Exception {
 		// On verifie que le code de deplacement est dans les valeurs possibles
 		if (code < 1 || code > 5) {
 			throw new Exception ("Wrong moving code detected");
@@ -144,7 +144,7 @@ public class Carte implements Interface_VL{
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
 		find_ghost();
-		return this;
+
 	}
 	
 	/**
@@ -189,13 +189,13 @@ public class Carte implements Interface_VL{
 	 * Method to move all ghosts of the map
 	 * @return this the actualized map
 	 */
-	public Carte move_ghost() {
+	public void move_ghost() {
 		// On recherche dans la liste tous les fantomes
 		for (int i = 0; i < liste.length; i++) {
 			if (liste[i] instanceof Ghost) {
 				// On deplace les fantomes seulement si leur direction n'est pas un mur
 				try {
-					if (is_a_wall(liste[i]) == false) {
+					if (is_a_wall(liste[i]) == false && ((Ghost) liste[i]).get_x() + ((Ghost) liste[i]).get_direction_x() > -1 && ((Ghost) liste[i]).get_x() + ((Ghost) liste[i]).get_direction_x() < 15 && ((Ghost) liste[i]).get_y() + ((Ghost) liste[i]).get_direction_y() > -1 && ((Ghost) liste[i]).get_y() + ((Ghost) liste[i]).get_direction_y() < 15) {
 						((Ghost) liste[i]).move_ghost();
 					}
 					else {
@@ -207,7 +207,7 @@ public class Carte implements Interface_VL{
 						System.out.println("Is a wall : " + is_a_wall(liste[i]));
 						System.out.println("Coords : " + liste[i].get_x() + " " + liste[i].get_y());
 						System.out.println("New direction : " + ((Ghost) liste[i]).get_direction_x() + "  " + ((Ghost) liste[i]).get_direction_y());
-						liste[i] = ((Ghost) liste[i]).move_ghost();
+						((Ghost) liste[i]).move_ghost();
 						System.out.println("New coords : " + liste[i].get_x() + " " + liste[i].get_y());
 					} 
 				}
@@ -216,6 +216,6 @@ public class Carte implements Interface_VL{
 				}				
 			}
 		}
-		return this;
+
 	}
 }
