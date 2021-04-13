@@ -16,9 +16,9 @@ public class Empty extends Entite {
 	private static final Color color = Color.BLACK;
 	
 	/**
-	 * Constructor of Empty
-	 * @param x the x position of the empty case
-	 * @param y the y position of the empty case
+	 * Constructor for Empty
+	 * @param x the abscissa of the empty case
+	 * @param y the ordinate of the empty case
 	 */
 	public Empty(int x, int y) {
 		super(color, x, y);
