@@ -80,7 +80,7 @@ public class GUI extends JFrame {
 	 * @throws Exception 
 	 */
 	
-	public GUI(int taille, Carte carte, int score_pre, int lvl, int Xresolution, int Yresolution) throws Exception{
+	public GUI(int taille, Carte carte, int score_pre, int lvl, int Xresolution, int Yresolution, int pacman_life) throws Exception{
 		
 		// Récupération de la taille de la map
 		this.taille = taille;
@@ -94,9 +94,10 @@ public class GUI extends JFrame {
 		this.Xresolution = Xresolution;
 		this.Yresolution = Yresolution;
 		
-		// Récupération du score initial
+		// Récupération du score initial et de la vie restante
 		this.SCORE = score_pre;
-		
+		((Pacman) item[carte.get_position()]).set_life(pacman_life);
+				
 		// On défini les paramètres de base de la fenêtre
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -243,6 +244,7 @@ public class GUI extends JFrame {
 				((Pacman) item[i]).set_score(this.SCORE);
 				assert PACMAN_POSITION == -1 : "More than 1 Pacman detected";
 				this.donnee[(item[i]).get_x()][(item[i]).get_y()] = this.pacman;
+				// On enregistre la position de pacman, ici et pas plus tot pour vérifié qu'on en a que un 
 				PACMAN_POSITION = i;
 						
 			}
@@ -449,8 +451,8 @@ public class GUI extends JFrame {
 			}
 			finally {
 				
-				// On fait bouger les fantomes
 				playSound("pacman_chomp.wav");
+				// On fait bouger les fantomes
 				carte.move_ghost();
 
 				// On rebalaye tout le tableau après le déplacement de pacman et donc aussi les déplacements des fantomes
@@ -491,7 +493,7 @@ public class GUI extends JFrame {
 			// On crée une nouvelle fenêtre
 			playSound("victory.wav");
 			Thread.sleep(2000);
-			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1, this.Xresolution, this.Yresolution);
+			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1, this.Xresolution, this.Yresolution, ((Pacman) item[PACMAN_POSITION]).get_life());
 			frame.setSize(Xresolution, Yresolution);
 	        frame.setResizable(false);
 	        frame.setVisible(true);

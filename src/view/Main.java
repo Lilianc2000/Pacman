@@ -99,7 +99,7 @@ public class Main {
 		
 		
 		int Xresolution = 60 * taille, Yresolution = 65 * taille;			//Résolution de la fenetre
-		GUI frame = new GUI(taille, carte, 0, lvl, Xresolution, Yresolution);
+		GUI frame = new GUI(taille, carte, 0, lvl, Xresolution, Yresolution, ((Pacman) carte.get_all()[carte.get_position()]).get_life());
         frame.setSize(Xresolution, Yresolution);
         frame.setResizable(false);
         frame.setVisible(true);
