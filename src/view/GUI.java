@@ -77,9 +77,10 @@ public class GUI extends JFrame {
 	 * @param taille the number of case in x and y
 	 * @param item the list of objects to draw on the GUI
 	 * @param score_pre the score to initialize the game
+	 * @throws Exception 
 	 */
 	
-	public GUI(int taille, Carte carte, int score_pre, int lvl, int Xresolution, int Yresolution){
+	public GUI(int taille, Carte carte, int score_pre, int lvl, int Xresolution, int Yresolution) throws Exception{
 		
 		// Récupération de la taille de la map
 		this.taille = taille;
@@ -196,7 +197,7 @@ public class GUI extends JFrame {
 
         				} 
             			
-            			catch (InterruptedException e1) {
+            			catch (Exception e1) {
             				
         					e1.printStackTrace();
         					
@@ -228,9 +229,10 @@ public class GUI extends JFrame {
 	 * Method to set the map with items of the game
 	 * @param item the list of item in the game
 	 * @param donnee the list of the graphicals item in the game
+	 * @throws Exception 
 	 */
 	
-	private void initialize_table() {
+	private void initialize_table() throws Exception {
 		
 		// On rempli le tableau avec les éléments nécessaires
 		for (int i = 0; i < item.length; i++) {
@@ -272,6 +274,9 @@ public class GUI extends JFrame {
 				this.donnee[item[i].get_x()][item[i].get_y()] = this.wall;
 				
 			}
+			else {
+				throw new Exception("Case manquante");
+			}
 					
 		}
 		
@@ -310,18 +315,22 @@ public class GUI extends JFrame {
 				
 				// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome imagé, aux coordonnées de l'item
 				else if (item[i] instanceof Ghost) {
-					
-					modele.setValueAt(this.ghost, item[i].get_x(), item[i].get_y());	
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
+						
 
+					
+					}
+					else {
+					modele.setValueAt(this.ghost, item[i].get_x(), item[i].get_y());	
+					}
 				}
 				
 				// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit imagé, aux coordonnées de l'item
 				else if (item[i] instanceof Fruit) {
 				
 					// Si il y a un pacman à son emplacement, on prefere afficher pacman
-					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.ghost) {
 					
-						modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 					
 					}
 					else {
@@ -335,9 +344,9 @@ public class GUI extends JFrame {
 				else if (item[i] instanceof Empty) {
 				
 					// Si il y a un pacman à son emplacement, on prefere afficher pacman
-					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.ghost || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.fruit) {
 					
-						modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
+
 					
 					}
 					else {
@@ -349,9 +358,14 @@ public class GUI extends JFrame {
 					
 				// Si l'item est un mur
 				else if (item[i] instanceof Wall){
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.ghost || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.fruit || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.empty) {
+						
 
+						
+					}
+					else {
 					modele.setValueAt(this.wall, item[i].get_x(), item[i].get_y());	
-				
+					}
 				}
 			}
 			
@@ -361,7 +375,7 @@ public class GUI extends JFrame {
 							
 		}
 		
-		// S'il reste des cases null, on y met null
+		// S'il reste des cases null, on y met empty
 		for (int i = 0; i < donnee.length; i++) {
 			
 			for (int j = 0; j < donnee.length; j++) {
@@ -382,10 +396,10 @@ public class GUI extends JFrame {
 	/**
 	 * Method to launch the game
 	 * @param item a table of item in the game
-	 * @throws InterruptedException 
+	 * @throws Exception 
 	 */
 	
-	private void game() throws InterruptedException {
+	private void game() throws Exception {
 		
 		// Tant qu'il y a des fruits en jeu et que Pacman a de la vie, on peut le déplacer
 		while (carte.are_Fruits() && ((Pacman) item[PACMAN_POSITION]).get_life() > 0) {
@@ -397,35 +411,35 @@ public class GUI extends JFrame {
 				// Si on a pressé UP, alors on envoie le code 1 pour le déplacement
 				if (upPressed) {
 					System.out.println("1 sent");
-					carte.move_pacman(1, (Pacman) item[PACMAN_POSITION]);
+					carte = carte.move_pacman(1, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé DOWN, alors on envoie le code 2 pour le déplacement
 				else if (downPressed) {
 					System.out.println("2 sent");
-					carte.move_pacman(2, (Pacman) item[PACMAN_POSITION]);
+					carte = carte.move_pacman(2, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé RIGHT, alors on envoie le code 3 pour le déplacement
 				else if (rightPressed) {
 					System.out.println("3 sent");
-					carte.move_pacman(3,(Pacman) item[PACMAN_POSITION]);
+					carte = carte.move_pacman(3,(Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé LEFT, alors on envoie le code 4 pour le déplacement
 				else if (leftPressed) {
 					System.out.println("4 sent");
-					carte.move_pacman(4, (Pacman) item[PACMAN_POSITION]);
+					carte = carte.move_pacman(4, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Sinon, on doit continuer dans la meme direction, on envoie donc le code 5
 				else {
 					System.out.println("5 sent");
-					carte.move_pacman(5, (Pacman) item[PACMAN_POSITION]);
+					carte = carte.move_pacman(5, (Pacman) item[PACMAN_POSITION]);
 					
 				}
 			}
@@ -437,11 +451,11 @@ public class GUI extends JFrame {
 				
 				// On fait bouger les fantomes
 				playSound("pacman_chomp.wav");
-				carte.move_ghost();
+				carte = carte.move_ghost();
 
 				// On rebalaye tout le tableau après le déplacement de pacman et donc aussi les déplacements des fantomes
-				Entite[] item2 = new Entite[donnee.length * donnee.length];
-				item2 = carte.get_all();
+				//Entite[] item2 = new Entite[donnee.length * donnee.length];
+				Entite[] item2 = carte.get_all();
 			
 				// Et on redraw le tableau
 				change_gui(item2);

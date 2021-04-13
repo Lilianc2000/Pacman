@@ -86,7 +86,8 @@ public class Carte implements Interface_VL{
 			if (this.liste[i] instanceof Wall) {
 				if (this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y) {
 				// On retourne true si l'entite veut se deplacer sur un mur
-				return true;}
+				return true;
+				}
 			}
 		}
 		return false;
@@ -139,7 +140,7 @@ public class Carte implements Interface_VL{
 			i += 1;
 		}
 		// Si aucune exception n a ete soulevee on deplace Pacman
-		pacman.move_pacman(code);	
+		liste[PACMAN_POSITION] = pacman.move_pacman(code);	
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
 		find_ghost();
@@ -188,7 +189,7 @@ public class Carte implements Interface_VL{
 	 * Method to move all ghosts of the map
 	 * @return this the actualized map
 	 */
-	public void move_ghost() {
+	public Carte move_ghost() {
 		// On recherche dans la liste tous les fantomes
 		for (int i = 0; i < liste.length; i++) {
 			if (liste[i] instanceof Ghost) {
@@ -203,9 +204,10 @@ public class Carte implements Interface_VL{
 							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 2));
 							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 2));
 						}
+						System.out.println("Is a wall : " + is_a_wall(liste[i]));
 						System.out.println("Coords : " + liste[i].get_x() + " " + liste[i].get_y());
 						System.out.println("New direction : " + ((Ghost) liste[i]).get_direction_x() + "  " + ((Ghost) liste[i]).get_direction_y());
-						((Ghost) liste[i]).move_ghost();
+						liste[i] = ((Ghost) liste[i]).move_ghost();
 						System.out.println("New coords : " + liste[i].get_x() + " " + liste[i].get_y());
 					} 
 				}
@@ -214,5 +216,6 @@ public class Carte implements Interface_VL{
 				}				
 			}
 		}
+		return this;
 	}
 }

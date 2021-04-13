@@ -116,6 +116,7 @@ public class Pacman extends Entite {
 		}
 		this.x = this.x + this.direction_x;
 		this.y = this.y + this.direction_y;
+		
 		return this;
 	}
 

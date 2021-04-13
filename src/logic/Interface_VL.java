@@ -33,5 +33,5 @@ public interface Interface_VL {
 		 * Moves all ghosts that exist on the map
 		 * @throws Exception 
 		 */
-		public void move_ghost();
+		public Carte move_ghost();
 }
