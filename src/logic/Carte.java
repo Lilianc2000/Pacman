@@ -138,7 +138,7 @@ public class Carte implements Interface_VL{
 		while (i < this.liste.length && verif == false) {
 			if (liste[i] instanceof Wall && liste[i].get_x() == x && liste[i].get_y() == y) {
 				verif = true;
-				pacman.move_pacman(5);			
+				throw new Exception ("There is a wall on this cell");
 			}
 			i += 1;
 		}
