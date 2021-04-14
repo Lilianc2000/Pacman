@@ -100,14 +100,14 @@ public class Carte implements Interface_VL{
 	 * @return carte the actualized Carte object
 	 */	
 	public void move_pacman(int code, Pacman pacman) throws Exception {
-		// On verifie que le code de deplacement est dans les valeurs possibles
+		// On verifie que le code de deplacement est dans l'intervalle (1,5)
 		if (code < 1 || code > 5) {
 			throw new Exception ("Wrong moving code detected");
 		}
-		// On initialise des valeurs a -1 de x et y
+		// On initialise des variables x et y a -1
 		int x = - 1;
 		int y = - 1;
-		// On calcule les futures coordonnes x et y de Pacman
+		// On calcule les futures coordonnes en x et y de Pacman
 		if (code == 1) {
 			x = pacman.get_x() - 1;
 			y = pacman.get_y();
