@@ -12,9 +12,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
@@ -401,6 +398,7 @@ public class GUI extends JFrame {
 	 * @throws Exception 
 	 */
 	
+	@SuppressWarnings("static-access")
 	private void game() throws Exception {
 		
 		// Tant qu'il y a des fruits en jeu et que Pacman a de la vie, on peut le déplacer
