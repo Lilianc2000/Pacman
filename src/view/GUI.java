@@ -403,7 +403,7 @@ public class GUI extends JFrame {
 		// On met a jour le tableau
 		modele.fireTableDataChanged();
 		
-	}
+		}
 	
 	/**
 	 * Method to launch the game
