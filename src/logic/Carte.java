@@ -68,7 +68,7 @@ public class Carte implements Interface_VL{
 		// On initialise deux variables pour les futures coordonnees 
 		int future_x = -1;
 		int future_y = -1;
-		// On calcule les futures coordonn�es de notre entite (qui est soit un Pacman soit un Ghost)
+		// On calcule les futures coordonnees de notre entite (qui est soit un Pacman soit un Ghost)
 		if (entite instanceof Pacman) {
 			future_x = ((Pacman) entite).get_x() + ((Pacman) entite).get_direction_x();
 			future_y = ((Pacman) entite).get_y() + ((Pacman) entite).get_direction_y();
@@ -86,7 +86,8 @@ public class Carte implements Interface_VL{
 			if (this.liste[i] instanceof Wall) {
 				if (this.liste[i].get_x() == future_x  && this.liste[i].get_y() == future_y) {
 				// On retourne true si l'entite veut se deplacer sur un mur
-				return true;}
+				return true;
+				}
 			}
 		}
 		return false;
@@ -98,7 +99,7 @@ public class Carte implements Interface_VL{
 	 * @throws Exception 
 	 * @return carte the actualized Carte object
 	 */	
-	public Carte move_pacman(int code, Pacman pacman) throws Exception {
+	public void move_pacman(int code, Pacman pacman) throws Exception {
 		// On verifie que le code de deplacement est dans les valeurs possibles
 		if (code < 1 || code > 5) {
 			throw new Exception ("Wrong moving code detected");
@@ -138,12 +139,11 @@ public class Carte implements Interface_VL{
 			}
 			i += 1;
 		}
+		find_ghost();
 		// Si aucune exception n a ete soulevee on deplace Pacman
-		pacman.move_pacman(code);	
+		liste[PACMAN_POSITION] = pacman.move_pacman(code);	
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
-		find_ghost();
-		return this;
 	}
 	
 	/**
@@ -194,7 +194,7 @@ public class Carte implements Interface_VL{
 			if (liste[i] instanceof Ghost) {
 				// On deplace les fantomes seulement si leur direction n'est pas un mur
 				try {
-					if (is_a_wall(liste[i]) == false) {
+					if (is_a_wall(liste[i]) == false && ((Ghost) liste[i]).get_x() + ((Ghost) liste[i]).get_direction_x() > -1 && ((Ghost) liste[i]).get_x() + ((Ghost) liste[i]).get_direction_x() < 15 && ((Ghost) liste[i]).get_y() + ((Ghost) liste[i]).get_direction_y() > -1 && ((Ghost) liste[i]).get_y() + ((Ghost) liste[i]).get_direction_y() < 15) {
 						((Ghost) liste[i]).move_ghost();
 					}
 					else {
@@ -203,6 +203,7 @@ public class Carte implements Interface_VL{
 							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 2));
 							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 2));
 						}
+						System.out.println("Is a wall : " + is_a_wall(liste[i]));
 						System.out.println("Coords : " + liste[i].get_x() + " " + liste[i].get_y());
 						System.out.println("New direction : " + ((Ghost) liste[i]).get_direction_x() + "  " + ((Ghost) liste[i]).get_direction_y());
 						((Ghost) liste[i]).move_ghost();
@@ -214,5 +215,6 @@ public class Carte implements Interface_VL{
 				}				
 			}
 		}
+
 	}
 }

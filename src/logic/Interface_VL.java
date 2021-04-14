@@ -27,7 +27,7 @@ public interface Interface_VL {
 		 * @return this the actualized map
 		 * @throws Exception 
 		 */
-		public Carte move_pacman(int code, Pacman pacman) throws Exception;
+		public void move_pacman(int code, Pacman pacman) throws Exception;
 
 		/**
 		 * Moves all ghosts that exist on the map

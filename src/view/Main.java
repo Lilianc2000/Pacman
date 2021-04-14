@@ -20,13 +20,13 @@ public class Main {
 	private static Carte carte;
 	private static int lvl = 0;
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		if(args.length == 1 && (args[0].equals("--debug") || args[0].equals("-d"))) {
 			
 			// Carte de débug
 			
-			Entite[] item = new Entite[taille * taille];
+			Entite[] item = new Entite[taille * taille + 2];
 			item[0] = new Pacman(10, 0, 0, 1);
 			item[1] = new Fruit(10, 0, 2);
 			item[2] = new Fruit(10, 0, 3);
@@ -84,6 +84,8 @@ public class Main {
 					
 			}
 			
+			item[225] = new Wall(13, 0);
+			item[226] = new Wall(14, 0);
 			carte = new Carte(item);
 			
 		}
@@ -97,7 +99,7 @@ public class Main {
 		
 		
 		int Xresolution = 60 * taille, Yresolution = 65 * taille;			//Résolution de la fenetre
-		GUI frame = new GUI(taille, carte, 0, lvl, Xresolution, Yresolution);
+		GUI frame = new GUI(taille, carte, 0, lvl, Xresolution, Yresolution, ((Pacman) carte.get_all()[carte.get_position()]).get_life());
         frame.setSize(Xresolution, Yresolution);
         frame.setResizable(false);
         frame.setVisible(true);

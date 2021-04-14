@@ -25,10 +25,10 @@ public abstract class Level {
 									  new Fruit(10, 8, 13),
 									  new Fruit(10, 14, 2),
 									  new Fruit(10, 13, 9),
-									  new Fruit(10, 6, 0),  // Fantome
-									  new Ghost(12, 5), // Fantome
-									  new Fruit(10, 5, 10), // Fantome
-									  new Fruit(10, 10, 13), // Fantome
+									  new Ghost(6, 0),
+									  new Ghost(12, 5),
+									  new Ghost(5, 10),
+									  new Ghost(10, 13),
 									  new Wall(0, 4),
 									  new Wall(0, 5),
 									  new Wall(0, 12),
@@ -727,7 +727,7 @@ public abstract class Level {
 	/**
 	 * 
 	 * @param level
-	 * @return a list with the initial coordinate of pacman, walls, Fruits(with values) and Ghosts
+	 * @return a list with the initial coordinate of Pacman, walls, Fruits(with values) and Ghosts
 	 */
 	public static Carte get_carte(int level) {
 		

@@ -44,7 +44,7 @@ public class GUI extends JFrame {
 
 	private JPanel contentPane;
 	
-	// Création des objets graphiques des objets
+	// Creation des objets graphiques des objets
 	private ImageIcon pacman = new ImageIcon(GUI.class.getResource("/view/pacman.png"));
 	private ImageIcon ghost = new ImageIcon(GUI.class.getResource("/view/ghost.png"));
 	private ImageIcon fruit = new ImageIcon(GUI.class.getResource("/view/fruit.png"));
@@ -55,7 +55,7 @@ public class GUI extends JFrame {
 	// Suivi du clavier
 	public boolean upPressed, downPressed, rightPressed, leftPressed;
 			
-	// Création du tableau pour l'affichage
+	// Creation du tableau pour l'affichage
 	private ImageIcon[][] donnee;
 	private String[] entetes;
 	
@@ -77,52 +77,54 @@ public class GUI extends JFrame {
 	 * @param taille the number of case in x and y
 	 * @param item the list of objects to draw on the GUI
 	 * @param score_pre the score to initialize the game
+	 * @throws Exception 
 	 */
 	
-	public GUI(int taille, Carte carte, int score_pre, int lvl, int Xresolution, int Yresolution){
+	public GUI(int taille, Carte carte, int score_pre, int lvl, int Xresolution, int Yresolution, int pacman_life) throws Exception{
 		
-		// Récupération de la taille de la map
+		// Recuperation de la taille de la map
 		this.taille = taille;
 		
-		// Récupération de la carte
+		// Recuperation de la carte
 		this.carte = carte;
 		this.item = carte.get_all();
 		this.lvl = lvl;
 		
-		// Récupération de la taille de la fenêtre
+		// Recuperation de la taille de la fenêtre
 		this.Xresolution = Xresolution;
 		this.Yresolution = Yresolution;
 		
-		// Récupération du score initial
+		// Recuperation du score initial et de la vie restante
 		this.SCORE = score_pre;
-		
-		// On défini les paramètres de base de la fenêtre
+		((Pacman) item[carte.get_position()]).set_life(pacman_life);
+				
+		// On definit les parametres de base de la fenetre
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		
-		// Création de la bar de menu
+		// Creation de la barre de menu
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
-		// Création du bouton start et ajout à la bar de menu
+		// Creation du bouton start et ajout a la barre de menu
 		JButton btnStart = new JButton("Start");
 		menuBar.add(btnStart);
 		
-		// Création du bounton exit et ajout à la bar de menu
+		// Creation du bounton exit et ajout a la barre de menu
 		JButton btnExit = new JButton("Exit");
 		menuBar.add(btnExit);
 		
-		// Création de la zone de score
+		// Creation de la zone de score
 		score = new JLabel("Score : " + this.SCORE + "  ");
 		menuBar.add(score);
 		
-		// Création de la fenêtre
+		// Creation de la fenetre
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 	       
-		// Création du panneau d'affichage
+		// Creation du panneau d'affichage
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.CENTER);
 		
@@ -131,7 +133,7 @@ public class GUI extends JFrame {
 		entetes = new String[this.taille];
 		initialize_table();
 		
-		// Création de la zone d'affichage de la vie
+		// Creation de la zone d'affichage de la vie
 		life = new JLabel("              Life remaining : " + ((Pacman) item[PACMAN_POSITION]).get_life());
 		menuBar.add(life);
 		
@@ -142,7 +144,7 @@ public class GUI extends JFrame {
 		{          
 			private static final long serialVersionUID = 1;
             
-			// Permet de détecter le type des variables dans le tableau et de les afficher correctement
+			// Permet de detecter le type des variables dans le tableau et de les afficher correctement
 			@SuppressWarnings({ "unchecked", "rawtypes" })
 			public Class getColumnClass(int colonne)
            {
@@ -165,12 +167,12 @@ public class GUI extends JFrame {
         // Le suivi du clavier est fait sur le tableau car celui-ci occupe tout le JPanel et donc on ne peut obtenir le focus sur le JPanel
         table_1.addKeyListener(new KeyboardListener());
         
-        // Création de l'action du bouton exit
+        // Creation de l'action du bouton exit
         ActionListener action_exit = new ActionListener() {
         	
         	public void actionPerformed(ActionEvent e) {
         		
-				// On quite en envoyant un code du score de pacman, cela peut toujours être utile
+				// On quitte en envoyant un code du score de pacman, cela peut toujours être utile
         		System.exit(((Pacman) item[PACMAN_POSITION]).get_score());
 		
         	}
@@ -179,7 +181,7 @@ public class GUI extends JFrame {
         
         btnExit.addActionListener(action_exit);
         
-        // Création de l'action du bouton start
+        // Creation de l'action du bouton start
         ActionListener action_start = new ActionListener() {
         	
         	public void actionPerformed(ActionEvent e) {
@@ -190,13 +192,13 @@ public class GUI extends JFrame {
         			public void run() {
         				
         				try {
-            				playSound("pacman_beginning.wav");
+        					Audio.playSound("pacman_beginning.wav");
             				Thread.sleep(4000);
         					game();
 
         				} 
             			
-            			catch (InterruptedException e1) {
+            			catch (Exception e1) {
             				
         					e1.printStackTrace();
         					
@@ -228,31 +230,33 @@ public class GUI extends JFrame {
 	 * Method to set the map with items of the game
 	 * @param item the list of item in the game
 	 * @param donnee the list of the graphicals item in the game
+	 * @throws Exception 
 	 */
 	
-	private void initialize_table() {
+	private void initialize_table() throws Exception {
 		
-		// On rempli le tableau avec les éléments nécessaires
+		// On rempli le tableau avec les elements necessaires
 		for (int i = 0; i < item.length; i++) {
 			
-			// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman imagé, aux coordonnées de l'item
+			// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman image, aux coordonnees de l'item
 			if (item[i] instanceof Pacman) {
 				
 				((Pacman) item[i]).set_score(this.SCORE);
 				assert PACMAN_POSITION == -1 : "More than 1 Pacman detected";
 				this.donnee[(item[i]).get_x()][(item[i]).get_y()] = this.pacman;
+				// On enregistre la position de pacman, ici et pas plus tot pour verifie qu'on en a que un 
 				PACMAN_POSITION = i;
 						
 			}
 			
-			// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome imagé, aux coordonnées de l'item
+			// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome image, aux coordonnees de l'item
 			else if (item[i] instanceof Ghost) {
 					
 				this.donnee[item[i].get_x()][item[i].get_y()] = this.ghost;	
 				
 			}
 			
-			// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit imagé, aux coordonnées de l'item
+			// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit image, aux coordonnees de l'item
 			else if (item[i] instanceof Fruit) {
 						
 				this.donnee[item[i].get_x()][item[i].get_y()] = this.fruit;
@@ -271,6 +275,9 @@ public class GUI extends JFrame {
 				
 				this.donnee[item[i].get_x()][item[i].get_y()] = this.wall;
 				
+			}
+			else {
+				throw new Exception("Case manquante");
 			}
 					
 		}
@@ -297,31 +304,35 @@ public class GUI extends JFrame {
 			
 		}
 		
-		// On rempli le tableau avec les éléments nécessaires
+		// On rempli le tableau avec les elements necessaires
 		for (int i = 0; i < item.length; i++) {
 			
 			try {
-				// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman imagé, aux coordonnées de l'item
+				// Si l'item donne est un pacman, alors on remplie le tableau donne avec un objet pacman image, aux coordonnees de l'item
 				if (item[i] instanceof Pacman) {
 
 					modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 								
 				}
 				
-				// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome imagé, aux coordonnées de l'item
+				// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome image, aux coordonnees de l'item
 				else if (item[i] instanceof Ghost) {
-					
-					modele.setValueAt(this.ghost, item[i].get_x(), item[i].get_y());	
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
+						
 
+					
+					}
+					else {
+					modele.setValueAt(this.ghost, item[i].get_x(), item[i].get_y());	
+					}
 				}
 				
-				// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit imagé, aux coordonnées de l'item
+				// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit image, aux coordonnees de l'item
 				else if (item[i] instanceof Fruit) {
 				
-					// Si il y a un pacman à son emplacement, on prefere afficher pacman
-					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
+					// Si il y a un pacman a son emplacement, on prefere afficher pacman
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.ghost) {
 					
-						modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
 					
 					}
 					else {
@@ -335,9 +346,9 @@ public class GUI extends JFrame {
 				else if (item[i] instanceof Empty) {
 				
 					// Si il y a un pacman à son emplacement, on prefere afficher pacman
-					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman) {
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.ghost || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.fruit) {
 					
-						modele.setValueAt(this.pacman, item[i].get_x(), item[i].get_y());
+
 					
 					}
 					else {
@@ -349,9 +360,14 @@ public class GUI extends JFrame {
 					
 				// Si l'item est un mur
 				else if (item[i] instanceof Wall){
+					if (modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.pacman || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.ghost || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.fruit || modele.getValueAt(item[i].get_x(), item[i].get_y()) == this.empty) {
+						
 
+						
+					}
+					else {
 					modele.setValueAt(this.wall, item[i].get_x(), item[i].get_y());	
-				
+					}
 				}
 			}
 			
@@ -361,7 +377,7 @@ public class GUI extends JFrame {
 							
 		}
 		
-		// S'il reste des cases null, on y met null
+		// S'il reste des cases null, on y met empty
 		for (int i = 0; i < donnee.length; i++) {
 			
 			for (int j = 0; j < donnee.length; j++) {
@@ -382,10 +398,10 @@ public class GUI extends JFrame {
 	/**
 	 * Method to launch the game
 	 * @param item a table of item in the game
-	 * @throws InterruptedException 
+	 * @throws Exception 
 	 */
 	
-	private void game() throws InterruptedException {
+	private void game() throws Exception {
 		
 		// Tant qu'il y a des fruits en jeu et que Pacman a de la vie, on peut le déplacer
 		while (carte.are_Fruits() && ((Pacman) item[PACMAN_POSITION]).get_life() > 0) {
@@ -435,13 +451,13 @@ public class GUI extends JFrame {
 			}
 			finally {
 				
+				Audio.playSound("pacman_chomp.wav");
 				// On fait bouger les fantomes
-				playSound("pacman_chomp.wav");
 				carte.move_ghost();
 
 				// On rebalaye tout le tableau après le déplacement de pacman et donc aussi les déplacements des fantomes
-				Entite[] item2 = new Entite[donnee.length * donnee.length];
-				item2 = carte.get_all();
+				//Entite[] item2 = new Entite[donnee.length * donnee.length];
+				Entite[] item2 = carte.get_all();
 			
 				// Et on redraw le tableau
 				change_gui(item2);
@@ -457,8 +473,9 @@ public class GUI extends JFrame {
 		}
 		// Si on a arreté de jouer et qu'il y a encore des fruits, c'est que pacman n'a plus de vie, et donc on arrete le jeu
 		if (carte.are_Fruits()) {
+			
 			Thread.sleep(1000);
-			playSound("pacman_death.wav");
+			Audio.playSound("pacman_death.wav");
 			Thread.sleep(2000);
 			JOptionPane box = new JOptionPane();
 			box.showMessageDialog(this, "You loose ! Your score : " + this.SCORE);
@@ -475,9 +492,9 @@ public class GUI extends JFrame {
 			Carte new_map = Level.get_carte(lvl + 1);
 			
 			// On crée une nouvelle fenêtre
-			playSound("victory.wav");
+			Audio.playSound("victory.wav");
 			Thread.sleep(2000);
-			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1, this.Xresolution, this.Yresolution);
+			GUI frame = new GUI(this.taille, new_map, this.SCORE, this.lvl + 1, this.Xresolution, this.Yresolution, ((Pacman) item[PACMAN_POSITION]).get_life());
 			frame.setSize(Xresolution, Yresolution);
 	        frame.setResizable(false);
 	        frame.setVisible(true);
@@ -536,22 +553,5 @@ public class GUI extends JFrame {
 	            }
 	        }
 	    }
-
-	// Fonction de l'audio du jeu
-	public static synchronized void playSound(final String url) {
-		  new Thread(new Runnable() {
-		    public void run() {
-		      try {
-		        Clip clip = AudioSystem.getClip();
-		        AudioInputStream inputStream = AudioSystem.getAudioInputStream(
-		          Main.class.getResourceAsStream("/view/" + url));
-		        clip.open(inputStream);
-		        clip.start(); 
-		      } catch (Exception e) {
-		        System.err.println(e.getMessage());
-		      }
-		    }
-		  }).start();
-		}
 
 }
