@@ -24,13 +24,12 @@ public abstract class Audio{
 	         clip.open(audioStream);
 	         clip.start(); 
 	      } catch (Exception e) {
-	        System.err.println(e.getMessage());
 	      }
 	    }
 	  }).start();
 	}
 	
-	public static void stop() {
+	public static synchronized void stop() {
 		
 		play = false;
 		

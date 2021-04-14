@@ -24,14 +24,10 @@ public abstract class Level {
 									  new Fruit(10, 1, 11),
 									  new Fruit(10, 8, 13),
 									  new Fruit(10, 14, 2),
-									  new Fruit(10, 13, 9),
-									  new Ghost(6, 0),
+									  new Fruit(10, 13, 9),  
 									  new Fruit(10, 6, 0),
-									  new Ghost(12, 5),
 									  new Fruit(10, 12, 5),
-									  new Ghost(5, 10),
 									  new Fruit(10, 5, 10),
-									  new Ghost(10, 13),
 									  new Fruit(10, 10, 13),
 									  new Wall(0, 4),
 									  new Wall(0, 5),
@@ -247,10 +243,10 @@ public abstract class Level {
 									  new Fruit(10, 14, 12),
 									  new Fruit(10, 14, 13),
 									  new Fruit(10, 14, 14),
-									  
-									  
-									  
-									  
+									  new Ghost(6, 0),
+									  new Ghost(12, 5),
+									  new Ghost(5, 10),
+									  new Ghost(10, 13),
 									  
 									  
 									  

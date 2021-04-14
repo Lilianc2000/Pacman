@@ -204,15 +204,11 @@ public class Carte implements Interface_VL{
 							((Ghost) liste[i]).set_direction_x(ThreadLocalRandom.current().nextInt(-1, 2));
 							((Ghost) liste[i]).set_direction_y(ThreadLocalRandom.current().nextInt(-1, 2));
 						}
-						System.out.println("Is a wall : " + is_a_wall(liste[i]));
-						System.out.println("Coords : " + liste[i].get_x() + " " + liste[i].get_y());
-						System.out.println("New direction : " + ((Ghost) liste[i]).get_direction_x() + "  " + ((Ghost) liste[i]).get_direction_y());
 						((Ghost) liste[i]).move_ghost();
-						System.out.println("New coords : " + liste[i].get_x() + " " + liste[i].get_y());
 					} 
 				}
 				catch (Exception e) {
-				e.printStackTrace();
+					
 				}				
 			}
 		}
