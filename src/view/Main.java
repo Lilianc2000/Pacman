@@ -11,15 +11,20 @@ import logic.Wall;
 /**
  * Main method of the program
  * @author Lilian Cizeron
- * @param int the number of case in X and Y 
  */
 
 public class Main {
-		
+	
+	// Variables diverses
 	private static final int taille = 15;
 	private static Carte carte;
 	private static int lvl = 0;
 	
+	/**
+	 * Main function of the program
+	 * @param args (-d || --debug) to launch with the debug map
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		
 		if(args.length == 1 && (args[0].equals("--debug") || args[0].equals("-d"))) {
@@ -97,8 +102,9 @@ public class Main {
 			
 		}
 		
-		
-		int Xresolution = 60 * taille, Yresolution = 65 * taille;			//Résolution de la fenetre
+		// On defini la resolution de la fenetre puis on la creer
+		// Coefficient 60 car c'est la taille de nos images
+		int Xresolution = 60 * taille, Yresolution = 65 * taille;
 		GUI frame = new GUI(taille, carte, 0, lvl, Xresolution, Yresolution, ((Pacman) carte.get_all()[carte.get_position()]).get_life());
         frame.setSize(Xresolution, Yresolution);
         frame.setResizable(false);

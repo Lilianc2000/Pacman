@@ -6,11 +6,6 @@ import logic.Ghost;
 import logic.Pacman;
 import logic.Wall;
 
-/**
- * Abstract Static Class to define ours levels
- * @author Lilian Cizeron
- *
- */
 public abstract class Level {
 
 	/**
@@ -270,17 +265,11 @@ public abstract class Level {
 					  new Fruit(15, 12, 2),
 					  new Fruit(15, 8, 13),
 					  new Fruit(15, 11, 10),
-					  new Ghost(1, 8),
-					  new Fruit(15, 1, 8),
-					  new Ghost(7, 3),
-					  new Fruit(15, 7, 3),
-					  new Ghost(13, 5),
+					  new Fruit(15, 1, 8),					  
+					  new Fruit(15, 7, 3),					 
 					  new Fruit(15, 13, 5),
-					  new Ghost(3, 12),
-					  new Fruit(15, 3, 12),
-					  new Ghost(8, 8),
-					  new Fruit(15, 8, 8),
-					  new Ghost(10, 12),
+					  new Fruit(15, 3, 12),					  
+					  new Fruit(15, 8, 8),					  
 					  new Fruit(15, 10, 12),
 					  new Wall(0, 1),
 					  new Wall(0, 2),
@@ -493,11 +482,13 @@ public abstract class Level {
 					  new Fruit(15, 14, 7),
 					  new Fruit(15, 14, 8),
 					  new Fruit(15, 14, 9),
-					  
-					  
-					  
-					  
-					  
+					  new Ghost(1, 8),
+					  new Ghost(7, 3),
+					  new Ghost(10, 12),
+					  new Ghost(8, 8),
+					  new Ghost(10, 12),
+					  new Ghost(13, 5),
+					  new Ghost(3, 12),
 			};
 	
 	/**
@@ -505,22 +496,14 @@ public abstract class Level {
 	 * @author Antoine Chrétien
 	 */
 	private static Entite[] liste_niveau_3= new Entite[] {
-			  new Pacman(10, 0, 1, 14), 
-			  new Ghost(2,5),
-			  new Fruit(20, 2, 5),
-			  new Ghost(2,11),
-			  new Fruit(20, 2, 11),
-			  new Ghost(5,0),
-			  new Fruit(20, 5, 0),
-			  new Ghost(6,12),
-			  new Fruit(20, 6, 12),
-			  new Ghost(10,2),
-			  new Fruit(20, 10, 2),
-			  new Ghost(10,7),
-			  new Fruit(20, 10, 7),
-			  new Ghost(13,4),
+			  new Pacman(10, 0, 1, 14), 			  
+			  new Fruit(20, 2, 5),			  
+			  new Fruit(20, 2, 11),			  
+			  new Fruit(20, 5, 0),			  
+			  new Fruit(20, 6, 12),			
+			  new Fruit(20, 10, 2),			  
+			  new Fruit(20, 10, 7),	  
 			  new Fruit(20, 13, 4),
-			  new Ghost(13,13),
 			  new Wall(0, 0),
 			  new Wall(0, 1),
 			  new Wall(0, 2),
@@ -736,11 +719,15 @@ public abstract class Level {
 			  new Fruit(20, 14, 11),
 			  new Fruit(20, 14, 12),
 			  new Fruit(20, 14, 13),
-			  
-			  
-			  
-			  
-			
+			  new Fruit(20, 14, 10),
+			  new Ghost(13,13),
+			  new Ghost(2,5),
+			  new Ghost(2,11),
+			  new Ghost(5,0),
+			  new Ghost(6,12),
+			  new Ghost(10,2),
+			  new Ghost(10,7),
+			  new Ghost(13,4),
 			
 	};
 	
