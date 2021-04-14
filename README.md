@@ -11,4 +11,4 @@ Launch with `java -jar Pacman_v1.1.jar`
 
 Then, it is because of a method use to display ImageIcon.
 
-Don't worry about it, it is fully under control
+Don't worry about it, it is fully under control.
