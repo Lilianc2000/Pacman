@@ -183,7 +183,6 @@ public class GUI extends JFrame {
         	
         	public void actionPerformed(ActionEvent e) {
         		btnStart.setEnabled(false);
-        		System.out.println("Game launched");
         		table_1.requestFocus();
         		new Thread() {
         			public void run() {
@@ -196,9 +195,7 @@ public class GUI extends JFrame {
         				} 
             			
             			catch (Exception e1) {
-            				
-        					e1.printStackTrace();
-        					
+            					
         				}
             			
             			finally {
@@ -248,14 +245,14 @@ public class GUI extends JFrame {
 			
 			// Si l'item donne est un fantome, alors on remplie le tableau donne avec un objet fantome image, aux coordonnees de l'item
 			else if (item[i] instanceof Ghost) {
-					
+
 				this.donnee[item[i].get_x()][item[i].get_y()] = this.ghost;	
 				
 			}
 			
 			// Si l'item donne est un fruit, alors on remplie le tableau donne avec un objet fruit image, aux coordonnees de l'item
 			else if (item[i] instanceof Fruit) {
-						
+				
 				this.donnee[item[i].get_x()][item[i].get_y()] = this.fruit;
 				
 			}
@@ -404,41 +401,40 @@ public class GUI extends JFrame {
 		// Tant qu'il y a des fruits en jeu et que Pacman a de la vie, on peut le déplacer
 		while (carte.are_Fruits() && ((Pacman) item[PACMAN_POSITION]).get_life() > 0) {
 
-			System.out.println("Waiting actions");
 			Thread.sleep(565);
 			
 			try {
 				// Si on a pressé UP, alors on envoie le code 1 pour le déplacement
 				if (upPressed) {
-					System.out.println("1 sent");
+					
 					carte.move_pacman(1, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé DOWN, alors on envoie le code 2 pour le déplacement
 				else if (downPressed) {
-					System.out.println("2 sent");
+
 					carte.move_pacman(2, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé RIGHT, alors on envoie le code 3 pour le déplacement
 				else if (rightPressed) {
-					System.out.println("3 sent");
+
 					carte.move_pacman(3,(Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Si on a pressé LEFT, alors on envoie le code 4 pour le déplacement
 				else if (leftPressed) {
-					System.out.println("4 sent");
+
 					carte.move_pacman(4, (Pacman) item[PACMAN_POSITION]);
 				
 				}
 			
 				// Sinon, on doit continuer dans la meme direction, on envoie donc le code 5
 				else {
-					System.out.println("5 sent");
+
 					carte.move_pacman(5, (Pacman) item[PACMAN_POSITION]);
 					
 				}
@@ -514,18 +510,14 @@ public class GUI extends JFrame {
 	            switch (event.getKeyCode()) {
 	                case KeyEvent.VK_UP:
 	                    upPressed = true;
-	                    System.out.println("UP");
 	                    break;
 	                case KeyEvent.VK_DOWN:
 	                    downPressed = true;
-	                    System.out.println("DOWN");
 	                    break;
 	                case KeyEvent.VK_LEFT:
 	                    leftPressed = true;
-	                    System.out.println("LEFT");
 	                    break;
 	                case KeyEvent.VK_RIGHT:
-	                	System.out.println("RIGHT");
 	                    rightPressed = true;
 	                    break;
 	                	
