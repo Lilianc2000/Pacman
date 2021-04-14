@@ -90,33 +90,32 @@ public class Pacman extends Entite {
 	 * @throws Exception 
 	 */
 	public Pacman move_pacman(int code) throws Exception {
-		// Direction nord
+		// Direction haute
 		if (code == 1) {
 			this.direction_y = 0;
 			this.direction_x = -1;
 		}
-		// Direction sud
+		// Direction basse
 		else if (code == 2) {	
 			this.direction_y = 0;
 			this.direction_x = 1;
 		}
-		// Direction est
+		// Direction droite
 		else if (code == 3) {	
 			this.direction_y = 1;
 			this.direction_x = 0;
 		}
-		// Direction ouest
+		// Direction gauche
 		else if (code == 4) {	
 			this.direction_y = -1;
 			this.direction_x = 0;
 		}
-		// Si on a recu un autre code que 1 2 3 ou 4, alors Pacman ne change pas de direction		
+		// Si on a recu un code diff�rent de 1 2 3 ou 4, alors Pacman ne change pas de direction		
 		if (this.x + this.direction_x > 14 || this.x + this.direction_x < 0 || this.y + this.direction_y > 14 || this.y + this.direction_y < 0) {
 			throw new Exception ("Pacman sort du jeu");
 		}
 		this.x = this.x + this.direction_x;
 		this.y = this.y + this.direction_y;
-		System.out.println("Pacman updated : x " + this.x + "   y : " + this.y);
 		return this;
 	}
 

@@ -21,14 +21,11 @@ public class Ghost extends Entite {
 	
 	/**
 	 * Constructor of Ghost
-	 * @param x the x position of the ghost
-	 * @param y the y position of the ghost
+	 * @param x the abscissa of the ghost
+	 * @param y the ordinate of the ghost
 	 */
-	
 	public Ghost(int x, int y) {
-		
 		super(color, x, y);
-		
 	}
 	
 	/**

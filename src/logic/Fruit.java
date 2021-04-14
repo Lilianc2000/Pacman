@@ -21,8 +21,8 @@ public class Fruit extends Entite {
 	/**
 	 * Constructor of Fruit
 	 * @param value the value of the fruit
-	 * @param x the x position of the fruit
-	 * @param y the y position of the fruit
+	 * @param x the abscissa of the fruit
+	 * @param y the ordinate of the fruit
 	 */
 	public Fruit(int value, int x, int y) {
 		super(color, x, y);
