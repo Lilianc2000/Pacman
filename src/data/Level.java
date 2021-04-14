@@ -13,8 +13,10 @@ import logic.Wall;
  */
 public abstract class Level {
 
-	// Antoine, la premiere ligne du premier niveau est faite. Je te laisse la modifier si tu le souhaites,
-	// et completer les 14 autres lignes ainsi que le niveau 2
+	/**
+	 * Level 1 has 3 ghosts and every fruits have the value 10
+	 * @author Antoine Chrétien
+	 */
 	private static Entite[] liste_niveau_1 = new Entite[]
 									  {
 									  new Wall(0, 0),
@@ -26,9 +28,13 @@ public abstract class Level {
 									  new Fruit(10, 14, 2),
 									  new Fruit(10, 13, 9),
 									  new Ghost(6, 0),
+									  new Fruit(10, 6, 0),
 									  new Ghost(12, 5),
+									  new Fruit(10, 12, 5),
 									  new Ghost(5, 10),
+									  new Fruit(10, 5, 10),
 									  new Ghost(10, 13),
+									  new Fruit(10, 10, 13),
 									  new Wall(0, 4),
 									  new Wall(0, 5),
 									  new Wall(0, 12),
@@ -253,7 +259,11 @@ public abstract class Level {
 									  
 									  
 									  };
-									  
+								
+	/**
+	 * Level 2 has 3 ghosts and every fruits have the value 15
+	 * @author Antoine Chrétien
+	 */
 	private static Entite[] liste_niveau_2= new Entite[] 
 			{
 					  new Wall(0, 0),
@@ -265,11 +275,17 @@ public abstract class Level {
 					  new Fruit(15, 8, 13),
 					  new Fruit(15, 11, 10),
 					  new Ghost(1, 8),
+					  new Fruit(15, 1, 8),
 					  new Ghost(7, 3),
+					  new Fruit(15, 7, 3),
 					  new Ghost(13, 5),
+					  new Fruit(15, 13, 5),
 					  new Ghost(3, 12),
+					  new Fruit(15, 3, 12),
 					  new Ghost(8, 8),
+					  new Fruit(15, 8, 8),
 					  new Ghost(10, 12),
+					  new Fruit(15, 10, 12),
 					  new Wall(0, 1),
 					  new Wall(0, 2),
 					  new Wall(0, 8),
@@ -487,15 +503,27 @@ public abstract class Level {
 					  
 					  
 			};
+	
+	/**
+	 * Level 3 has 8 ghosts and every fruits have the value 20
+	 * @author Antoine Chrétien
+	 */
 	private static Entite[] liste_niveau_3= new Entite[] {
 			  new Pacman(10, 0, 1, 14), 
 			  new Ghost(2,5),
+			  new Fruit(20, 2, 5),
 			  new Ghost(2,11),
+			  new Fruit(20, 2, 11),
 			  new Ghost(5,0),
+			  new Fruit(20, 5, 0),
 			  new Ghost(6,12),
+			  new Fruit(20, 6, 12),
 			  new Ghost(10,2),
+			  new Fruit(20, 10, 2),
 			  new Ghost(10,7),
+			  new Fruit(20, 10, 7),
 			  new Ghost(13,4),
+			  new Fruit(20, 13, 4),
 			  new Ghost(13,13),
 			  new Wall(0, 0),
 			  new Wall(0, 1),
@@ -725,7 +753,7 @@ public abstract class Level {
 	private static Carte niveau_3 = new Carte(liste_niveau_3);
 	
 	/**
-	 * 
+	 * this method give an initial map for a level give. We have initialize 3 Maps for levels 1,2 and 3
 	 * @param level
 	 * @return a list with the initial coordinate of Pacman, walls, Fruits(with values) and Ghosts
 	 */
