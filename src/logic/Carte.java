@@ -141,7 +141,8 @@ public class Carte implements Interface_VL{
 		}
 		find_ghost();
 		// Si aucune exception n a ete soulevee on deplace Pacman
-		liste[PACMAN_POSITION] = pacman.move_pacman(code);	
+		liste[PACMAN_POSITION] = pacman.move_pacman(code);
+		find_ghost();
 		// On verifie si Pacman n'a pas mange un fruit ou rencontre un fantome
 		eat_fruit();
 	}
