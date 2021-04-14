@@ -1,5 +1,8 @@
 package view;
 
+import java.io.BufferedInputStream;
+import java.io.InputStream;
+
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -14,11 +17,12 @@ public abstract class Audio{
 	    public void run() {
 	      try {
 	    	 play = true;
-	        Clip clip = AudioSystem.getClip();
-	        AudioInputStream inputStream = AudioSystem.getAudioInputStream(
-	          Main.class.getResourceAsStream("/view/" + url));
-	        clip.open(inputStream);
-	        clip.start(); 
+	    	 InputStream audioSrc = getClass().getResourceAsStream("/view/" + url);
+	         Clip clip = AudioSystem.getClip();
+	         InputStream bufferedIn = new BufferedInputStream(audioSrc);
+	         AudioInputStream audioStream = AudioSystem.getAudioInputStream(bufferedIn);
+	         clip.open(audioStream);
+	         clip.start(); 
 	      } catch (Exception e) {
 	        System.err.println(e.getMessage());
 	      }
