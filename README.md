@@ -1,4 +1,4 @@
-# PacmanBis
+# Pacman
 ## Authors : Lilian Cizeron & Camille Barbarin--Renvoisé & Antoine Chrétin
 
 ### How to ?
