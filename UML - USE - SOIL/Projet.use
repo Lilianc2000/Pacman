@@ -1,0 +1,223 @@
+-- Lilian Cizeron ; Camille Barbarin--Renvoisé ; Antoine Chrétien
+model PacMan_Game
+
+-- Nombre de cases x : 15
+-- Nombre de cases y : 15
+-- A changer dans les fonctions de déplacement
+
+
+abstract class Entite
+
+attributes
+	x : Integer
+	y : Integer
+	color : String
+	id : Integer
+	case : Case
+end
+
+
+class Case
+
+attributes
+	x : Integer
+	y : Integer
+	est_un_mur : Boolean
+	carte : Carte
+end
+
+
+class Gomme < Entite
+
+operations
+	estMangee()
+	begin
+		destroy self
+	end
+end
+
+
+abstract class Personnage < Entite
+
+operations
+	Deplacement_x(dx : Integer)
+	Deplacement_y(dy : Integer)
+end
+
+
+class Fantome < Personnage
+
+attributes
+	sens_x : Integer
+	sens_y : Integer
+
+operations
+	Deplacement_x(dx : Integer)
+	begin
+		self.x := self.x + self.sens_x
+	end
+	Deplacement_y(dy : Integer)
+	begin
+		self.y := self.y + self.sens_y
+	end
+end
+
+
+class Pacman < Personnage
+
+attributes
+	life : Integer
+	score : Integer
+	level : Integer
+
+operations
+	Deplacement_x(dx : Integer)
+	begin
+		self.x := self.x + dx
+	end
+	Deplacement_y(dy : Integer)
+	begin
+		self.y := self.y + dy
+	end
+	Perdre_une_vie()
+	begin
+		self.life := self.life - 1
+	end
+	Augmenter_le_score()
+	begin
+		self.score := self.score + 10
+	end
+	Fin_du_jeu() : Integer
+	begin
+		result := self.score
+	end
+	Next_level() : Integer
+	begin
+		self.level := self.level + 1;
+		result := self.level
+	end
+end
+
+
+class Niveau
+
+attributes
+	nb_fantomes : Integer
+	vitesse_fantome : Integer
+	ratio_de_cases_libres : Integer
+	nb_vie_initial : Integer
+end
+
+
+class Carte
+
+attributes
+	x : Integer
+	y : Integer
+	nb_cases : Integer
+	liste_niveau : Sequence(Niveau)
+	lvl_actuel : Integer
+	cases : Sequence(Case)
+
+operations
+	construireCases()
+	draw()
+	Fin_de_jeu()
+	begin
+		self.cases := null
+	end
+end
+
+
+-- Associations
+
+aggregation Possede_case between
+	Carte[1] role cartes
+	Case[2..*] role cases
+end
+
+aggregation Possede_gomme between
+	Case[1] role cases
+	Gomme[0..1] role gommes
+end
+
+aggregation Possede_pacman between
+	Case[1] role cases
+	Pacman[0..1] role pacmans
+end
+
+aggregation Possede_fantome between
+	Case[1] role cases
+	Fantome[*] role fantomes
+end
+
+aggregation Possede_niveau between
+	Carte[1] role cartes
+	Niveau[1..*] role niveaux
+end
+
+constraints
+
+
+-- Être toujours sur le chemin
+-- On vérifie que la somme du nombre d'entités présentes dans les associations (donc sur les cases et pas dans les murs) forment bien le nombre d'entités initialisées.
+
+context Entite inv valideLocation:
+	Entite.allInstances() -> size() = (Possede_gomme.allInstances() -> size() + Possede_pacman.allInstances() -> size() + Possede_fantome.allInstances() -> size())
+
+
+-- Vérification de toujours dans les bornes et la sortie est la bonne
+context Fantome::Deplacement_x(dx : Integer)
+post : self.x = self.x@pre + self.sens_x
+post : -1 < self.x
+post : self.x < 15
+
+-- Vérification qu'il n'y ai plus de gomme pour pouvoir changer de niveau
+context Pacman::Next_level() : Integer
+pre : Gomme.allInstances() -> size() = 0
+
+-- Vérification de toujours dans les bornes et la sortie est la bonne
+context Fantome::Deplacement_y(dy : Integer)
+post : self.y = self.y@pre + self.sens_y
+post : -1 < self.y 
+post : self.y < 15
+
+
+-- Vérification de toujours dans les bornes
+context Pacman::Deplacement_x(dx : Integer)
+post : -1 < self.x 
+post : self.x < 15
+
+
+-- Vérification de toujours dans les bornes
+context Pacman::Deplacement_y(dy : Integer)
+post : -1 < self.y 
+post : self.y < 15
+
+-- Vérification de la sortie
+context Pacman::Perdre_une_vie()
+post : self.life = self.life@pre - 1
+
+
+-- Vérification de la sortie
+context Pacman::Augmenter_le_score()
+post : self.score = (self.score@pre + 10)
+
+-- Fin du jeu possible si plus de vie ou plus de gomme
+context Pacman::Fin_du_jeu() : Integer
+pre : (self.life = 0) or (Gomme.allInstances() -> isEmpty())
+
+
+-- Suppression d'une gomme qui existait avant
+context Gomme::estMangee()
+pre : Gomme.allInstances() -> includes(self)
+post : Gomme.allInstances() -> excludes(self)
+
+
+-- On draw que si il y a des choses sur la carte
+context Carte::draw()
+pre : not (Entite.allInstances() -> isEmpty())
+
+-- On construit une case si elle n'est pas vide
+context Carte::construireCases()
+pre : not (Case.allInstances() -> isEmpty())

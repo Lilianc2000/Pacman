@@ -1,0 +1,70 @@
+!new Carte('carte')
+!carte.nb_cases := 4
+!carte.x := 2
+!carte.y := 2
+!carte.liste_niveau := new OrderedSet(Niveau)
+!new Pacman('pacman')
+!new Gomme('gomme')
+!new Fantome('fantome')
+!pacman.score := 0
+!pacman.x := 0
+!pacman.y := 1
+!pacman.life := 5
+!pacman.color := 'yellow'
+!pacman.id := 1
+!gomme.x := 0
+!gomme.y := 0
+!gomme.color := 'white'
+!gomme.id := 2
+!fantome.x := 1
+!fantome.y := 1
+!fantome.color := 'red'
+!fantome.id := 3 
+!fantome.sens_x := 1
+!fantome.sens_y := 0
+!new Case('case0')
+!case0.x := 1
+!case0.y := 0
+!case0.est_un_mur := true
+!case0.carte := carte
+!insert (carte,case0) into Possede_case
+!new Case('case1')
+!case1.x := 0
+!case1.y :=1
+!pacman.life := 5
+!case1.est_un_mur := false
+!case1.carte := carte
+!insert (carte,case1) into Possede_case
+!insert (case1,pacman) into Possede_pacman
+!new Case('case2')
+!case2.x := 1
+!case2.y := 1
+!case2.est_un_mur := false
+!case2.carte := carte
+!insert (carte,case2) into Possede_case
+!insert (case2,fantome) into Possede_fantome
+!new Case('case3')
+!case3.x := 0
+!case3.y := 0
+!case3.est_un_mur := false 
+!case3.carte := carte
+!pacman.case := case1
+!gomme.case := case3
+!fantome.case := case2
+!insert (carte,case3) into Possede_case
+!insert (case3,gomme) into Possede_gomme 
+!new Niveau('niveau1')
+!niveau1.nb_fantomes := 1
+!niveau1.nb_vie_initial := 5
+!niveau1.ratio_de_cases_libres := 80
+!niveau1.vitesse_fantome := 10
+!new Niveau('niveau2')
+!niveau2.nb_fantomes := 1
+!niveau2.nb_vie_initial := 3
+!niveau2.ratio_de_cases_libres := 80
+!niveau2.vitesse_fantome := 30
+!insert (carte, niveau1) into Possede_niveau
+!insert (carte, niveau2) into Possede_niveau
+!carte.lvl_actuel := 1
+!carte.liste_niveau := Sequence{niveau1, niveau2}
+!carte.cases := Sequence{case0, case1, case2, case3}

@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_3qmqgIWTEeu6b5oWicb40g" type="PapyrusUMLClassDiagram" name="ClassDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_4gSVUIWTEeu6b5oWicb40g" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_4gUKgIWTEeu6b5oWicb40g" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_4gUKgYWTEeu6b5oWicb40g" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_4gUKgoWTEeu6b5oWicb40g" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_4gUxkIWTEeu6b5oWicb40g" type="Class_AttributeCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_etS-wIWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_9Cxk4IWaEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_etS-wYWbEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_etS-woWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_-hFV8IWaEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_etS-w4WbEeu6b5oWicb40g"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4gUxkYWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4gUxkoWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4gUxk4WTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4gUxlIWTEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_4gUxlYWTEeu6b5oWicb40g" type="Class_OperationCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_8TSwEIWXEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_4-jB0IWXEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_8TSwEYWXEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_IapjcIWYEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_GsvQIIWYEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_IapjcYWYEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_LW-xsIWYEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_KK_fsIWYEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_LW-xsYWYEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_VNPsMIWYEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_UQw10IWYEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_VNPsMYWYEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_hkTfwIWpEeu2gc1sQaRKTA" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_YmAvEIWpEeu2gc1sQaRKTA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_hkTfwYWpEeu2gc1sQaRKTA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4gUxloWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4gUxl4WTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4gUxmIWTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4gUxmYWTEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_4gUxmoWTEeu6b5oWicb40g" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_4gUxm4WTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4gUxnIWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4gUxnYWTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4gUxnoWTEeu6b5oWicb40g"/>
+      </children>
+      <element xmi:type="uml:Class" href="PacMan_Game.uml#_4gJycIWTEeu6b5oWicb40g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4gSVUYWTEeu6b5oWicb40g" x="580" y="160" width="201" height="201"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_53rmEIWTEeu6b5oWicb40g" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_53sNIIWTEeu6b5oWicb40g" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_53sNIYWTEeu6b5oWicb40g" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_53sNIoWTEeu6b5oWicb40g" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_53sNI4WTEeu6b5oWicb40g" type="Class_AttributeCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_53sNJIWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_53sNJYWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_53sNJoWTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_53sNJ4WTEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_53s0MIWTEeu6b5oWicb40g" type="Class_OperationCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_dpoCoIWYEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_cNUcsIWYEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_dpoCoYWYEeu6b5oWicb40g"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_53s0MYWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_53s0MoWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_53s0M4WTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_53s0NIWTEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_53s0NYWTEeu6b5oWicb40g" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_53s0NoWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_53s0N4WTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_53s0OIWTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_53s0OYWTEeu6b5oWicb40g"/>
+      </children>
+      <element xmi:type="uml:Class" href="PacMan_Game.uml#_53lfcIWTEeu6b5oWicb40g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_53rmEYWTEeu6b5oWicb40g" x="380" y="40"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_6geEYIWTEeu6b5oWicb40g" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_6gfSgIWTEeu6b5oWicb40g" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_6gfSgYWTEeu6b5oWicb40g" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6gfSgoWTEeu6b5oWicb40g" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_6gf5kIWTEeu6b5oWicb40g" type="Class_AttributeCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_1Jw54IWdEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_x4D4kIWdEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_1Jw54YWdEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_1Jxg8IWdEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_zrXCMIWdEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_1Jxg8YWdEeu6b5oWicb40g"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_6gf5kYWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_6gf5koWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_6gf5k4WTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6gf5lIWTEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_6gf5lYWTEeu6b5oWicb40g" type="Class_OperationCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_7d6AMIWXEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_6ZadUIWXEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_7d6AMYWXEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_eTJ4EIWpEeu2gc1sQaRKTA" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_cJ2CMIWpEeu2gc1sQaRKTA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_eTJ4EYWpEeu2gc1sQaRKTA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_6gf5loWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_6gf5l4WTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_6gggoIWTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6gggoYWTEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_6gggooWTEeu6b5oWicb40g" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_6gggo4WTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_6gggpIWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_6gggpYWTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6gggpoWTEeu6b5oWicb40g"/>
+      </children>
+      <element xmi:type="uml:Class" href="PacMan_Game.uml#_6gZy8IWTEeu6b5oWicb40g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6geEYYWTEeu6b5oWicb40g" x="920" y="120" width="181" height="161"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_9jnFQIWTEeu6b5oWicb40g" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_9jnsUIWTEeu6b5oWicb40g" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9joTYIWTEeu6b5oWicb40g" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9joTYYWTEeu6b5oWicb40g" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_9joTYoWTEeu6b5oWicb40g" type="Class_AttributeCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_9joTY4WTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_9joTZIWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_9joTZYWTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9joTZoWTEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_9joTZ4WTEeu6b5oWicb40g" type="Class_OperationCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_zSLU4IWXEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_yMZ_oIWXEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_zSLU4YWXEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_tsxGYIWpEeu2gc1sQaRKTA" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_s3Ro0IWpEeu2gc1sQaRKTA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_tsxGYYWpEeu2gc1sQaRKTA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_9joTaIWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_9joTaYWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_9joTaoWTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9joTa4WTEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_9joTbIWTEeu6b5oWicb40g" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_9joTbYWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_9joTboWTEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_9joTb4WTEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9joTcIWTEeu6b5oWicb40g"/>
+      </children>
+      <element xmi:type="uml:Class" href="PacMan_Game.uml#_9jiz0IWTEeu6b5oWicb40g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9jnFQYWTEeu6b5oWicb40g" x="760"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_ehuaMIWWEeu6b5oWicb40g" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ehvBQIWWEeu6b5oWicb40g" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ehvBQYWWEeu6b5oWicb40g" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ehvBQoWWEeu6b5oWicb40g" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_ehvBQ4WWEeu6b5oWicb40g" type="Class_AttributeCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_iHRLQIWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_NK8iUIWbEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_iHRLQYWbEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_iHRyUIWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_PGgQEIWbEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_iHRyUYWbEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_itHsgIWqEeu2gc1sQaRKTA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_hoNS4IWqEeu2gc1sQaRKTA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_itHsgYWqEeu2gc1sQaRKTA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_3hjfIIsYEeuINZOCdeQIoA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_d47_EIWaEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_3hjfIYsYEeuINZOCdeQIoA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_ehvBRIWWEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_ehvBRYWWEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_ehvBRoWWEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ehvBR4WWEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_ehvBSIWWEeu6b5oWicb40g" type="Class_OperationCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_ehvBSYWWEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_ehvBSoWWEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_ehvBS4WWEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ehvBTIWWEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_ehvBTYWWEeu6b5oWicb40g" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_ehvBToWWEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_ehvBT4WWEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_ehvBUIWWEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ehvBUYWWEeu6b5oWicb40g"/>
+      </children>
+      <element xmi:type="uml:Class" href="PacMan_Game.uml#_ehr98IWWEeu6b5oWicb40g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ehuaMYWWEeu6b5oWicb40g" x="80" y="-20"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_xoioIIWYEeu6b5oWicb40g" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xojPMIWYEeu6b5oWicb40g" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xojPMYWYEeu6b5oWicb40g" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xojPMoWYEeu6b5oWicb40g" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_xojPM4WYEeu6b5oWicb40g" type="Class_AttributeCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_dM0qgIWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_2oqoMIWaEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_dM0qgYWbEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_dM1RkIWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_4VjAwIWaEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_dM1RkYWbEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_VE4lsIsPEeuINZOCdeQIoA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_SC40UIsPEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_VE4lsYsPEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_buXjsIsmEeuayZrPaYIHVA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_ZN9ccIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_buXjsYsmEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_buZY4IsmEeuayZrPaYIHVA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_atDQoIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_buZY4YsmEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_xojPNIWYEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_xojPNYWYEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_xojPNoWYEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xojPN4WYEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_xoj2QIWYEeu6b5oWicb40g" type="Class_OperationCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_xoj2QYWYEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_xoj2QoWYEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_xoj2Q4WYEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xoj2RIWYEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_xoj2RYWYEeu6b5oWicb40g" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_xoj2RoWYEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_xoj2R4WYEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_xoj2SIWYEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xoj2SYWYEeu6b5oWicb40g"/>
+      </children>
+      <element xmi:type="uml:Class" href="PacMan_Game.uml#_xogy8IWYEeu6b5oWicb40g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xoioIYWYEeu6b5oWicb40g" x="520" y="-140"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_aon6UIWZEeu6b5oWicb40g" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_aon6UoWZEeu6b5oWicb40g" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_aon6U4WZEeu6b5oWicb40g" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_aon6VIWZEeu6b5oWicb40g" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_aoohYIWZEeu6b5oWicb40g" type="Class_AttributeCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_ior2QIWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_RyCCMIWbEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ior2QYWbEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_iosdUIWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_S_6xoIWbEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_iosdUYWbEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_iotEYIWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_Ww4h0IWbEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_iotEYYWbEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_iotEYoWbEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_Y6G4IIWbEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_iotEY4WbEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_q4SfgIWcEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_pcUQwIWcEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_q4SfgYWcEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_KkNU4IsSEeuINZOCdeQIoA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_JGFxEIsSEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_KkNU4YsSEeuINZOCdeQIoA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_aoohYYWZEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_aoohYoWZEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_aoohY4WZEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aoohZIWZEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_aoohZYWZEeu6b5oWicb40g" type="Class_OperationCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_q4SfgoWcEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_C3ijYIWcEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_q4Sfg4WcEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Qk0EUIWfEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_ADIsoIWdEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qk0EUYWfEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Qk0rYIWfEeu6b5oWicb40g" type="Operation_ClassOperationLabel">
+          <element xmi:type="uml:Operation" href="PacMan_Game.uml#_L86-EIWdEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qk0rYYWfEeu6b5oWicb40g"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_aoohZoWZEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_aoohZ4WZEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_aoohaIWZEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aoohaYWZEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_aoohaoWZEeu6b5oWicb40g" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_aooha4WZEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_aoohbIWZEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_aoohbYWZEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aoohboWZEeu6b5oWicb40g"/>
+      </children>
+      <element xmi:type="uml:Class" href="PacMan_Game.uml#_aoleEIWZEeu6b5oWicb40g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aon6UYWZEeu6b5oWicb40g" x="100" y="240"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_m2wKcIWhEeu6b5oWicb40g" type="Class_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_m2wxgIWhEeu6b5oWicb40g" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_m2wxgYWhEeu6b5oWicb40g" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m2wxgoWhEeu6b5oWicb40g" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_m2wxg4WhEeu6b5oWicb40g" type="Class_AttributeCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_uMNVEIWhEeu6b5oWicb40g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_si9fUIWhEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_uMNVEYWhEeu6b5oWicb40g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_kJ418IsPEeuINZOCdeQIoA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_uq2_8IWhEeu6b5oWicb40g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_kJ418YsPEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_2eAe0IsVEeuINZOCdeQIoA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_1V8qkIsVEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_2eAe0YsVEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_d-FOcIskEeuayZrPaYIHVA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_bmIfoIskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_d-FOcYskEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_d-F1gIskEeuayZrPaYIHVA" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="PacMan_Game.uml#_dGSq0IskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_d-F1gYskEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_m2wxhIWhEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_m2wxhYWhEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_m2wxhoWhEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m2wxh4WhEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_m2wxiIWhEeu6b5oWicb40g" type="Class_OperationCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_m2wxiYWhEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_m2wxioWhEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_m2wxi4WhEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m2wxjIWhEeu6b5oWicb40g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_m2wxjYWhEeu6b5oWicb40g" type="Class_NestedClassifierCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_m2wxjoWhEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_m2wxj4WhEeu6b5oWicb40g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_m2wxkIWhEeu6b5oWicb40g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m2wxkYWhEeu6b5oWicb40g"/>
+      </children>
+      <element xmi:type="uml:Class" href="PacMan_Game.uml#_m2tHIIWhEeu6b5oWicb40g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m2wKcYWhEeu6b5oWicb40g" x="320" y="480"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_3qmqgYWTEeu6b5oWicb40g" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_3qmqgoWTEeu6b5oWicb40g"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_3qmqg4WTEeu6b5oWicb40g" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+      <owner xmi:type="uml:Model" href="PacMan_Game.uml#_xVzEkIWTEeu6b5oWicb40g"/>
+    </styles>
+    <element xmi:type="uml:Model" href="PacMan_Game.uml#_xVzEkIWTEeu6b5oWicb40g"/>
+    <edges xmi:type="notation:Connector" xmi:id="_t8mpQIWVEeu6b5oWicb40g" type="Generalization_Edge" source="_4gSVUIWTEeu6b5oWicb40g" target="_9jnFQIWTEeu6b5oWicb40g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_t8n3YIWVEeu6b5oWicb40g" type="Generalization_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_vToGkIWVEeu6b5oWicb40g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_t8n3YYWVEeu6b5oWicb40g" x="1" y="38"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_t8mpQYWVEeu6b5oWicb40g"/>
+      <element xmi:type="uml:Generalization" href="PacMan_Game.uml#_t8RSEIWVEeu6b5oWicb40g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_t8mpQoWVEeu6b5oWicb40g" points="[600, 240, -643984, -643984]$[680, 184, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t9xG4IWVEeu6b5oWicb40g" id="(0.3482587064676617,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t9xt8IWVEeu6b5oWicb40g" id="(0.291970802919708,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_uxV44IWVEeu6b5oWicb40g" type="Generalization_Edge" source="_6geEYIWTEeu6b5oWicb40g" target="_9jnFQIWTEeu6b5oWicb40g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uxXHAIWVEeu6b5oWicb40g" type="Generalization_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_XsA_QIWZEeu6b5oWicb40g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uxXHAYWVEeu6b5oWicb40g" x="-1" y="38"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_uxWf8IWVEeu6b5oWicb40g"/>
+      <element xmi:type="uml:Generalization" href="PacMan_Game.uml#_uw_6oIWVEeu6b5oWicb40g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_uxWf8YWVEeu6b5oWicb40g" points="[840, 240, -643984, -643984]$[760, 184, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uyCccIWVEeu6b5oWicb40g" id="(0.5524861878453039,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_uyCccYWVEeu6b5oWicb40g" id="(0.7299270072992701,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_HvwW4IWZEeu6b5oWicb40g" type="Generalization_Edge" source="_53rmEIWTEeu6b5oWicb40g" target="_xoioIIWYEeu6b5oWicb40g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_HvwW44WZEeu6b5oWicb40g" type="Generalization_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_HvwW5IWZEeu6b5oWicb40g" y="40"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_HvwW4YWZEeu6b5oWicb40g"/>
+      <element xmi:type="uml:Generalization" href="PacMan_Game.uml#_Hvdb8IWZEeu6b5oWicb40g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HvwW4oWZEeu6b5oWicb40g" points="[460, 40, -643984, -643984]$[560, -28, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HwYpAIWZEeu6b5oWicb40g" id="(0.6557377049180327,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HwZQEIWZEeu6b5oWicb40g" id="(0.3125,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_IcWXIIWZEeu6b5oWicb40g" type="Generalization_Edge" source="_9jnFQIWTEeu6b5oWicb40g" target="_xoioIIWYEeu6b5oWicb40g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_IcW-MIWZEeu6b5oWicb40g" type="Generalization_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_XrwgkIWZEeu6b5oWicb40g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IcW-MYWZEeu6b5oWicb40g" x="-2" y="37"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_IcWXIYWZEeu6b5oWicb40g"/>
+      <element xmi:type="uml:Generalization" href="PacMan_Game.uml#_IcCOEIWZEeu6b5oWicb40g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IcWXIoWZEeu6b5oWicb40g" points="[720, 40, -643984, -643984]$[600, -28, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IdC6sIWZEeu6b5oWicb40g" id="(0.43795620437956206,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IdC6sYWZEeu6b5oWicb40g" id="(0.6578947368421053,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_urbnsIWhEeu6b5oWicb40g" type="Association_Edge" source="_m2wKcIWhEeu6b5oWicb40g" target="_aon6UIWZEeu6b5oWicb40g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_urbns4WhEeu6b5oWicb40g" type="Association_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_k3pukIWjEeu6b5oWicb40g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_urbntIWhEeu6b5oWicb40g" x="1" y="-18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_urcOwIWhEeu6b5oWicb40g" type="Association_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_k4O9YIWjEeu6b5oWicb40g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_urcOwYWhEeu6b5oWicb40g" x="-1" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_urcOwoWhEeu6b5oWicb40g" type="Association_TargetRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_k4wh0IWjEeu6b5oWicb40g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_urcOw4WhEeu6b5oWicb40g" x="42" y="25"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_urcOxIWhEeu6b5oWicb40g" type="Association_SourceRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_k5T7cIWjEeu6b5oWicb40g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_urcOxYWhEeu6b5oWicb40g" x="-53" y="36"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_urcOxoWhEeu6b5oWicb40g" type="Association_SourceMultiplicityLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_k53VEIWjEeu6b5oWicb40g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_urcOx4WhEeu6b5oWicb40g" x="27" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_urcOyIWhEeu6b5oWicb40g" type="Association_TargetMultiplicityLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_k6ausIWjEeu6b5oWicb40g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_urcOyYWhEeu6b5oWicb40g" x="-27" y="-18"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_urbnsYWhEeu6b5oWicb40g"/>
+      <element xmi:type="uml:Association" href="PacMan_Game.uml#_uqyHcIWhEeu6b5oWicb40g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_urbnsoWhEeu6b5oWicb40g" points="[400, 500, -643984, -643984]$[302, 340, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_usmsYIWhEeu6b5oWicb40g" id="(0.0,0.6)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_usmsYYWhEeu6b5oWicb40g" id="(0.49504950495049505,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_WFz3MIsPEeuINZOCdeQIoA" type="Association_Edge" source="_53rmEIWTEeu6b5oWicb40g" target="_m2wKcIWhEeu6b5oWicb40g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_WF1FUIsPEeuINZOCdeQIoA" type="Association_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WF1FUYsPEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_WF1FUosPEeuINZOCdeQIoA" type="Association_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WF1FU4sPEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_WF1sYIsPEeuINZOCdeQIoA" type="Association_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WF1sYYsPEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_WF1sYosPEeuINZOCdeQIoA" type="Association_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WF1sY4sPEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_WF1sZIsPEeuINZOCdeQIoA" type="Association_SourceMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WF1sZYsPEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_WF1sZosPEeuINZOCdeQIoA" type="Association_TargetMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_WF1sZ4sPEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_WF0eQIsPEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:Association" href="PacMan_Game.uml#_WEwHQIsPEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WF0eQYsPEeuINZOCdeQIoA" points="[440, 140, -643984, -643984]$[420, 480, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WIdikIsPEeuINZOCdeQIoA" id="(0.4918032786885246,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WIeJoIsPEeuINZOCdeQIoA" id="(0.5128205128205128,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_YaXTwIsPEeuINZOCdeQIoA" type="Association_Edge" source="_4gSVUIWTEeu6b5oWicb40g" target="_m2wKcIWhEeu6b5oWicb40g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YaX60IsPEeuINZOCdeQIoA" type="Association_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YaX60YsPEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_YaX60osPEeuINZOCdeQIoA" type="Association_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YaX604sPEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_YaX61IsPEeuINZOCdeQIoA" type="Association_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YaX61YsPEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_YaX61osPEeuINZOCdeQIoA" type="Association_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YaX614sPEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_YaX62IsPEeuINZOCdeQIoA" type="Association_SourceMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YaX62YsPEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_YaX62osPEeuINZOCdeQIoA" type="Association_TargetMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YaX624sPEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_YaXTwYsPEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:Association" href="PacMan_Game.uml#_YZZqcIsPEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YaXTwosPEeuINZOCdeQIoA" points="[660, 360, -643984, -643984]$[460, 480, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YcqZ0IsPEeuINZOCdeQIoA" id="(0.39800995024875624,0.9950248756218906)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YcrA4IsPEeuINZOCdeQIoA" id="(0.717948717948718,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_ZToeEIsPEeuINZOCdeQIoA" type="Association_Edge" source="_6geEYIWTEeu6b5oWicb40g" target="_m2wKcIWhEeu6b5oWicb40g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZTpFIIsPEeuINZOCdeQIoA" type="Association_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZTpFIYsPEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZTpFIosPEeuINZOCdeQIoA" type="Association_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZTpFI4sPEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZTpFJIsPEeuINZOCdeQIoA" type="Association_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZTpFJYsPEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZTpFJosPEeuINZOCdeQIoA" type="Association_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZTpFJ4sPEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZTpsMIsPEeuINZOCdeQIoA" type="Association_SourceMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZTpsMYsPEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZTqTQIsPEeuINZOCdeQIoA" type="Association_TargetMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_ZTqTQYsPEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_ZToeEYsPEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:Association" href="PacMan_Game.uml#_ZS1M0IsPEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZToeEosPEeuINZOCdeQIoA" points="[980, 280, -643984, -643984]$[514, 540, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZVPnoIsPEeuINZOCdeQIoA" id="(0.3314917127071823,0.9937888198757764)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZVQOsIsPEeuINZOCdeQIoA" id="(0.9982905982905981,0.6)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_9fbLwIsYEeuINZOCdeQIoA" type="Association_Edge" source="_ehuaMIWWEeu6b5oWicb40g" target="_aon6UIWZEeu6b5oWicb40g">
+      <children xmi:type="notation:DecorationNode" xmi:id="_9fby0IsYEeuINZOCdeQIoA" type="Association_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9fby0YsYEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9fby0osYEeuINZOCdeQIoA" type="Association_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9fby04sYEeuINZOCdeQIoA" x="-4" y="55"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9fby1IsYEeuINZOCdeQIoA" type="Association_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9fby1YsYEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9fby1osYEeuINZOCdeQIoA" type="Association_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9fby14sYEeuINZOCdeQIoA" x="-4" y="51"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9fby2IsYEeuINZOCdeQIoA" type="Association_SourceMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9fby2YsYEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_9fby2osYEeuINZOCdeQIoA" type="Association_TargetMultiplicityLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9fby24sYEeuINZOCdeQIoA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_9fbLwYsYEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:Association" href="PacMan_Game.uml#_9e8qoIsYEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9fbLwosYEeuINZOCdeQIoA" points="[180, 124, -643984, -643984]$[200, 240, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9geUoIsYEeuINZOCdeQIoA" id="(0.4166666666666667,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9geUoYsYEeuINZOCdeQIoA" id="(0.49504950495049505,0.0)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_r7l64IsTEeuINZOCdeQIoA" type="PapyrusUMLClassDiagram" name="Instanciation0" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_uUZlUIsTEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_uUaMYIsTEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_uUaMYYsTEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uUaMYosTEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_uUazcIsTEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_7I-rEIsTEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_7I6ZoIsTEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_7I-rEYsTEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_IViWgIsVEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_IVcP4IsVEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_IViWgYsVEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Lr6ccIsVEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_LrxSgIsVEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Lr6ccYsVEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_VPiHwIsVEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_VPcoMIsVEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_VPiHwYsVEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_NyKXQIsVEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_NyBNUIsVEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_NyKXQYsVEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_uZ_YgIsqEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_uZj6sIsqEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_uZ_YgYsqEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_uUazcYsTEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_uUazcosTEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_uUazc4sTEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uUazdIsTEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_uUP0UIsTEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uUZlUYsTEeuINZOCdeQIoA" x="1320" y="500"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_IK30EIsUEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_IK5CMIsUEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_IK5CMYsUEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IK5CMosUEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_IK5CM4sUEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_TocqoIsUEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_ToV88IsUEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_TocqoYsUEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_YusLsIsUEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_YuglgIsUEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_YusLsYsUEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_cEjUQIsUEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_cEb_gIsUEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_cEjUQYsUEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_fkeXwIsUEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_fkWb8IsUEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_fkeXwYsUEeuINZOCdeQIoA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_IK5CNIsUEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_IK5CNYsUEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_IK5CNosUEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IK5CN4sUEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_IKzioIsUEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IK30EYsUEeuINZOCdeQIoA" x="660" y="640"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_JPUToIsUEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_JPU6sIsUEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_JPU6sYsUEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_JPU6sosUEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_JPU6s4sUEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_lavAgIsUEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_lanEsIsUEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_lavAgYsUEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_tC4doIsUEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_tCy-EIsUEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_tC4doYsUEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ytnL0IsUEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_ythFMIsUEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ytnL0YsUEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_20FR8IsUEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_2z8vEIsUEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_20FR8YsUEeuINZOCdeQIoA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_JPU6tIsUEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_JPU6tYsUEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_JPU6tosUEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JPU6t4sUEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_JPSecIsUEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JPUToYsUEeuINZOCdeQIoA" x="800" y="420"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_eKG2EIsVEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eKHdIIsVEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eKHdIYsVEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eKHdIosVEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_eKHdI4sVEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_kIuJkIsVEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_kInb4IsVEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_kIuJkYsVEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rBQusIsVEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_rA7-kIsVEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rBQusYsVEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_6Q7W0IsVEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_6QwXsIsVEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_6Q7W0YsVEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_itinMIskEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_itNQAIskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_itinMYskEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lKkDQIskEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_lKPTIIskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_lKkDQYskEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eKHdJIsVEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eKHdJYsVEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eKHdJosVEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eKHdJ4sVEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_eKDywIsVEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eKG2EYsVEeuINZOCdeQIoA" x="980" y="180"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_BDJRgIsWEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BDJ4kIsWEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_BDJ4kYsWEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BDJ4kosWEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_BDJ4k4sWEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_E4bhAIsWEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_E4P60IsWEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_E4bhAYsWEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_OOZK0IsWEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_OOQn8IsWEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_OOZK0YsWEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_QzlEYIsWEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_QzaFQIsWEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_QzlEYYsWEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_JSnsAIskEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_JSTi8IskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_JSnsAYskEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Mm110IskEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_MmiT0IskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Mm110YskEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_fDaz8IsmEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_fC7rwIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_fDaz8YsmEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_hPmXoIsmEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_hPHPcIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_hPmXoYsmEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_BDJ4lIsWEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_BDJ4lYsWEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_BDJ4losWEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BDJ4l4sWEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_BDHcUIsWEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BDJRgYsWEeuINZOCdeQIoA" x="1200"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_eQc5MIsWEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_eQc5MosWEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_eQdgQIsWEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_eQdgQYsWEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_eQdgQosWEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_h5SBEIsWEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_h5HpAIsWEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_h5SBEYsWEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_k23zkIsWEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_k2upoIsWEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_k23zkYsWEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_o8qkQIsWEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_o8haUIsWEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_o8qkQYsWEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_zjTDYIskEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_zjAvgIskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_zjTDYYskEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_3g7WkIskEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_3gn0kIskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_3g7WkYskEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eQdgQ4sWEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eQdgRIsWEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eQdgRYsWEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eQdgRosWEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_eQZ14IsWEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eQc5MYsWEeuINZOCdeQIoA" x="1180" y="180"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_041bUIsWEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_042CYIsWEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_042CYYsWEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_042CYosWEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_042CY4sWEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_14COgIsWEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_135roIsWEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_14COgYsWEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_4xSTkIsWEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_4xGtYIsWEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_4xSTkYsWEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_LN_fcIsXEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_LNkosIsXEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_LN_fcYsXEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_XMWmgIslEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_XMH9AIslEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_XMWmgYslEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZWJkkIslEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_ZV5F4IslEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ZWJkkYslEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_042CZIsWEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_042CZYsWEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_042CZosWEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_042CZ4sWEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_04zmIIsWEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_041bUYsWEeuINZOCdeQIoA" x="1760" y="180"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_8tr3sIsWEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_8tr3sosWEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_8tr3s4sWEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_8tsewIsWEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_8tsewYsWEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_BHr90IsXEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_BHja8IsXEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_BHr90YsXEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_FSxeMIsXEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_FSjbwIsXEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_FSxeMYsXEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_JY7S4IslEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_JYnJ0IslEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_JY7S4YslEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_L11aMIslEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_L1jGUIslEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_L11aMYslEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_QShn8IslEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_QSS-cIslEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_QShn8YslEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rKfTcIsmEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_rKDOkIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rKfTcYsmEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_trLHgIsmEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_tqqKIIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_trLHgYsmEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_8tsewosWEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_8tsew4sWEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_8tsexIsWEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8tsexYsWEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_8tqCgIsWEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8tr3sYsWEeuINZOCdeQIoA" x="1740"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_r1umoIsXEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_r1umoosXEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_r1vNsIsXEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_r1vNsYsXEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_r1vNsosXEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_u0YJEIsXEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_u0KGoIsXEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_u0YJEYsXEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xSE6kIsXEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_xR1qAIsXEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xSE6kYsXEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_y5NlkIsZEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_y474wIsZEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_y5NlkYsZEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_AoLO8IslEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_An5iIIslEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_AoLO8YslEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_CohWEIslEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_CoPpQIslEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_CohWEYslEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_r1vNs4sXEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_r1vNtIsXEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_r1vNtYsXEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r1vNtosXEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_r1sxcIsXEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r1umoYsXEeuINZOCdeQIoA" x="1440" y="180"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_3mcboIsXEeuINZOCdeQIoA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_3mdCsIsXEeuINZOCdeQIoA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_3mdCsYsXEeuINZOCdeQIoA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3mdCsosXEeuINZOCdeQIoA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_3mdCs4sXEeuINZOCdeQIoA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_vctCcIsZEeuINZOCdeQIoA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_vcg1MIsZEeuINZOCdeQIoA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_vctCcYsZEeuINZOCdeQIoA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_oDR80IskEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_oDAQAIskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_oDR80YskEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_r8d04IskEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_r8MIEIskEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_r8d04YskEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lM_aQIsmEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_lMcAoIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_lM_aQYsmEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_opZPsIsmEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_oo_nEIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_opZPsYsmEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_3mdCtIsXEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_3mdCtYsXEeuINZOCdeQIoA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_3mdCtosXEeuINZOCdeQIoA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3mdCt4sXEeuINZOCdeQIoA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_3mamcIsXEeuINZOCdeQIoA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3mcboYsXEeuINZOCdeQIoA" x="1440"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_r7l64YsTEeuINZOCdeQIoA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_r7l64osTEeuINZOCdeQIoA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_r7l644sTEeuINZOCdeQIoA" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+      <owner xmi:type="uml:Model" href="PacMan_Game.uml#_xVzEkIWTEeu6b5oWicb40g"/>
+    </styles>
+    <element xmi:type="uml:Model" href="PacMan_Game.uml#_xVzEkIWTEeu6b5oWicb40g"/>
+    <edges xmi:type="notation:Connector" xmi:id="_kM8lcIsZEeuINZOCdeQIoA" type="InstanceSpecification_Edge" source="_BDJRgIsWEeuINZOCdeQIoA" target="_eQc5MIsWEeuINZOCdeQIoA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_kM9MgIsZEeuINZOCdeQIoA" type="InstanceSpecification_SourceRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_ku0jcIsZEeuINZOCdeQIoA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_kM9zkIsZEeuINZOCdeQIoA" x="-13" y="22"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_kM9zkYsZEeuINZOCdeQIoA" type="InstanceSpecification_TargetRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_kvCl4IsZEeuINZOCdeQIoA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_kM9zkosZEeuINZOCdeQIoA" x="7" y="-44"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_kM8lcYsZEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_jPqd0IsZEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kM8lcosZEeuINZOCdeQIoA" points="[1260, 160, -643984, -643984]$[1260, 180, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kNZ4cIsZEeuINZOCdeQIoA" id="(0.4444444444444444,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_kNafgIsZEeuINZOCdeQIoA" id="(0.43243243243243246,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_96F5EIsZEeuINZOCdeQIoA" type="InstanceSpecification_Edge" source="_3mcboIsXEeuINZOCdeQIoA" target="_r1umoIsXEeuINZOCdeQIoA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_96GgIIsZEeuINZOCdeQIoA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_96GgIYsZEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_96GgIosZEeuINZOCdeQIoA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_96GgI4sZEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_96F5EYsZEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_9mavIIsZEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_96F5EosZEeuINZOCdeQIoA" points="[1540, 100, -643984, -643984]$[1520, 180, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_96uLMIsZEeuINZOCdeQIoA" id="(0.7518796992481203,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_96uLMYsZEeuINZOCdeQIoA" id="(0.43243243243243246,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_AXTiYIsaEeuINZOCdeQIoA" type="InstanceSpecification_Edge" source="_8tr3sIsWEeuINZOCdeQIoA" target="_041bUIsWEeuINZOCdeQIoA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_AXTiY4saEeuINZOCdeQIoA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AXTiZIsaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_AXTiZYsaEeuINZOCdeQIoA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AXTiZosaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_AXTiYYsaEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#___KvMIsZEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AXTiYosaEeuINZOCdeQIoA" points="[1820, 100, -643984, -643984]$[1840, 180, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AX4KIIsaEeuINZOCdeQIoA" id="(0.5594405594405595,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AX4KIYsaEeuINZOCdeQIoA" id="(0.43243243243243246,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_KRLxkIsaEeuINZOCdeQIoA" type="InstanceSpecification_Edge" source="_eKG2EIsVEeuINZOCdeQIoA" target="_uUZlUIsTEeuINZOCdeQIoA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_KRMYoIsaEeuINZOCdeQIoA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_KRMYoYsaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_KRMYoosaEeuINZOCdeQIoA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_KRMYo4saEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_KRLxkYsaEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_J_-FwIsaEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KRLxkosaEeuINZOCdeQIoA" points="[1040, 280, -643984, -643984]$[1400, 500, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KR0qwIsaEeuINZOCdeQIoA" id="(0.32786885245901637,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KR1R0IsaEeuINZOCdeQIoA" id="(0.3018867924528302,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_LDL2QIsaEeuINZOCdeQIoA" type="InstanceSpecification_Edge" source="_eQc5MIsWEeuINZOCdeQIoA" target="_uUZlUIsTEeuINZOCdeQIoA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_LDL2Q4saEeuINZOCdeQIoA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LDL2RIsaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_LDL2RYsaEeuINZOCdeQIoA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LDL2RosaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_LDL2QYsaEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_Ky6loIsaEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LDL2QosaEeuINZOCdeQIoA" points="[1300, 280, -643984, -643984]$[1400, 500, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LDvP4IsaEeuINZOCdeQIoA" id="(0.6486486486486487,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LDvP4YsaEeuINZOCdeQIoA" id="(0.3018867924528302,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_L2W_oIsaEeuINZOCdeQIoA" type="InstanceSpecification_Edge" source="_r1umoIsXEeuINZOCdeQIoA" target="_uUZlUIsTEeuINZOCdeQIoA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_L2W_o4saEeuINZOCdeQIoA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_L2XmsIsaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_L2XmsYsaEeuINZOCdeQIoA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_L2XmsosaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_L2W_oYsaEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_LlhHQIsaEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L2W_oosaEeuINZOCdeQIoA" points="[1540, 280, -643984, -643984]$[1400, 500, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L281gIsaEeuINZOCdeQIoA" id="(0.5405405405405406,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L281gYsaEeuINZOCdeQIoA" id="(0.3018867924528302,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_M2aucIsaEeuINZOCdeQIoA" type="InstanceSpecification_Edge" source="_041bUIsWEeuINZOCdeQIoA" target="_uUZlUIsTEeuINZOCdeQIoA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_M2auc4saEeuINZOCdeQIoA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_M2audIsaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_M2bVgIsaEeuINZOCdeQIoA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_M2bVgYsaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_M2aucYsaEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_Mjw4MIsaEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_M2aucosaEeuINZOCdeQIoA" points="[1840, 280, -643984, -643984]$[1400, 500, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_M27EwIsaEeuINZOCdeQIoA" id="(0.43243243243243246,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_M27EwYsaEeuINZOCdeQIoA" id="(0.3018867924528302,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_lY17YIsaEeuINZOCdeQIoA" type="InstanceSpecification_Edge" source="_JPUToIsUEeuINZOCdeQIoA" target="_uUZlUIsTEeuINZOCdeQIoA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_lY2icIsaEeuINZOCdeQIoA" type="InstanceSpecification_SourceRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zpR6IIslEeuayZrPaYIHVA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lY2icYsaEeuINZOCdeQIoA" x="-93" y="19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_lY3JgIsaEeuINZOCdeQIoA" type="InstanceSpecification_TargetRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_zpmqQIslEeuayZrPaYIHVA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lY3JgYsaEeuINZOCdeQIoA" x="93" y="19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_lY17YYsaEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_lGMFIIsaEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lY17YosaEeuINZOCdeQIoA" points="[859, 540, -643984, -643984]$[1320, 560, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lZYG4IsaEeuINZOCdeQIoA" id="(1.0,0.4)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lZYG4YsaEeuINZOCdeQIoA" id="(0.0,0.5660377358490566)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_mfhPkIsaEeuINZOCdeQIoA" type="InstanceSpecification_Edge" source="_IK30EIsUEeuINZOCdeQIoA" target="_uUZlUIsTEeuINZOCdeQIoA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_mfhPk4saEeuINZOCdeQIoA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_mfhPlIsaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_mfhPlYsaEeuINZOCdeQIoA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_mfhPlosaEeuINZOCdeQIoA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_mfhPkYsaEeuINZOCdeQIoA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_mIl9UIsaEeuINZOCdeQIoA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mfhPkosaEeuINZOCdeQIoA" points="[879, 680, -643984, -643984]$[1320, 560, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mf97gIsaEeuINZOCdeQIoA" id="(1.0,0.4)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mf97gYsaEeuINZOCdeQIoA" id="(0.0,0.5660377358490566)"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_o_zW0IshEeuayZrPaYIHVA" type="PapyrusUMLClassDiagram" name="Instanciation1" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_y0JlwIshEeuayZrPaYIHVA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_y0KM0IshEeuayZrPaYIHVA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_y0KM0YshEeuayZrPaYIHVA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_y0KM0oshEeuayZrPaYIHVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_y0Kz4IshEeuayZrPaYIHVA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_1rUAIIshEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_1rOgkIshEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_1rUnMIshEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_4lDNYIshEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_4k-U4IshEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_4lDNYYshEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_8bGR4IshEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_8bALQIshEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_8bGR4YshEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="__fOxQIshEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#__fJ4wIshEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="__fOxQYshEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_y0Kz4YshEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_y0Kz4oshEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_y0Kz44shEeuayZrPaYIHVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y0Kz5IshEeuayZrPaYIHVA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_yz8KYIshEeuayZrPaYIHVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y0JlwYshEeuayZrPaYIHVA" x="100" y="440"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_fTIAsIsiEeuayZrPaYIHVA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_fTInwIsiEeuayZrPaYIHVA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_fTInwYsiEeuayZrPaYIHVA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fTInwosiEeuayZrPaYIHVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_fTInw4siEeuayZrPaYIHVA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_jjGoIIsiEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_ji7B8IsiEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_jjGoIYsiEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_nh6AAIsiEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_nhxdIIsiEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nh6AAYsiEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_t5yIEIsiEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_t5kFoIsiEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_t5yIEYsiEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_wrASgIsiEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_wq3voIsiEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_wrASgYsiEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_fTInxIsiEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_fTInxYsiEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_fTInxosiEeuayZrPaYIHVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTInx4siEeuayZrPaYIHVA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_fTE9YIsiEeuayZrPaYIHVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fTIAsYsiEeuayZrPaYIHVA" x="100" y="320"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_2v_60IsiEeuayZrPaYIHVA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_2wAh4IsiEeuayZrPaYIHVA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_2wAh4YsiEeuayZrPaYIHVA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_2wAh4osiEeuayZrPaYIHVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_2wBI8IsiEeuayZrPaYIHVA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_6mg5YIsiEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_6mWhUIsiEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_6mg5YYsiEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_EI848IsjEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_EI2LQIsjEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EI848YsjEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_G5l0kIsjEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_G5fG4IsjEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5l0kYsjEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_NyYRUIsjEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_NyOgUIsjEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_NyYRUYsjEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_xhCpAIsqEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_xgpAYIsqEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_xhCpAYsqEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_2wBI8YsiEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_2wBI8osiEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_2wBI84siEeuayZrPaYIHVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2wBI9IsiEeuayZrPaYIHVA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_2v8QcIsiEeuayZrPaYIHVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2v_60YsiEeuayZrPaYIHVA" x="620" y="400"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_XtWssIsjEeuayZrPaYIHVA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XtXTwIsjEeuayZrPaYIHVA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_XtXTwYsjEeuayZrPaYIHVA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XtXTwosjEeuayZrPaYIHVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_XtXTw4sjEeuayZrPaYIHVA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_bDF5cIsjEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_bC-ksIsjEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_bDF5cYsjEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_eNKowIsjEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_eNCs8IsjEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_eNKowYsjEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_zpWdgIsjEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_zpN6oIsjEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_zpWdgYsjEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_2JkFkIslEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_2JXRQIslEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_2JkFkYslEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="__mqSIIslEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#__mViAIslEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="__mqSIYslEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_XtXTxIsjEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_XtXTxYsjEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_XtXTxosjEeuayZrPaYIHVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XtXTx4sjEeuayZrPaYIHVA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_XtTpYIsjEeuayZrPaYIHVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XtWssYsjEeuayZrPaYIHVA" x="660" y="180"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_3AgmkIsjEeuayZrPaYIHVA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_3AhNoIsjEeuayZrPaYIHVA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_3AhNoYsjEeuayZrPaYIHVA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3AhNoosjEeuayZrPaYIHVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_3AhNo4sjEeuayZrPaYIHVA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_6CXOAIsjEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_6CNdAIsjEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_6CXOAYsjEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_UbxqYIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_UbTwUIsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_UbxqYYsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_YENJoIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_YD9SAIsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_YENJoYsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_BaR58IsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_BZ-X8IsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_BaR58YsoEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_DqzyIIsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_DqiFUIsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_DqzyIYsoEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_3AhNpIsjEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_3AhNpYsjEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_3AhNposjEeuayZrPaYIHVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3AhNp4sjEeuayZrPaYIHVA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_3AeKUIsjEeuayZrPaYIHVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3AgmkYsjEeuayZrPaYIHVA" x="920" y="180"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_830_QIsjEeuayZrPaYIHVA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_831mUIsjEeuayZrPaYIHVA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_831mUYsjEeuayZrPaYIHVA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_831mUosjEeuayZrPaYIHVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_832NYIsjEeuayZrPaYIHVA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_Gmr_UIsmEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_GmcHsIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Gmr_UYsmEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_7sma4IsmEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_7sXxYIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_7sma4YsmEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_-yIocIsmEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_-x27oIsmEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_-yIocYsmEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_EhW1EIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_EhDTEIsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EhW1EYsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_H8eREIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_H8KvEIsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_H8eREYsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_MVLWsIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_MU9UQIsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_MVLWsYsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Qe8ocIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_QerisIsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qe8ocYsnEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_832NYYsjEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_832NYosjEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_832NY4sjEeuayZrPaYIHVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_832NZIsjEeuayZrPaYIHVA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_83x78IsjEeuayZrPaYIHVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_830_QYsjEeuayZrPaYIHVA" x="1180"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_f9wf0IsnEeuayZrPaYIHVA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_f9wf0osnEeuayZrPaYIHVA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_f9wf04snEeuayZrPaYIHVA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_f9wf1IsnEeuayZrPaYIHVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_f9xG4IsnEeuayZrPaYIHVA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_it6TQIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_itomcIsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_it6TQYsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_l82UcIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_l8knoIsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_l82UcYsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rODIUIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_rN1s8IsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_rODIUYsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_uhICoIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_ug3j8IsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_uhICoYsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_0sIMUIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_0r6J4IsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0sIzYIsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_8gF34IsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_8f4cgIsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_8gF34YsnEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="__ALPAIsnEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#__AAP4IsnEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="__ALPAYsnEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_f9xG4YsnEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_f9xG4osnEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_f9xG44snEeuayZrPaYIHVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f9xG5IsnEeuayZrPaYIHVA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_f9tcgIsnEeuayZrPaYIHVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f9wf0YsnEeuayZrPaYIHVA" x="920" y="20"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Lo9UcIsoEeuayZrPaYIHVA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Lo97gIsoEeuayZrPaYIHVA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Lo97gYsoEeuayZrPaYIHVA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Lo97gosoEeuayZrPaYIHVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Lo-ikIsoEeuayZrPaYIHVA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_Qd1_wIsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_QdfacIsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Qd1_wYsoEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_YiekkIsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_YiLpoIsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_YiekkYsoEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_idbx0IsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_idL6MIsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_idbx0YsoEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_fD97oIsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_fDn9YIsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_fD97oYsoEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_VFUrwIspEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_VE7DIIspEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_VFUrwYspEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_Lo-ikYsoEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Lo-ikosoEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Lo-ik4soEeuayZrPaYIHVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lo-ilIsoEeuayZrPaYIHVA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_Lo5DAIsoEeuayZrPaYIHVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lo9UcYsoEeuayZrPaYIHVA" x="1200" y="180"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_nAIg8IsoEeuayZrPaYIHVA" type="InstanceSpecification_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_nAJIAYsoEeuayZrPaYIHVA" type="InstanceSpecification_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_nAJIAosoEeuayZrPaYIHVA" type="InstanceSpecification_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_nAJvEIsoEeuayZrPaYIHVA" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_nAJvEYsoEeuayZrPaYIHVA" type="InstanceSpecification_SlotCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_tMeHYIsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_tMHiEIsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_tMeHYYsoEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_1HHpwIsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_1GxEcIsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_1HHpwYsoEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_4vuIIIsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_4vamIIsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_4vuIIYsoEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_6rAwIIsoEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_6qjdIIsoEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_6rAwIYsoEeuayZrPaYIHVA"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_X8V8MIspEeuayZrPaYIHVA" type="Slot_SlotLabel">
+          <element xmi:type="uml:Slot" href="PacMan_Game.uml#_X7_98IspEeuayZrPaYIHVA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_X8V8MYspEeuayZrPaYIHVA"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_nAJvEosoEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_nAJvE4soEeuayZrPaYIHVA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_nAJvFIsoEeuayZrPaYIHVA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nAJvFYsoEeuayZrPaYIHVA"/>
+      </children>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_nAFdoIsoEeuayZrPaYIHVA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nAJIAIsoEeuayZrPaYIHVA" x="1420" y="180"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_o_zW0YshEeuayZrPaYIHVA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_o_zW0oshEeuayZrPaYIHVA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_o_zW04shEeuayZrPaYIHVA" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+      <owner xmi:type="uml:Model" href="PacMan_Game.uml#_xVzEkIWTEeu6b5oWicb40g"/>
+    </styles>
+    <element xmi:type="uml:Model" href="PacMan_Game.uml#_xVzEkIWTEeu6b5oWicb40g"/>
+    <edges xmi:type="notation:Connector" xmi:id="_A2W4EIspEeuayZrPaYIHVA" type="InstanceSpecification_Edge" source="_fTIAsIsiEeuayZrPaYIHVA" target="_2v_60IsiEeuayZrPaYIHVA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_A2YGMIspEeuayZrPaYIHVA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_A2YGMYspEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_A2YGMospEeuayZrPaYIHVA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_A2YGM4spEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_A2XfIIspEeuayZrPaYIHVA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_AlETwIspEeuayZrPaYIHVA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A2XfIYspEeuayZrPaYIHVA" points="[319, 380, -643984, -643984]$[620, 440, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3A_YIspEeuayZrPaYIHVA" id="(1.0,0.6)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3A_YYspEeuayZrPaYIHVA" id="(0.0,0.4)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_BycF0IspEeuayZrPaYIHVA" type="InstanceSpecification_Edge" source="_y0JlwIshEeuayZrPaYIHVA" target="_2v_60IsiEeuayZrPaYIHVA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_BycF04spEeuayZrPaYIHVA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BycF1IspEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_BycF1YspEeuayZrPaYIHVA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BycF1ospEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_BycF0YspEeuayZrPaYIHVA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_Bft-IIspEeuayZrPaYIHVA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_BycF0ospEeuayZrPaYIHVA" points="[319, 500, -643984, -643984]$[620, 440, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_By4KsIspEeuayZrPaYIHVA" id="(1.0,0.6)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_By4KsYspEeuayZrPaYIHVA" id="(0.0,0.4)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Cj5X8IspEeuayZrPaYIHVA" type="InstanceSpecification_Edge" source="_XtWssIsjEeuayZrPaYIHVA" target="_2v_60IsiEeuayZrPaYIHVA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Cj5_AIspEeuayZrPaYIHVA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Cj5_AYspEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Cj5_AospEeuayZrPaYIHVA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Cj5_A4spEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Cj5X8YspEeuayZrPaYIHVA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_CS-AAIspEeuayZrPaYIHVA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Cj5X8ospEeuayZrPaYIHVA" points="[780, 286, -643984, -643984]$[760, 400, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ck6roIspEeuayZrPaYIHVA" id="(0.6557377049180327,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Ck7SsIspEeuayZrPaYIHVA" id="(0.4778156996587031,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_DYs5AIspEeuayZrPaYIHVA" type="InstanceSpecification_Edge" source="_3AgmkIsjEeuayZrPaYIHVA" target="_2v_60IsiEeuayZrPaYIHVA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DYtgEIspEeuayZrPaYIHVA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DYtgEYspEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_DYtgEospEeuayZrPaYIHVA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DYtgE4spEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_DYs5AYspEeuayZrPaYIHVA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_DEsX4IspEeuayZrPaYIHVA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DYs5AospEeuayZrPaYIHVA" points="[980, 286, -643984, -643984]$[760, 400, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DZpUMIspEeuayZrPaYIHVA" id="(0.32432432432432434,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DZpUMYspEeuayZrPaYIHVA" id="(0.4778156996587031,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Q2odwIspEeuayZrPaYIHVA" type="InstanceSpecification_Edge" source="_f9wf0IsnEeuayZrPaYIHVA" target="_3AgmkIsjEeuayZrPaYIHVA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Q2pE0IspEeuayZrPaYIHVA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Q2pE0YspEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Q2pE0ospEeuayZrPaYIHVA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Q2pE04spEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Q2odwYspEeuayZrPaYIHVA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_QklEcIspEeuayZrPaYIHVA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Q2odwospEeuayZrPaYIHVA" points="[1000, 154, -643984, -643984]$[1000, 180, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q3ojUIspEeuayZrPaYIHVA" id="(0.5095541401273885,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q3ojUYspEeuayZrPaYIHVA" id="(0.43243243243243246,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_RlUIsIspEeuayZrPaYIHVA" type="InstanceSpecification_Edge" source="_830_QIsjEeuayZrPaYIHVA" target="_Lo9UcIsoEeuayZrPaYIHVA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_RlUIs4spEeuayZrPaYIHVA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_RlUItIspEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_RlUItYspEeuayZrPaYIHVA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_RlUItospEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_RlUIsYspEeuayZrPaYIHVA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_RP4rQIspEeuayZrPaYIHVA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_RlUIsospEeuayZrPaYIHVA" points="[1260, 134, -643984, -643984]$[1280, 180, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rl-3EIspEeuayZrPaYIHVA" id="(0.5369127516778524,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Rl-3EYspEeuayZrPaYIHVA" id="(0.43243243243243246,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_TVUGsIspEeuayZrPaYIHVA" type="InstanceSpecification_Edge" source="_Lo9UcIsoEeuayZrPaYIHVA" target="_2v_60IsiEeuayZrPaYIHVA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_TVUtwIspEeuayZrPaYIHVA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_TVVU0IspEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_TVVU0YspEeuayZrPaYIHVA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_TVVU0ospEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_TVUGsYspEeuayZrPaYIHVA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_TET2QIspEeuayZrPaYIHVA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TVUGsospEeuayZrPaYIHVA" points="[1280, 280, -643984, -643984]$[913, 460, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TWEUoIspEeuayZrPaYIHVA" id="(0.43243243243243246,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TWEUoYspEeuayZrPaYIHVA" id="(1.0,0.6)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_UYKDwIspEeuayZrPaYIHVA" type="InstanceSpecification_Edge" source="_nAIg8IsoEeuayZrPaYIHVA" target="_2v_60IsiEeuayZrPaYIHVA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_UYKq0IspEeuayZrPaYIHVA" type="InstanceSpecification_SourceRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UYKq0YspEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_UYKq0ospEeuayZrPaYIHVA" type="InstanceSpecification_TargetRoleLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UYKq04spEeuayZrPaYIHVA" y="20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_UYKDwYspEeuayZrPaYIHVA"/>
+      <element xmi:type="uml:InstanceSpecification" href="PacMan_Game.uml#_UGvjoIspEeuayZrPaYIHVA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UYKDwospEeuayZrPaYIHVA" points="[1500, 280, -643984, -643984]$[913, 460, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UZECsIspEeuayZrPaYIHVA" id="(0.43243243243243246,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UZECsYspEeuayZrPaYIHVA" id="(1.0,0.6)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
